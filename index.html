@@ -10,9 +10,11 @@
 <body>
 <header class="header">
 <div class="header-container">
-  <a class="main-title-link" href="http://cedar-club.ru/">
-    <h1 class="main-title">Кедровый&nbsp;клуб</h1>
-  </a>
+  <div class="main-title-container">
+    <a class="main-title-link" href="http://cedar-club.ru/">
+      <h1 class="main-title">Кедровый&nbsp;клуб</h1>
+    </a>
+  </div>
   <nav class="header-nav">
     <ul class="header-list">
       <li class="header-nav-item">
@@ -33,17 +35,72 @@
     </ul>
   </nav>
   <nav class="burger-nav">
-    <button class="burger-button">
-      Nav
-    </button>
+    <nav class="navbar">
+      <div class="navbar-container">
+        <div class="navbar__wrap">
+          <div class="hamb">
+            <div class="hamb__field" id="hamb">
+              <span class="bar"></span> <span class="bar"></span>
+              <span class="bar"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="popup" id="popup">
+      <ul class="menu-list" id="menu">
+        <li class="menu-item">
+          <a class="menu-link" href="#about-us">О&nbsp;нас</a>
+        </li>
+        <li class="menu-item">
+          <a class="menu-link" href="#catalog">Каталог</a>
+          <ul class="menu-products-list">
+            <li class="menu-product-item">
+              <a href="#" class="menu-product-link">
+                Столики
+              </a>
+            </li>
+            <li class="menu-product-item">
+              <a href="#" class="menu-product-link">
+                Столики
+              </a>
+            </li>
+            <li class="menu-product-item">
+              <a href="#" class="menu-product-link">
+                Столики
+              </a>
+            </li>
+            <li class="menu-product-item">
+              <a href="#" class="menu-product-link">
+                Столики
+              </a>
+            </li>
+            <li class="menu-product-item">
+              <a href="#" class="menu-product-link">
+                Столики
+              </a>
+            </li>
+            <li class="menu-product-item">
+              <a href="#" class="menu-product-link">
+                Столики
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="menu-item">
+          <a class="menu-link" href="#contacts">Контакты</a>
+        </li>
+      </ul>
+    </div>
   </nav>
 </div>
+
 </header>
 <section class="section section-home">
   <img class="home-img" src="img/home.jpg" alt="Светильник из ствола кедра">
 </section>
 <section class="section section-products-nav">
-<div class="container">
+<div class="container products-nav-container">
   <nav class="products-nav">
     <ul class="produts-nav-list">
       <li class="products-nav-item">
@@ -92,21 +149,25 @@
 </section>
 <section id="about-us" class="section section-about-us">
 <div class="container">
-  <h2 class="section-title">
-    О&nbsp;нас
+  <h2 class="section-title about-us-title">
+    О&nbsp;нас&nbsp;
   </h2>
-  <p class="basic-text">
-    Что-то про Кедровый клуб, что-то про Кедровый клуб, что-то про Кедровый клуб, что-то про Кедровый клуб, что-то про Кедровый клуб, что-то про Кедровый клуб, что-то про Кедровый клуб, что-то про Кедровый клуб, что-то про Кедровый клуб, что-то про Кедровый клуб, что-то про Кедровый клуб, что-то про Кедровый клуб, что-то про Кедровый клуб, что-то про Кедровый клуб.
-  </p>
-  <img class="about-us-img" src="img/about-us.jpg" alt="Анатолий Богун">
+  <article class="about-club">
+    <p class="basic-text about-club-text">
+      Что-то про Кедровый клуб, что-то про Кедровый клуб, что-то про Кедровый клуб, что-то про Кедровый клуб, что-то про Кедровый клуб, что-то про Кедровый клуб, что-то про Кедровый клуб, что-то про Кедровый клуб, что-то про Кедровый клуб, что-то про Кедровый клуб, что-то про Кедровый клуб, что-то про Кедровый клуб, что-то про Кедровый клуб, что-то про Кедровый клуб.
+    </p>
+    <img class="about-us-img" src="img/about-us.jpg" alt="Анатолий Богун">
+  </article>
   <article class="about-bogun">
-    <h3 class="about-bogun-title">
+    <h3 class="section-title about-bogun-title">
       Анатолий Богун
     </h3>
-    <img class="about-us-logo" src="img/about-us-logo.png" alt="Логотип Анатолия Богуна">
-    <p class="basic-text">
-      Что-то про Кедровый клуб, что-то про Кедровый клуб, что-то про Кедровый клуб, что-то про Кедровый клуб, что-то про Кедровый клуб, что-то про Кедровый клуб, что-то про Кедровый клуб..
-    </p>
+    <div class="about-bogun-desc">
+      <img class="about-us-logo" src="img/about-us-logo.png" alt="Логотип Анатолия Богуна">
+      <p class="basic-text about-bogun-text">
+        Что-то про Кедровый клуб, что-то про Кедровый клуб, что-то про Кедровый клуб, что-то про Кедровый клуб, что-то про Кедровый клуб, что-то про Кедровый клуб, что-то про Кедровый клуб..
+      </p>
+    </div>
   </article>
 </div>
 </section>
@@ -124,7 +185,7 @@
       <div class="card-inner">
         <div class="card-rotate card-rotate--front">
           <button class="product-button">
-            <h3 id="" class="product-title">Столики</h3>
+            <h3 id="" class="product-title product-title-light">Столики</h3>
           </button>
         </div>
         <div class="card-rotate card-rotate--back">
@@ -132,74 +193,91 @@
             Какой-то текст про столики, еще какой-то текст про столики, ну и какой-то текст про столики, здесь тоже текст про столики.
           </p>
           <button class="product-button">
-            <h3 class="product-title">Столики</h3>
+            <h3 class="product-title product-title-dark">Столики</h3>
           </button>
         </div>
       </div>
     </li>
     <li class="product-card">
-      <div class="card-inner">
-        <div class="card-rotate card-rotate--front">
+      <div class="card-inner2">
+        <div class="card-rotate2 card-rotate--front2">
           <button class="product-button">
-            <h3 id="" class="product-title">Столики</h3>
+            <h3 id="" class="product-title product-title-light">Столики</h3>
           </button>
         </div>
-        <div class="card-rotate card-rotate--back">
+        <div class="card-rotate2 card-rotate--back2">
           <p class="basic-text product-card-text">
             Какой-то текст про столики, еще какой-то текст про столики, ну и какой-то текст про столики, здесь тоже текст про столики.
           </p>
           <button class="product-button">
-            <h3 class="product-title">Столики</h3>
+            <h3 class="product-title product-title-dark">Столики</h3>
           </button>
         </div>
       </div>
     </li>
     <li class="product-card">
-      <div class="card-inner">
-        <div class="card-rotate card-rotate--front">
+      <div class="card-inner3">
+        <div class="card-rotate3 card-rotate--front3">
           <button class="product-button">
-            <h3 id="" class="product-title">Столики</h3>
+            <h3 id="" class="product-title product-title-light">Столики</h3>
           </button>
         </div>
-        <div class="card-rotate card-rotate--back">
+        <div class="card-rotate3 card-rotate--back3">
           <p class="basic-text product-card-text">
             Какой-то текст про столики, еще какой-то текст про столики, ну и какой-то текст про столики, здесь тоже текст про столики.
           </p>
           <button class="product-button">
-            <h3 class="product-title">Столики</h3>
+            <h3 class="product-title product-title-dark">Столики</h3>
           </button>
         </div>
       </div>
     </li>
     <li class="product-card">
-      <div class="card-inner">
-        <div class="card-rotate card-rotate--front">
+      <div class="card-inner4">
+        <div class="card-rotate4 card-rotate--front4">
           <button class="product-button">
-            <h3 id="" class="product-title">Столики</h3>
+            <h3 id="" class="product-title product-title-light">Столики</h3>
           </button>
         </div>
-        <div class="card-rotate card-rotate--back">
+        <div class="card-rotate4 card-rotate--back4">
           <p class="basic-text product-card-text">
             Какой-то текст про столики, еще какой-то текст про столики, ну и какой-то текст про столики, здесь тоже текст про столики.
           </p>
           <button class="product-button">
-            <h3 class="product-title">Столики</h3>
+            <h3 class="product-title product-title-dark">Столики</h3>
           </button>
         </div>
       </div>
     </li><li class="product-card">
-      <div class="card-inner">
-        <div class="card-rotate card-rotate--front">
+      <div class="card-inner5">
+        <div class="card-rotate5 card-rotate--front5">
           <button class="product-button">
-            <h3 id="" class="product-title">Столики</h3>
+            <h3 id="" class="product-title product-title-light">Столики</h3>
           </button>
         </div>
-        <div class="card-rotate card-rotate--back">
+        <div class="card-rotate5 card-rotate--back5">
           <p class="basic-text product-card-text">
             Какой-то текст про столики, еще какой-то текст про столики, ну и какой-то текст про столики, здесь тоже текст про столики.
           </p>
           <button class="product-button">
-            <h3 class="product-title">Столики</h3>
+            <h3 class="product-title product-title-dark">Столики</h3>
+          </button>
+        </div>
+      </div>
+    </li>
+    <li class="product-card">
+      <div class="card-inner6">
+        <div class="card-rotate6 card-rotate--front6">
+          <button class="product-button">
+            <h3 id="" class="product-title product-title-light">Столики</h3>
+          </button>
+        </div>
+        <div class="card-rotate6 card-rotate--back6">
+          <p class="basic-text product-card-text">
+            Какой-то текст про столики, еще какой-то текст про столики, ну и какой-то текст про столики, здесь тоже текст про столики.
+          </p>
+          <button class="product-button">
+            <h3 class="product-title product-title-dark">Столики</h3>
           </button>
         </div>
       </div>
@@ -208,7 +286,7 @@
       <div class="card-inner">
         <div class="card-rotate card-rotate--front">
           <button class="product-button">
-            <h3 id="" class="product-title">Столики</h3>
+            <h3 id="" class="product-title product-title-light">Столики</h3>
           </button>
         </div>
         <div class="card-rotate card-rotate--back">
@@ -216,7 +294,7 @@
             Какой-то текст про столики, еще какой-то текст про столики, ну и какой-то текст про столики, здесь тоже текст про столики.
           </p>
           <button class="product-button">
-            <h3 class="product-title">Столики</h3>
+            <h3 class="product-title product-title-dark">Столики</h3>
           </button>
         </div>
       </div>
@@ -225,7 +303,7 @@
       <div class="card-inner">
         <div class="card-rotate card-rotate--front">
           <button class="product-button">
-            <h3 id="" class="product-title">Столики</h3>
+            <h3 id="" class="product-title product-title-light">Столики</h3>
           </button>
         </div>
         <div class="card-rotate card-rotate--back">
@@ -233,7 +311,7 @@
             Какой-то текст про столики, еще какой-то текст про столики, ну и какой-то текст про столики, здесь тоже текст про столики.
           </p>
           <button class="product-button">
-            <h3 class="product-title">Столики</h3>
+            <h3 class="product-title product-title-dark">Столики</h3>
           </button>
         </div>
       </div>
@@ -242,7 +320,7 @@
       <div class="card-inner">
         <div class="card-rotate card-rotate--front">
           <button class="product-button">
-            <h3 id="" class="product-title">Столики</h3>
+            <h3 id="" class="product-title product-title-light">Столики</h3>
           </button>
         </div>
         <div class="card-rotate card-rotate--back">
@@ -250,7 +328,7 @@
             Какой-то текст про столики, еще какой-то текст про столики, ну и какой-то текст про столики, здесь тоже текст про столики.
           </p>
           <button class="product-button">
-            <h3 class="product-title">Столики</h3>
+            <h3 class="product-title product-title-dark">Столики</h3>
           </button>
         </div>
       </div>
@@ -259,7 +337,7 @@
       <div class="card-inner">
         <div class="card-rotate card-rotate--front">
           <button class="product-button">
-            <h3 id="" class="product-title">Столики</h3>
+            <h3 id="" class="product-title product-title-light">Столики</h3>
           </button>
         </div>
         <div class="card-rotate card-rotate--back">
@@ -267,7 +345,7 @@
             Какой-то текст про столики, еще какой-то текст про столики, ну и какой-то текст про столики, здесь тоже текст про столики.
           </p>
           <button class="product-button">
-            <h3 class="product-title">Столики</h3>
+            <h3 class="product-title product-title-dark">Столики</h3>
           </button>
         </div>
       </div>
@@ -276,7 +354,7 @@
       <div class="card-inner">
         <div class="card-rotate card-rotate--front">
           <button class="product-button">
-            <h3 id="" class="product-title">Столики</h3>
+            <h3 id="" class="product-title product-title-light">Столики</h3>
           </button>
         </div>
         <div class="card-rotate card-rotate--back">
@@ -284,7 +362,7 @@
             Какой-то текст про столики, еще какой-то текст про столики, ну и какой-то текст про столики, здесь тоже текст про столики.
           </p>
           <button class="product-button">
-            <h3 class="product-title">Столики</h3>
+            <h3 class="product-title product-title-dark">Столики</h3>
           </button>
         </div>
       </div>
@@ -293,7 +371,7 @@
       <div class="card-inner">
         <div class="card-rotate card-rotate--front">
           <button class="product-button">
-            <h3 id="" class="product-title">Столики</h3>
+            <h3 id="" class="product-title product-title-light">Столики</h3>
           </button>
         </div>
         <div class="card-rotate card-rotate--back">
@@ -301,24 +379,7 @@
             Какой-то текст про столики, еще какой-то текст про столики, ну и какой-то текст про столики, здесь тоже текст про столики.
           </p>
           <button class="product-button">
-            <h3 class="product-title">Столики</h3>
-          </button>
-        </div>
-      </div>
-    </li>
-    <li class="product-card">
-      <div class="card-inner">
-        <div class="card-rotate card-rotate--front">
-          <button class="product-button">
-            <h3 id="" class="product-title">Столики</h3>
-          </button>
-        </div>
-        <div class="card-rotate card-rotate--back">
-          <p class="basic-text product-card-text">
-            Какой-то текст про столики, еще какой-то текст про столики, ну и какой-то текст про столики, здесь тоже текст про столики.
-          </p>
-          <button class="product-button">
-            <h3 class="product-title">Столики</h3>
+            <h3 class="product-title product-title-dark">Столики</h3>
           </button>
         </div>
       </div>
@@ -326,23 +387,28 @@
   </ul>
 </div>
 </section>
-<section id="contacts" class="section">
+<section id="contacts" class="section section-contacts">
 <div class="container">
   <h2 class="section-title">
     Контакты&ensp;
   </h2>
-  <p class="basic-text">
-    Еще что-то про Кедровый клуб, что-то про Кедровый клуб.
-  </p>
-  <a class="contacts-link" href="mailto:anatolbogun74@gmail.com">
-    anatolbogun74@gmail.com
-  </a>
-  <a class="contacts-link" href="tel:+79527460942">
-    +7 (952) 746-09-42
-  </a>
-  <a class="contacts-link" href="tel:+79919816067">
-    +7 (991) 981-60-67
-  </a>
+  <div class="contacts-container">
+    <p class="basic-text contacts-text">
+      Еще что-то про Кедровый клуб, что-то про Кедровый клуб, что-то про Кедровый клуб.
+    </p>
+    <a class="contacts-link" href="mailto:anatolbogun74@gmail.com">
+      anatolbogun74@gmail.com
+    </a>
+    <a class="contacts-link" href="tel:+79527460942">
+      +7 (952) 746-09-42
+    </a>
+    <a class="contacts-link" href="tel:+79919816067">
+      +7 (991) 981-60-67
+    </a>
+    <div class="contacts-img-container">
+      <img class="contacts-img" src="img/contacts-card.png" alt="Где находится Кедровый клуб">
+    </div>
+  </div>
 </div>
 </section>
 <footer class="footer">
@@ -399,7 +465,7 @@
   <div class="footer-info">
     <img class="footer-logo" src="img/footer-logo.png" alt="Логотип Анатолия Богуна">
      <p class="footer-text footer-info-text">
-      All rights reserved
+      All&nbsp;rights&nbsp;reserved
      </p>
      <p class="footer-text">
       2024
@@ -410,5 +476,3 @@
 <script src="index.js"></script>
 </body>
 </html>
-
-<!-- it's need -->
