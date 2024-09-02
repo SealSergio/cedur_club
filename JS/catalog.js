@@ -256,22 +256,6 @@ title_back_14.addEventListener("click", function (e) {
   card_14.classList.toggle('is-flipped');
 });
 
-//  Card 15
-
-const title_15 = document.querySelector(".product-title-light-15");
-
-const title_back_15 = document.querySelector(".product-title-dark-15");
-
-const card_15 = document.querySelector(".card-inner-15")
-
-title_15.addEventListener("click", function (e) {
-  card_15.classList.toggle('is-flipped');
-});
-
-title_back_15.addEventListener("click", function (e) {
-  card_15.classList.toggle('is-flipped');
-});
-
 //  Card 16
 
 const title_16 = document.querySelector(".product-title-light-16");
@@ -284,24 +268,8 @@ title_16.addEventListener("click", function (e) {
   card_16.classList.toggle('is-flipped');
 });
 
-title_back_4.addEventListener("click", function (e) {
-  card_4.classList.toggle('is-flipped');
-});
-
-//  Card 17
-
-const title_17 = document.querySelector(".product-title-light-17");
-
-const title_back_17 = document.querySelector(".product-title-dark-17");
-
-const card_17 = document.querySelector(".card-inner-17")
-
-title_17.addEventListener("click", function (e) {
-  card_17.classList.toggle('is-flipped');
-});
-
-title_back_17.addEventListener("click", function (e) {
-  card_17.classList.toggle('is-flipped');
+title_back_16.addEventListener("click", function (e) {
+  card_16.classList.toggle('is-flipped');
 });
 
 //  Card 18
@@ -332,8 +300,8 @@ title_19.addEventListener("click", function (e) {
   card_19.classList.toggle('is-flipped');
 });
 
-title_back_7.addEventListener("click", function (e) {
-  card_7.classList.toggle('is-flipped');
+title_back_19.addEventListener("click", function (e) {
+  card_19.classList.toggle('is-flipped');
 });
 
 //  Card 20
@@ -348,24 +316,8 @@ title_20.addEventListener("click", function (e) {
   card_20.classList.toggle('is-flipped');
 });
 
-title_back_8.addEventListener("click", function (e) {
-  card_8.classList.toggle('is-flipped');
-});
-
-//  Card 21
-
-const title_21 = document.querySelector(".product-title-light-21");
-
-const title_back_21 = document.querySelector(".product-title-dark-21");
-
-const card_21 = document.querySelector(".card-inner-21")
-
-title_21.addEventListener("click", function (e) {
-  card_21.classList.toggle('is-flipped');
-});
-
-title_back_21.addEventListener("click", function (e) {
-  card_21.classList.toggle('is-flipped');
+title_back_20.addEventListener("click", function (e) {
+  card_20.classList.toggle('is-flipped');
 });
 
 //  Card 22
@@ -398,22 +350,6 @@ title_23.addEventListener("click", function (e) {
 
 title_back_23.addEventListener("click", function (e) {
   card_23.classList.toggle('is-flipped');
-});
-
-//  Card 24
-
-const title_24 = document.querySelector(".product-title-light-24");
-
-const title_back_24 = document.querySelector(".product-title-dark-24");
-
-const card_24 = document.querySelector(".card-inner-24")
-
-title_24.addEventListener("click", function (e) {
-  card_24.classList.toggle('is-flipped');
-});
-
-title_back_24.addEventListener("click", function (e) {
-  card_24.classList.toggle('is-flipped');
 });
 
 //  Card 25
@@ -764,8 +700,8 @@ title_46.addEventListener("click", function (e) {
   card_46.classList.toggle('is-flipped');
 });
 
-title_back_24.addEventListener("click", function (e) {
-  card_24.classList.toggle('is-flipped');
+title_back_46.addEventListener("click", function (e) {
+  card_46.classList.toggle('is-flipped');
 });
 
 //  Card 47
@@ -780,8 +716,8 @@ title_47.addEventListener("click", function (e) {
   card_47.classList.toggle('is-flipped');
 });
 
-title_back_24.addEventListener("click", function (e) {
-  card_24.classList.toggle('is-flipped');
+title_back_47.addEventListener("click", function (e) {
+  card_47.classList.toggle('is-flipped');
 });
 
 //  Card 48
@@ -974,20 +910,4 @@ title_59.addEventListener("click", function (e) {
 
 title_back_59.addEventListener("click", function (e) {
   card_59.classList.toggle('is-flipped');
-});
-
-//  Card 60
-
-const title_60 = document.querySelector(".product-title-light-60");
-
-const title_back_60 = document.querySelector(".product-title-dark-60");
-
-const card_60 = document.querySelector(".card-inner-60")
-
-title_60.addEventListener("click", function (e) {
-  card_60.classList.toggle('is-flipped');
-});
-
-title_back_60.addEventListener("click", function (e) {
-  card_60.classList.toggle('is-flipped');
 });

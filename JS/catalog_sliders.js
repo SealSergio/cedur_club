@@ -166,7 +166,7 @@ function updateSlider_05() {
   });
 }
 
-updateSlider_table_05();
+updateSlider_05();
 
 // Slider 06
 
@@ -438,7 +438,7 @@ function updateSlider_13() {
   });
 }
 
-updateSlider_table_13();
+updateSlider_13();
 
 // Slider 14
 
@@ -473,108 +473,6 @@ function updateSlider_14() {
 }
 
 updateSlider_14();
-
-// Slider 15
-
-const slider_15 = document.querySelector('.slider-15');
-const prevButton_15 = document.querySelector('.prev-button-15');
-const nextButton_15 = document.querySelector('.next-button-15');
-const slides_15 = Array.from(slider_15.querySelectorAll('.product-img-15'));
-const slideCount_15 = slides_15.length;
-let slideIndex_15 = 0;
-
-prevButton_15.addEventListener('click', showPreviousSlide_15);
-nextButton_15.addEventListener('click', showNextSlide_15);
-
-function showPreviousSlide_15() {
-  slideIndex_15 = (slideIndex_15 - 1 + slideCount_15) % slideCount_15;
-  updateSlider_15();
-}
-
-function showNextSlide_15() {
-  slideIndex_15 = (slideIndex_15 + 1) % slideCount_15;
-  updateSlider_15();
-}
-
-function updateSlider_15() {
-  slides_15.forEach((slide, index) => {
-    if (index === slideIndex_15) {
-      slide.style.display = 'block';
-    } else {
-      slide.style.display = 'none';
-    }
-  });
-}
-
-updateSlider_15();
-
-// Slider 16
-
-const slider_16 = document.querySelector('.slider-16');
-const prevButton_16 = document.querySelector('.prev-button-16');
-const nextButton_16 = document.querySelector('.next-button-16');
-const slides_16 = Array.from(slider_16.querySelectorAll('.product-img-16'));
-const slideCount_16 = slides_16.length;
-let slideIndex_16 = 0;
-
-prevButton_16.addEventListener('click', showPreviousSlide_16);
-nextButton_16.addEventListener('click', showNextSlide_16);
-
-function showPreviousSlide_16() {
-  slideIndex_16 = (slideIndex_16 - 1 + slideCount_16) % slideCount_16;
-  updateSlider_16();
-}
-
-function showNextSlide_16() {
-  slideIndex_16 = (slideIndex_16 + 1) % slideCount_16;
-  updateSlider_16();
-}
-
-function updateSlider_16() {
-  slides_16.forEach((slide, index) => {
-    if (index === slideIndex_16) {
-      slide.style.display = 'block';
-    } else {
-      slide.style.display = 'none';
-    }
-  });
-}
-
-updateSlider_16();
-
-// Slider 17
-
-const slider_17 = document.querySelector('.slider-17');
-const prevButton_17 = document.querySelector('.prev-button-17');
-const nextButton_17 = document.querySelector('.next-button-17');
-const slides_17 = Array.from(slider_17.querySelectorAll('.product-img-17'));
-const slideCount_17 = slides_17.length;
-let slideIndex_17 = 0;
-
-prevButton_17.addEventListener('click', showPreviousSlide_17);
-nextButton_17.addEventListener('click', showNextSlide_17);
-
-function showPreviousSlide_17() {
-  slideIndex_17 = (slideIndex_17 - 1 + slideCount_17) % slideCount_17;
-  updateSlider_17();
-}
-
-function showNextSlide_17() {
-  slideIndex_17 = (slideIndex_17 + 1) % slideCount_17;
-  updateSlider_17();
-}
-
-function updateSlider_17() {
-  slides_17.forEach((slide, index) => {
-    if (index === slideIndex_17) {
-      slide.style.display = 'block';
-    } else {
-      slide.style.display = 'none';
-    }
-  });
-}
-
-updateSlider_17();
 
 // Slider 18
 
@@ -644,108 +542,6 @@ function updateSlider_19() {
 
 updateSlider_19();
 
-// Slider 20
-
-const slider_20 = document.querySelector('.slider-20');
-const prevButton_20 = document.querySelector('.prev-button-20');
-const nextButton_20 = document.querySelector('.next-button-20');
-const slides_20 = Array.from(slider_20.querySelectorAll('.product-img-20'));
-const slideCount_20 = slides_20.length;
-let slideIndex_20 = 0;
-
-prevButton_20.addEventListener('click', showPreviousSlide_20);
-nextButton_20.addEventListener('click', showNextSlide_20);
-
-function showPreviousSlide_20() {
-  slideIndex_20 = (slideIndex_20 - 1 + slideCount_20) % slideCount_20;
-  updateSlider_20();
-}
-
-function showNextSlide_20() {
-  slideIndex_20 = (slideIndex_20 + 1) % slideCount_20;
-  updateSlider_20();
-}
-
-function updateSlider_20() {
-  slides_20.forEach((slide, index) => {
-    if (index === slideIndex_20) {
-      slide.style.display = 'block';
-    } else {
-      slide.style.display = 'none';
-    }
-  });
-}
-
-updateSlider_20();
-
-// Slider 21
-
-const slider_21 = document.querySelector('.slider-21');
-const prevButton_21 = document.querySelector('.prev-button-21');
-const nextButton_21 = document.querySelector('.next-button-21');
-const slides_21 = Array.from(slider_21.querySelectorAll('.product-img-21'));
-const slideCount_21 = slides_21.length;
-let slideIndex_21 = 0;
-
-prevButton_21.addEventListener('click', showPreviousSlide_21);
-nextButton_21.addEventListener('click', showNextSlide_21);
-
-function showPreviousSlide_21() {
-  slideIndex_21 = (slideIndex_21 - 1 + slideCount_21) % slideCount_21;
-  updateSlider_21();
-}
-
-function showNextSlide_21() {
-  slideIndex_21 = (slideIndex_21 + 1) % slideCount_21;
-  updateSlider_21();
-}
-
-function updateSlider_21() {
-  slides_21.forEach((slide, index) => {
-    if (index === slideIndex_21) {
-      slide.style.display = 'block';
-    } else {
-      slide.style.display = 'none';
-    }
-  });
-}
-
-updateSlider_table_21();
-
-// Slider 22
-
-const slider_22 = document.querySelector('.slider-22');
-const prevButton_22 = document.querySelector('.prev-button-22');
-const nextButton_22 = document.querySelector('.next-button-22');
-const slides_22 = Array.from(slider_22.querySelectorAll('.product-img-22'));
-const slideCount_22 = slides_22.length;
-let slideIndex_22 = 0;
-
-prevButton_22.addEventListener('click', showPreviousSlide_22);
-nextButton_22.addEventListener('click', showNextSlide_22);
-
-function showPreviousSlide_22() {
-  slideIndex_22 = (slideIndex_22 - 1 + slideCount_22) % slideCount_22;
-  updateSlider_22();
-}
-
-function showNextSlide_22() {
-  slideIndex_22 = (slideIndex_22 + 1) % slideCount_22;
-  updateSlider_22();
-}
-
-function updateSlider_22() {
-  slides_22.forEach((slide, index) => {
-    if (index === slideIndex_22) {
-      slide.style.display = 'block';
-    } else {
-      slide.style.display = 'none';
-    }
-  });
-}
-
-updateSlider_22();
-
 // Slider 23
 
 const slider_23 = document.querySelector('.slider-23');
@@ -779,40 +575,6 @@ function updateSlider_23() {
 }
 
 updateSlider_23();
-
-// Slider 24
-
-const slider_24 = document.querySelector('.slider-24');
-const prevButton_24 = document.querySelector('.prev-button-24');
-const nextButton_24 = document.querySelector('.next-button-24');
-const slides_24 = Array.from(slider_24.querySelectorAll('.product-img-24'));
-const slideCount_24 = slides_24.length;
-let slideIndex_24 = 0;
-
-prevButton_24.addEventListener('click', showPreviousSlide_24);
-nextButton_24.addEventListener('click', showNextSlide_24);
-
-function showPreviousSlide_24() {
-  slideIndex_24 = (slideIndex_24 - 1 + slideCount_24) % slideCount_24;
-  updateSlider_24();
-}
-
-function showNextSlide_24() {
-  slideIndex_24 = (slideIndex_24 + 1) % slideCount_24;
-  updateSlider_24();
-}
-
-function updateSlider_24() {
-  slides_24.forEach((slide, index) => {
-    if (index === slideIndex_24) {
-      slide.style.display = 'block';
-    } else {
-      slide.style.display = 'none';
-    }
-  });
-}
-
-updateSlider_24();
 
 // Slider 25
 
@@ -848,40 +610,6 @@ function updateSlider_25() {
 
 updateSlider_25();
 
-// Slider 26
-
-const slider_26 = document.querySelector('.slider-26');
-const prevButton_26 = document.querySelector('.prev-button-26');
-const nextButton_26 = document.querySelector('.next-button-26');
-const slides_26 = Array.from(slider_26.querySelectorAll('.product-img-26'));
-const slideCount_26 = slides_26.length;
-let slideIndex_26 = 0;
-
-prevButton_26.addEventListener('click', showPreviousSlide_26);
-nextButton_26.addEventListener('click', showNextSlide_26);
-
-function showPreviousSlide_26() {
-  slideIndex_26 = (slideIndex_26 - 1 + slideCount_26) % slideCount_26;
-  updateSlider_26();
-}
-
-function showNextSlide_26() {
-  slideIndex_26 = (slideIndex_26 + 1) % slideCount_26;
-  updateSlider_26();
-}
-
-function updateSlider_26() {
-  slides_26.forEach((slide, index) => {
-    if (index === slideIndex_26) {
-      slide.style.display = 'block';
-    } else {
-      slide.style.display = 'none';
-    }
-  });
-}
-
-updateSlider_26();
-
 // Slider 27
 
 const slider_27 = document.querySelector('.slider-27');
@@ -915,74 +643,6 @@ function updateSlider_27() {
 }
 
 updateSlider_27();
-
-// Slider 28
-
-const slider_28 = document.querySelector('.slider-28');
-const prevButton_28 = document.querySelector('.prev-button-28');
-const nextButton_28 = document.querySelector('.next-button-28');
-const slides_28 = Array.from(slider_28.querySelectorAll('.product-img-28'));
-const slideCount_28 = slides_28.length;
-let slideIndex_28 = 0;
-
-prevButton_28.addEventListener('click', showPreviousSlide_28);
-nextButton_28.addEventListener('click', showNextSlide_28);
-
-function showPreviousSlide_28() {
-  slideIndex_28 = (slideIndex_28 - 1 + slideCount_28) % slideCount_28;
-  updateSlider_28();
-}
-
-function showNextSlide_28() {
-  slideIndex_28 = (slideIndex_28 + 1) % slideCount_28;
-  updateSlider_28();
-}
-
-function updateSlider_28() {
-  slides_28.forEach((slide, index) => {
-    if (index === slideIndex_28) {
-      slide.style.display = 'block';
-    } else {
-      slide.style.display = 'none';
-    }
-  });
-}
-
-updateSlider_28();
-
-// Slider 29
-
-const slider_29 = document.querySelector('.slider-29');
-const prevButton_29 = document.querySelector('.prev-button-29');
-const nextButton_29 = document.querySelector('.next-button-29');
-const slides_29 = Array.from(slider_29.querySelectorAll('.product-img-29'));
-const slideCount_29 = slides_29.length;
-let slideIndex_29 = 0;
-
-prevButton_29.addEventListener('click', showPreviousSlide_29);
-nextButton_29.addEventListener('click', showNextSlide_29);
-
-function showPreviousSlide_29() {
-  slideIndex_29 = (slideIndex_29 - 1 + slideCount_29) % slideCount_29;
-  updateSlider_29();
-}
-
-function showNextSlide_29() {
-  slideIndex_29 = (slideIndex_29 + 1) % slideCount_29;
-  updateSlider_29();
-}
-
-function updateSlider_29() {
-  slides_29.forEach((slide, index) => {
-    if (index === slideIndex_29) {
-      slide.style.display = 'block';
-    } else {
-      slide.style.display = 'none';
-    }
-  });
-}
-
-updateSlider_29();
 
 // Slider 30
 
@@ -1119,40 +779,6 @@ function updateSlider_33() {
 }
 
 updateSlider_33();
-
-// Slider 34
-
-const slider_34 = document.querySelector('.slider-34');
-const prevButton_34 = document.querySelector('.prev-button-34');
-const nextButton_34 = document.querySelector('.next-button-34');
-const slides_34 = Array.from(slider_34.querySelectorAll('.product-img-34'));
-const slideCount_34 = slides_34.length;
-let slideIndex_34 = 0;
-
-prevButton_34.addEventListener('click', showPreviousSlide_34);
-nextButton_34.addEventListener('click', showNextSlide_34);
-
-function showPreviousSlide_34() {
-  slideIndex_34 = (slideIndex_34 - 1 + slideCount_34) % slideCount_34;
-  updateSlider_34();
-}
-
-function showNextSlide_34() {
-  slideIndex_34 = (slideIndex_34 + 1) % slideCount_34;
-  updateSlider_34();
-}
-
-function updateSlider_34() {
-  slides_34.forEach((slide, index) => {
-    if (index === slideIndex_34) {
-      slide.style.display = 'block';
-    } else {
-      slide.style.display = 'none';
-    }
-  });
-}
-
-updateSlider_34();
 
 // Slider 35
 
@@ -1324,74 +950,6 @@ function updateSlider_39() {
 
 updateSlider_39();
 
-// Slider 40
-
-const slider_40 = document.querySelector('.slider-40');
-const prevButton_40 = document.querySelector('.prev-button-40');
-const nextButton_40 = document.querySelector('.next-button-40');
-const slides_40 = Array.from(slider_40.querySelectorAll('.product-img-40'));
-const slideCount_40 = slides_40.length;
-let slideIndex_40 = 0;
-
-prevButton_40.addEventListener('click', showPreviousSlide_40);
-nextButton_40.addEventListener('click', showNextSlide_40);
-
-function showPreviousSlide_40() {
-  slideIndex_40 = (slideIndex_40 - 1 + slideCount_40) % slideCount_40;
-  updateSlider_40();
-}
-
-function showNextSlide_40() {
-  slideIndex_40 = (slideIndex_40 + 1) % slideCount_40;
-  updateSlider_40();
-}
-
-function updateSlider_40() {
-  slides_40.forEach((slide, index) => {
-    if (index === slideIndex_40) {
-      slide.style.display = 'block';
-    } else {
-      slide.style.display = 'none';
-    }
-  });
-}
-
-updateSlider_40();
-
-// Slider 41
-
-const slider_41 = document.querySelector('.slider-41');
-const prevButton_41 = document.querySelector('.prev-button-41');
-const nextButton_41 = document.querySelector('.next-button-41');
-const slides_41 = Array.from(slider_41.querySelectorAll('.product-img-41'));
-const slideCount_41 = slides_41.length;
-let slideIndex_41 = 0;
-
-prevButton_41.addEventListener('click', showPreviousSlide_41);
-nextButton_41.addEventListener('click', showNextSlide_41);
-
-function showPreviousSlide_41() {
-  slideIndex_41 = (slideIndex_41 - 1 + slideCount_41) % slideCount_41;
-  updateSlider_41();
-}
-
-function showNextSlide_41() {
-  slideIndex_41 = (slideIndex_41 + 1) % slideCount_41;
-  updateSlider_41();
-}
-
-function updateSlider_41() {
-  slides_41.forEach((slide, index) => {
-    if (index === slideIndex_41) {
-      slide.style.display = 'block';
-    } else {
-      slide.style.display = 'none';
-    }
-  });
-}
-
-updateSlider_41();
-
 // Slider 42
 
 const slider_42 = document.querySelector('.slider-42');
@@ -1493,40 +1051,6 @@ function updateSlider_44() {
 }
 
 updateSlider_44();
-
-// Slider 45
-
-const slider_45 = document.querySelector('.slider-45');
-const prevButton_45 = document.querySelector('.prev-button-45');
-const nextButton_45 = document.querySelector('.next-button-45');
-const slides_45 = Array.from(slider_45.querySelectorAll('.product-img-45'));
-const slideCount_45 = slides_45.length;
-let slideIndex_45 = 0;
-
-prevButton_45.addEventListener('click', showPreviousSlide_45);
-nextButton_45.addEventListener('click', showNextSlide_45);
-
-function showPreviousSlide_45() {
-  slideIndex_45 = (slideIndex_45 - 1 + slideCount_45) % slideCount_45;
-  updateSlider_45();
-}
-
-function showNextSlide_45() {
-  slideIndex_45 = (slideIndex_45 + 1) % slideCount_45;
-  updateSlider_45();
-}
-
-function updateSlider_45() {
-  slides_45.forEach((slide, index) => {
-    if (index === slideIndex_45) {
-      slide.style.display = 'block';
-    } else {
-      slide.style.display = 'none';
-    }
-  });
-}
-
-updateSlider_45();
 
 // Slider 46
 
@@ -2003,37 +1527,3 @@ function updateSlider_59() {
 }
 
 updateSlider_59();
-
-// Slider 60
-
-const slider_60 = document.querySelector('.slider-60');
-const prevButton_60 = document.querySelector('.prev-button-60');
-const nextButton_60 = document.querySelector('.next-button-60');
-const slides_60 = Array.from(slider_60.querySelectorAll('.product-img-60'));
-const slideCount_60 = slides_60.length;
-let slideIndex_60 = 0;
-
-prevButton_60.addEventListener('click', showPreviousSlide_60);
-nextButton_60.addEventListener('click', showNextSlide_60);
-
-function showPreviousSlide_60() {
-  slideIndex_60 = (slideIndex_60 - 1 + slideCount_60) % slideCount_60;
-  updateSlider_60();
-}
-
-function showNextSlide_60() {
-  slideIndex_60 = (slideIndex_60 + 1) % slideCount_60;
-  updateSlider_60();
-}
-
-function updateSlider_60() {
-  slides_60.forEach((slide, index) => {
-    if (index === slideIndex_60) {
-      slide.style.display = 'block';
-    } else {
-      slide.style.display = 'none';
-    }
-  });
-}
-
-updateSlider_60();
