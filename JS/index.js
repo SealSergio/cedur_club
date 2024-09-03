@@ -41,14 +41,6 @@ function closeOnBack() {
   background.classList.remove("be");
 }
 
-// body.addEventListener("click", closeOnBody);
-
-// function closeOnBody() {
-//   popup.classList.remove("open");
-//   hamb.classList.remove("active");
-//   body.classList.remove("noscroll");
-// }
-
 // Product cards
 
 //  Card 1
