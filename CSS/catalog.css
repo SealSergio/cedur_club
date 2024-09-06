@@ -28,7 +28,7 @@
 
 .download-link {
   color: var(--dark);
-  font-family: 'Actay', 'Roboto', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 400;
 }
 
@@ -110,10 +110,6 @@
   transition: box-shadow 0.2s ease-in-out;
 }
 
-.card-rotate-front:hover {
-  box-shadow: inset 0 0 25px rgba(0, 0, 0, 0.2);
-}
-
 .card-rotate-back {
   background-color: var(--light);
   transform: rotateY(180deg);
@@ -125,7 +121,7 @@
   justify-content: end;
   align-items: center;
   margin-top: auto;
-  padding: 15px 15px 5px 15px;
+  padding: 10px 15px 8px 15px;
   min-width: 100%;
 }
 
@@ -145,39 +141,34 @@
   font-weight: normal;
   text-transform: uppercase;
   line-height: 1;
-  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border 0.2s ease-in-out;
+  transition: background-color 0.15s ease-in-out;
   border-radius: 18px;
-  box-sizing: border-box;
   user-select: none;
 }
 
 .product-title-light {
-  padding: 11px 10px 7px;
-  border: 1px solid rgba(15, 2, 0, 0.25);
-  color: var(--light);
-  background-color: rgba(15, 2, 0, 0.1);
-  backdrop-filter: blur(0.6px);
+  margin-bottom: 10px;
+  padding: 11px 12px 7px;
+  color: var(--dark);
+  background-color: var(--light);
 }
 
-.product-title-light:hover, .product-title-light:active,
-.card-rotate-front:hover .product-title-light {
-  border: 1px solid rgba(15, 2, 0, 0.6);
-  color: var(--lighter);
-  backdrop-filter: blur(0.9px);
+.card-rotate-front:hover .product-title-light,
+.product-title-light:hover, .product-title-light:active {
+  background-color: var(--lighter);
 }
 
 .product-title-dark {
   position: relative;
   z-index: 4;
-  margin: 1px;
-  padding: 10px 9px 6px;
-  border: 1px solid rgba(50, 50, 50, 0.3);
+  margin-top: 5px;
+  padding: 10px 11px 6px;
+  border: 1px solid var(--less-dark);
   color: var(--dark);
 }
 
 .product-title-dark:hover, .product-title-dark:active {
-  border: 1px solid rgba(50, 50, 50, 0.8);
-  color: var(--less-dark);
+  background-color: var(--lighter);
 }
 
 .product-card-text {
@@ -221,28 +212,34 @@
 
 .prev-button {
   left: 5px;
-  padding: 20px 20px 20px 3px;
+  padding: 10px 10px 10px 0;
 }
 
 .next-button {
   right: 5px;
-  padding: 20px 3px 20px 20px;
+  padding: 10px 0 10px 10px;
 }
 
 .slider-button-img {
-  height: 27px;
-  width: 14px;
-  opacity: 60%;
+  height: 65px;
+  width: 35px;
+}
+
+.slider-button-img path {
+  width: 100%;
+  height: 100%;
+  opacity: 50%;
   transition: 0.2s;
+  fill: rgb(230, 230, 230);
 }
 
 .slider-button-img:hover,
-.slider-button:hover .slider-button-img {
+.slider-button:hover .slider-button-img path {
   opacity: 90%;
 }
 
 .slider-button-img:active,
-.slider-button:active .slider-button-img {
+.slider-button:active .slider-button-img path {
   opacity: 100%;
 }
 
