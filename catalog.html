@@ -6,144 +6,147 @@
     <title>Кедровый клуб - каталог</title>
     <link rel="icon" href="img/graphics/favicone.ico">
     <link rel="stylesheet" href="CSS/normalize.css">
-    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/general.css">
     <link rel="stylesheet" href="CSS/catalog.css">
+    <script defer src="JS/up.js"></script>
+    <script defer src="JS/catalog.js"></script>
+    <script defer src="JS/catalog_sliders.js"></script>
 </head>
 <body>
 <header class="header">
-  <div class="header-container">
-    <div class="main-title-container">
-      <a class="main-title-link" href="https://cedar-club.ru/">
-        <h1 class="main-title">Кедровый&nbsp;клуб</h1>
+  <div class="header__container">
+    <div class="header__title__container">
+      <a class="header__title__link" href="https://cedar-club.ru/">
+        <h1 class="header__title">Кедровый&nbsp;клуб</h1>
       </a>
     </div>
     <nav class="header-nav">
-      <ul class="header-list">
-        <li class="header-nav-item">
-          <a class="header-nav-link" href="https://cedar-club.ru/catalog.html">
+      <ul class="header-nav__list">
+        <li class="header-nav__item">
+          <a class="header-nav__link" href="https://cedar-club.ru/catalog.html">
             Каталог
           </a>
         </li>
-        <li class="header-nav-item">
-          <a class="header-nav-link" href="https://cedar-club.ru/process.html">
+        <li class="header-nav__item">
+          <a class="header-nav__link" href="https://cedar-club.ru/process.html">
             Фпрацэссе
           </a>
         </li>
-        <li class="header-nav-item">
-          <a class="header-nav-link" href="https://cedar-club.ru/sketches.html">
+        <li class="header-nav__item">
+          <a class="header-nav__link" href="https://cedar-club.ru/sketches.html">
             Эскизы
           </a>
         </li>
-        <li class="header-nav-item">
-          <a class="header-nav-link" href="https://cedar-club.ru#about-us">
+        <li class="header-nav__item">
+          <a class="header-nav__link" href="https://cedar-club.ru#about-us">
             О&nbsp;нас
           </a>
         </li>
-        <li class="header-nav-item">
-          <a class="header-nav-link" href="https://cedar-club.ru#contacts">
+        <li class="header-nav__item">
+          <a class="header-nav__link" href="https://cedar-club.ru#contacts">
             Контакты
           </a>
         </li>
       </ul>
     </nav>
-    <nav class="burger-nav">
+    <nav class="header__burger">
       <nav class="navbar">
-        <div class="navbar-container">
+        <div class="navbar__container">
           <div class="navbar__wrap">
             <div class="hamb">
               <div class="hamb__field" id="hamb">
-                <span class="bar"></span> <span class="bar"></span>
-                <span class="bar"></span>
+                <span class="hamb__bar"></span> <span class="hamb__bar"></span>
+                <span class="hamb__bar"></span>
               </div>
             </div>
           </div>
         </div>
       </nav>
       <div class="popup" id="popup">
-        <ul class="menu-list" id="menu">
-          <li class="menu-item">
-            <a class="menu-link" href="catalog.html">Каталог</a>
-            <ul class="menu-products-list">
-              <li class="menu-product-item">
-                <a href="https://cedar-club.ru/catalog.html#lamps" class="menu-product-link">
+        <ul class="menu" id="menu">
+          <li class="menu__item">
+            <a class="menu__link" href="catalog.html">Каталог</a>
+            <ul class="menu-products">
+              <li class="menu-products__item">
+                <a href="https://cedar-club.ru/catalog.html#lamps" class="menu-products__link">
                   Светильники
                 </a>
               </li>
-              <li class="menu-product-item">
-                <a href="https://cedar-club.ru/catalog.html#tables" class="menu-product-link">
+              <li class="menu-products__item">
+                <a href="https://cedar-club.ru/catalog.html#tables" class="menu-products__link">
                   Столы&nbsp;и&nbsp;стулья
                 </a>
               </li>
-              <li class="menu-product-item">
-                <a href="https://cedar-club.ru/catalog.html#arm-chairs" class="menu-product-link">
+              <li class="menu-products__item">
+                <a href="https://cedar-club.ru/catalog.html#arm-chairs" class="menu-products__link">
                   Кресла
                 </a>
               </li>
-              <li class="menu-product-item">
-                <a href="https://cedar-club.ru/catalog.html#beds" class="menu-product-link">
+              <li class="menu-products__item">
+                <a href="https://cedar-club.ru/catalog.html#beds" class="menu-products__link">
                   Кровати&nbsp;и&nbsp;тумбочки
                 </a>
               </li>
-              <li class="menu-product-item">
-                <a href="https://cedar-club.ru/catalog.html#chests" class="menu-product-link">
+              <li class="menu-products__item">
+                <a href="https://cedar-club.ru/catalog.html#chests" class="menu-products__link">
                   Комоды
                 </a>
               </li>
-              <li class="menu-product-item">
-                <a href="https://cedar-club.ru/catalog.html#another" class="menu-product-link">
+              <li class="menu-products__item">
+                <a href="https://cedar-club.ru/catalog.html#another" class="menu-products__link">
                   Разное
                 </a>
               </li>
-              <li class="menu-product-item">
-                <a href="https://cedar-club.ru/catalog.html#carving" class="menu-product-link">
+              <li class="menu-products__item">
+                <a href="https://cedar-club.ru/catalog.html#carving" class="menu-products__link">
                   Резьба
                 </a>
               </li>
-              <li class="menu-product-item">
-                <a href="https://cedar-club.ru/catalog.html#kitchens" class="menu-product-link">
+              <li class="menu-products__item">
+                <a href="https://cedar-club.ru/catalog.html#kitchens" class="menu-products__link">
                   Кухни
                 </a>
               </li>
-              <li class="menu-product-item">
-                <a href="https://cedar-club.ru/catalog.html#doors" class="menu-product-link">
+              <li class="menu-products__item">
+                <a href="https://cedar-club.ru/catalog.html#doors" class="menu-products__link">
                   Двери
                 </a>
               </li>
-              <li class="menu-product-item">
-                <a href="https://cedar-club.ru/catalog.html#decoration" class="menu-product-link">
+              <li class="menu-products__item">
+                <a href="https://cedar-club.ru/catalog.html#decoration" class="menu-products__link">
                   Отделка
                 </a>
               </li>
             </ul>
           </li>
-          <li class="menu-item">
-            <a class="menu-link" href="https://cedar-club.ru/process.html">
+          <li class="menu__item">
+            <a class="menu__link" href="https://cedar-club.ru/process.html">
               Фпрацэссе
             </a>
           </li>
-          <li class="menu-item">
-            <a class="menu-link" href="https://cedar-club.ru/sketches.html">
+          <li class="menu__item">
+            <a class="menu__link" href="https://cedar-club.ru/sketches.html">
               Эскизы
             </a>
           </li>
-          <li class="menu-item">
-            <a class="menu-link" href="https://cedar-club.ru#about-us">
+          <li class="menu__item">
+            <a class="menu__link" href="https://cedar-club.ru#about-us">
               О&nbsp;нас
             </a>
           </li>
-          <li class="menu-item">
-            <a class="menu-link" href="https://cedar-club.ru#contacts">
+          <li class="menu__item">
+            <a class="menu__link" href="https://cedar-club.ru#contacts">
               Контакты
             </a>
           </li>
-          <ul class="menu-products-list">
-            <li class="menu-product-item">
-              <a class="menu-product-link" href="tel:+9527460942">
+          <ul class="menu-products">
+            <li class="menu-products__item">
+              <a class="menu-products__link" href="tel:+9527460942">
                 Позвонить
              </a>
             </li>
-            <li class="menu-product-item">
-              <a class="menu-product-link menu-product-link-last" href="mailto:anatolbogun74@gmail.com">
+            <li class="menu-products__item">
+              <a class="menu-products__link menu-products__link-last" href="mailto:anatolbogun74@gmail.com">
                 Написать
              </a>
             </li>
@@ -153,15 +156,14 @@
     </nav>
   </div>
 </header>
-<div class="body_back"></div>
+<div class="body__back"></div>
 <section id="catalog" class="section section-catalog">
   <div class="container">
-    <h2 class="section-title catalog-title">
+    <h2 class="section-title categories__title">
       Каталог&nbsp;
     </h2>
     <p class="basic-text catalog-text">
-      Еще что-то про Кедровый клуб, что-то про Кедровый клуб, что-то про Кедровый клуб, что-то про Кедровый клуб, что-то про Кедровый клуб,
-      также Вы можете скачать полный каталог по <a class="download-link" href="docs/Cedar-club-catalog.pdf" download>ссылке</a>.
+      Здесь представлен полный каталог наших изделий, который Вы также можете скачать по <a class="download-link" href="docs/Cedar-club-catalog.pdf" download>ссылке</a>.
     </p>
     <div class="product-category">
       <h3 class="category-title" id="lamps">
@@ -191,7 +193,7 @@
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M15.7071 4.29289C16.0976 4.68342 16.0976 5.31658 15.7071 5.70711L9.41421 12L15.7071 18.2929C16.0976 18.6834 16.0976 19.3166 15.7071 19.7071C15.3166 20.0976 14.6834 20.0976 14.2929 19.7071L7.29289 12.7071C7.10536 12.5196 7 12.2652 7 12C7 11.7348 7.10536 11.4804 7.29289 11.2929L14.2929 4.29289C14.6834 3.90237 15.3166 3.90237 15.7071 4.29289Z"/>
                 </svg>
               </button>
-              <button class="slider-button next-button next-button-01" aria-label="Посмотреть следующий слайд">
+              <button id="slider01" class="slider-button next-button next-button-01" aria-label="Посмотреть следующий слайд">
                 <svg class="slider-button-img" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M8.29289 4.29289C8.68342 3.90237 9.31658 3.90237 9.70711 4.29289L16.7071 11.2929C17.0976 11.6834 17.0976 12.3166 16.7071 12.7071L9.70711 19.7071C9.31658 20.0976 8.68342 20.0976 8.29289 19.7071C7.90237 19.3166 7.90237 18.6834 8.29289 18.2929L14.5858 12L8.29289 5.70711C7.90237 5.31658 7.90237 4.68342 8.29289 4.29289Z"/>
                 </svg>
@@ -2254,91 +2256,101 @@
   </div>
 </section>
 <footer class="footer">
-  <div class="footer-container">
-    <div class="footer-container-big">
-      <h2 class="footer-title">
+  <div class="footer__container">
+    <div class="footer__container__big">
+      <h2 class="footer__title">
         Кедровый клуб
       </h2>
-      <div class="footer-content-container">
-        <div class="footer-content">
+      <div class="footer__content">
+        <div class="footer__content__container">
           <nav class="footer-nav">
-            <ul class="footer-nav-list">
-              <li class="footer-nav-item">
-                <a href="https://cedar-club.ru/catalog.html#lamps" class="footer-nav-link">
+            <ul class="footer-nav__list">
+              <li class="footer-nav__item">
+                <a href="https://cedar-club.ru/catalog.html#lamps" class="footer-nav__link">
                   Светильники
                 </a>
               </li>
-              <li class="footer-nav-item">
-                <a href="https://cedar-club.ru/catalog.html#tables" class="footer-nav-link">
+              <li class="footer-nav__item">
+                <a href="https://cedar-club.ru/catalog.html#tables" class="footer-nav__link">
                   Столы&nbsp;и&nbsp;стулья
                 </a>
               </li>
-              <li class="footer-nav-item">
-                <a href="https://cedar-club.ru/catalog.html#arm-chairs" class="footer-nav-link">
+              <li class="footer-nav__item">
+                <a href="https://cedar-club.ru/catalog.html#arm-chairs" class="footer-nav__link">
                   Кресла
                 </a>
               </li>
-              <li class="footer-nav-item">
-                <a href="https://cedar-club.ru/catalog.html#beds" class="footer-nav-link">
+              <li class="footer-nav__item">
+                <a href="https://cedar-club.ru/catalog.html#beds" class="footer-nav__link">
                   Кровати&nbsp;и&nbsp;тумбочки
                 </a>
               </li>
-              <li class="footer-nav-item">
-                <a href="https://cedar-club.ru/catalog.html#chests" class="footer-nav-link">
+              <li class="footer-nav__item">
+                <a href="https://cedar-club.ru/catalog.html#chests" class="footer-nav__link">
                   Комоды
                 </a>
               </li>
-              <li class="footer-nav-item">
-                <a href="https://cedar-club.ru/catalog.html#another" class="footer-nav-link">
+              <li class="footer-nav__item">
+                <a href="https://cedar-club.ru/catalog.html#another" class="footer-nav__link">
                   Разное
                 </a>
               </li>
-              <li class="footer-nav-item">
-                <a href="https://cedar-club.ru/catalog.html#carving" class="footer-nav-link">
+              <li class="footer-nav__item">
+                <a href="https://cedar-club.ru/catalog.html#carving" class="footer-nav__link">
                   Резьба
                 </a>
               </li>
-              <li class="footer-nav-item">
-                <a href="https://cedar-club.ru/catalog.html#kitchens" class="footer-nav-link">
+              <li class="footer-nav__item">
+                <a href="https://cedar-club.ru/catalog.html#kitchens" class="footer-nav__link">
                   Кухни
                 </a>
               </li>
-              <li class="footer-nav-item">
-                <a href="https://cedar-club.ru/catalog.html#doors" class="footer-nav-link">
+              <li class="footer-nav__item">
+                <a href="https://cedar-club.ru/catalog.html#doors" class="footer-nav__link">
                   Двери
                 </a>
               </li>
-              <li class="footer-nav-item">
-                <a href="https://cedar-club.ru/catalog.html#decoration" class="footer-nav-link">
+              <li class="footer-nav__item">
+                <a href="https://cedar-club.ru/catalog.html#decoration" class="footer-nav__link">
                   Отделка
                 </a>
               </li>
             </ul>
           </nav>
-          <address class="address footer-address">
-            <a class="contacts-link footer-link" href="tel:+79527460942">
+          <address class="footer__address">
+            <a class="footer__link" href="tel:+79527460942">
+              <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M18.427 14.768 17.2 13.542a1.733 1.733 0 0 0-2.45 0l-.613.613a1.732 1.732 0 0 1-2.45 0l-1.838-1.84a1.735 1.735 0 0 1 0-2.452l.612-.613a1.735 1.735 0 0 0 0-2.452L9.237 5.572a1.6 1.6 0 0 0-2.45 0c-3.223 3.2-1.702 6.896 1.519 10.117 3.22 3.221 6.914 4.745 10.12 1.535a1.601 1.601 0 0 0 0-2.456Z"/>
+              </svg>
               +7 (952) 746-09-42
             </a>
-            <a class="contacts-link footer-link" href="tel:+79919816067">
+            <a class="footer__link" href="tel:+79919816067">
+              <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M18.427 14.768 17.2 13.542a1.733 1.733 0 0 0-2.45 0l-.613.613a1.732 1.732 0 0 1-2.45 0l-1.838-1.84a1.735 1.735 0 0 1 0-2.452l.612-.613a1.735 1.735 0 0 0 0-2.452L9.237 5.572a1.6 1.6 0 0 0-2.45 0c-3.223 3.2-1.702 6.896 1.519 10.117 3.22 3.221 6.914 4.745 10.12 1.535a1.601 1.601 0 0 0 0-2.456Z"/>
+              </svg>
               +7 (991) 981-60-67
             </a>
-            <a class="contacts-link footer-link" href="mailto:anatolbogun74@gmail.com">
+            <a class="footer__link" href="mailto:anatolbogun74@gmail.com">
+              <svg width="24px" height="22px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 7.00005L10.2 11.65C11.2667 12.45 12.7333 12.45 13.8 11.65L20 7" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+                <rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1" stroke-linecap="round"/>
+              </svg>
               anatolbogun74@gmail.com
             </a>
           </address>
-          <div class="footer-info">
-            <p class="footer-text">
+          <div class="footer__info">
+            <p class="footer__text">
               Информация на сайте носит ознакомительный характер и не&nbsp;является&nbsp;публичной&nbsp;офертой.
             </p>
-            <p class="footer-text footer-info-text">
-              ©&nbsp;All&nbsp;rights&nbsp;reserved.&nbsp;2024. Designed&nbsp;by&nbsp;<a class="footer-link footer-link-sergio" href="mailto:sergiobogunio@gmail.com">Sergio</a>.
+            <p class="footer__text footer__info-text">
+              ©&nbsp;All&nbsp;rights&nbsp;reserved.&nbsp;2024. Designed&nbsp;by&nbsp;<a class="footer__link footer__link-sergio" href="mailto:sergiobogunio@gmail.com">Sergio</a>.
             </p>
           </div>
         </div>
-        <img class="footer-logo" src="img/footer-logo.png" alt="Логотип Анатолия Богуна">
+        <img class="footer__logo" src="img/logo.png" alt="Логотип Анатолия Богуна">
       </div>
     </div>
-  <img class="footer-logo-big" src="img/footer-logo.png" alt="Логотип Анатолия Богуна">
+  <img class="footer__logo-big" src="img/logo.png" alt="Логотип Анатолия Богуна">
   </div>
 </footer>
 <div id="scrollToTop" class="btn-up" onclick="goUp();">
@@ -2346,8 +2358,5 @@
     <path d="M12,0A12,12,0,1,1,0,12,12.013,12.013,0,0,1,12,0Zm0,22A10,10,0,1,0,2,12,10.011,10.011,0,0,0,12,22ZM10.586,8.586,5.874,13.3l1.414,1.414L12,10l4.673,4.673,1.414-1.414L13.414,8.586a2,2,0,0,0-2.828,0Z"/>
   </svg>
 </div>
-<script src="JS/up.js"></script>
-<script src="JS/catalog.js"></script>
-<script src="JS/catalog_sliders.js"></script>
 </body>
 </html>

@@ -3,7 +3,7 @@
 const hamb = document.querySelector("#hamb");
 const popup = document.querySelector("#popup");
 const body = document.body;
-const background = document.querySelector(".body_back");
+const background = document.querySelector(".body__back");
 
 hamb.addEventListener("click", hambHandler);
 
