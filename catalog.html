@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Кедровый клуб - каталог</title>
-    <link rel="icon" href="img/graphics/favicone.ico">
-    <link rel="stylesheet" href="CSS/normalize.css">
-    <link rel="stylesheet" href="CSS/general.css">
-    <link rel="stylesheet" href="CSS/catalog.css">
-    <script defer src="JS/up.js"></script>
-    <script defer src="JS/catalog.js"></script>
-    <script defer src="JS/catalog_sliders.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Кедровый клуб - каталог</title>
+  <link rel="icon" href="img/graphics/favicone.ico">
+  <link rel="stylesheet" href="CSS/normalize.css">
+  <link rel="stylesheet" href="CSS/general.css">
+  <link rel="stylesheet" href="CSS/catalog.css">
+  <script defer src="JS/burger-nav.js"></script>
+  <script defer src="JS/up.js"></script>
+  <script defer src="JS/catalog.js"></script>
 </head>
 <body>
 <header class="header">
@@ -162,7 +162,7 @@
     <h2 class="section-title categories__title">
       Каталог&nbsp;
     </h2>
-    <p class="basic-text catalog-text">
+    <p class="basic-text catalog__text">
       Здесь представлен полный каталог наших изделий, который Вы также можете скачать по <a class="download-link" href="docs/Cedar-club-catalog.pdf" download>ссылке</a>.
     </p>
     <div class="product-category">
@@ -171,29 +171,29 @@
       </h3>
     </div>
     <ul class="products-list">
-      <li class="product-card card-1">
-        <div class="card-inner card-inner-01">
+      <li class="product-card">
+        <div class="card-inner">
           <div class="card-rotate card-rotate-front front-01">
             <button class="product-button">
-              <h4 class="product-title product-title-light product-title-light-01">AVENIR</h4>
+              <h4 class="product-title product-title-light">AVENIR</h4>
             </button>
           </div>
           <div class="card-rotate card-rotate-back">
             <div class="slider-container">
-              <div class="slider slider-01">
-                <img class="product-img product-img-01" src="img/products/01/02.jpg" alt="Светильник">
-                <img class="product-img product-img-01" src="img/products/01/03.jpg" alt="Светильник">
-                <img class="product-img product-img-01" src="img/products/01/04.jpg" alt="Светильник">
-                <img class="product-img product-img-01" src="img/products/01/05.jpg" alt="Светильник">
-                <img class="product-img product-img-01" src="img/products/01/06.jpg" alt="Светильник">
-                <img class="product-img product-img-01" src="img/products/01/07.jpg" alt="Светильник">
+              <div class="slider">
+                <img class="product-img" src="img/products/01/02.jpg" alt="Светильник">
+                <img class="product-img" src="img/products/01/03.jpg" alt="Светильник">
+                <img class="product-img" src="img/products/01/04.jpg" alt="Светильник">
+                <img class="product-img" src="img/products/01/05.jpg" alt="Светильник">
+                <img class="product-img" src="img/products/01/06.jpg" alt="Светильник">
+                <img class="product-img" src="img/products/01/07.jpg" alt="Светильник">
               </div>
-              <button class="slider-button prev-button prev-button-01" aria-label="Посмотреть предыдущий слайд">
+              <button class="slider-button prev-button" aria-label="Посмотреть предыдущий слайд">
                 <svg class="slider-button-img" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M15.7071 4.29289C16.0976 4.68342 16.0976 5.31658 15.7071 5.70711L9.41421 12L15.7071 18.2929C16.0976 18.6834 16.0976 19.3166 15.7071 19.7071C15.3166 20.0976 14.6834 20.0976 14.2929 19.7071L7.29289 12.7071C7.10536 12.5196 7 12.2652 7 12C7 11.7348 7.10536 11.4804 7.29289 11.2929L14.2929 4.29289C14.6834 3.90237 15.3166 3.90237 15.7071 4.29289Z"/>
                 </svg>
               </button>
-              <button id="slider01" class="slider-button next-button next-button-01" aria-label="Посмотреть следующий слайд">
+              <button class="slider-button next-button" aria-label="Посмотреть следующий слайд">
                 <svg class="slider-button-img" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M8.29289 4.29289C8.68342 3.90237 9.31658 3.90237 9.70711 4.29289L16.7071 11.2929C17.0976 11.6834 17.0976 12.3166 16.7071 12.7071L9.70711 19.7071C9.31658 20.0976 8.68342 20.0976 8.29289 19.7071C7.90237 19.3166 7.90237 18.6834 8.29289 18.2929L14.5858 12L8.29289 5.70711C7.90237 5.31658 7.90237 4.68342 8.29289 4.29289Z"/>
                 </svg>
@@ -210,33 +210,33 @@
                 высота 1,5-2,1м - 150-210&nbsp;т.р.
               </p>
               <button class="product-button">
-                <h4 class="product-title product-title-dark product-title-dark-01">AVENIR</h4>
+                <h4 class="product-title product-title-dark">AVENIR</h4>
               </button>
             </div>
           </div>
         </div>
       </li>
-      <li class="product-card card-2">
-        <div class="card-inner card-inner-02">
+      <li class="product-card">
+        <div class="card-inner">
           <div class="card-rotate card-rotate-front front-02">
             <button class="product-button">
-              <h4 class="product-title product-title-light product-title-light-02">BLUE&nbsp;BUTTERFLY</h4>
+              <h4 class="product-title product-title-light">BLUE&nbsp;BUTTERFLY</h4>
             </button>
           </div>
           <div class="card-rotate card-rotate-back">
             <div class="slider-container">
-              <div class="slider slider-02">
-                <img class="product-img product-img-02" src="img/products/02/02.jpg" alt="Светильник подвесной">
-                <img class="product-img product-img-02" src="img/products/02/03.jpg" alt="Светильник потолочный">
-                <img class="product-img product-img-02" src="img/products/02/04.jpg" alt="Светильник из кедра">
-                <img class="product-img product-img-02" src="img/products/02/05.jpg" alt="Светильник резной">
+              <div class="slider">
+                <img class="product-img" src="img/products/02/02.jpg" alt="Светильник подвесной">
+                <img class="product-img" src="img/products/02/03.jpg" alt="Светильник потолочный">
+                <img class="product-img" src="img/products/02/04.jpg" alt="Светильник из кедра">
+                <img class="product-img" src="img/products/02/05.jpg" alt="Светильник резной">
               </div>
-              <button class="slider-button prev-button prev-button-02" aria-label="Посмотреть предыдущий слайд">
+              <button class="slider-button prev-button" aria-label="Посмотреть предыдущий слайд">
                 <svg class="slider-button-img" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M15.7071 4.29289C16.0976 4.68342 16.0976 5.31658 15.7071 5.70711L9.41421 12L15.7071 18.2929C16.0976 18.6834 16.0976 19.3166 15.7071 19.7071C15.3166 20.0976 14.6834 20.0976 14.2929 19.7071L7.29289 12.7071C7.10536 12.5196 7 12.2652 7 12C7 11.7348 7.10536 11.4804 7.29289 11.2929L14.2929 4.29289C14.6834 3.90237 15.3166 3.90237 15.7071 4.29289Z"/>
                 </svg>
               </button>
-              <button class="slider-button next-button next-button-02" aria-label="Посмотреть следующий слайд">
+              <button class="slider-button next-button" aria-label="Посмотреть следующий слайд">
                 <svg class="slider-button-img" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M8.29289 4.29289C8.68342 3.90237 9.31658 3.90237 9.70711 4.29289L16.7071 11.2929C17.0976 11.6834 17.0976 12.3166 16.7071 12.7071L9.70711 19.7071C9.31658 20.0976 8.68342 20.0976 8.29289 19.7071C7.90237 19.3166 7.90237 18.6834 8.29289 18.2929L14.5858 12L8.29289 5.70711C7.90237 5.31658 7.90237 4.68342 8.29289 4.29289Z"/>
                 </svg>
@@ -250,32 +250,32 @@
                 220&nbsp;000&nbsp;р.&nbsp;(02)
               </p>
               <button class="product-button">
-                <h4 class="product-title product-title-dark product-title-dark-02">BLUE&nbsp;BUTTERFLY</h4>
+                <h4 class="product-title product-title-dark">BLUE&nbsp;BUTTERFLY</h4>
               </button>
             </div>
           </div>
         </div>
       </li>
-      <li class="product-card card-3">
-        <div class="card-inner card-inner-03">
+      <li class="product-card">
+        <div class="card-inner">
           <div class="card-rotate card-rotate-front front-03">
             <button class="product-button">
-              <h4 class="product-title product-title-light product-title-light-03">EMILIA</h4>
+              <h4 class="product-title product-title-light">EMILIA</h4>
             </button>
           </div>
           <div class="card-rotate card-rotate-back">
             <div class="slider-container">
-              <div class="slider slider-03">
-                <img class="product-img product-img-03" src="img/products/03/01.jpg" alt="Светильник">
-                <img class="product-img product-img-03" src="img/products/03/02.jpg" alt="Светильник">
-                <img class="product-img product-img-03" src="img/products/03/03.jpg" alt="Светильник">
+              <div class="slider">
+                <img class="product-img" src="img/products/03/01.jpg" alt="Светильник">
+                <img class="product-img" src="img/products/03/02.jpg" alt="Светильник">
+                <img class="product-img" src="img/products/03/03.jpg" alt="Светильник">
               </div>
-              <button class="slider-button prev-button prev-button-03" aria-label="Посмотреть предыдущий слайд">
+              <button class="slider-button prev-button" aria-label="Посмотреть предыдущий слайд">
                 <svg class="slider-button-img" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M15.7071 4.29289C16.0976 4.68342 16.0976 5.31658 15.7071 5.70711L9.41421 12L15.7071 18.2929C16.0976 18.6834 16.0976 19.3166 15.7071 19.7071C15.3166 20.0976 14.6834 20.0976 14.2929 19.7071L7.29289 12.7071C7.10536 12.5196 7 12.2652 7 12C7 11.7348 7.10536 11.4804 7.29289 11.2929L14.2929 4.29289C14.6834 3.90237 15.3166 3.90237 15.7071 4.29289Z"/>
                 </svg>
               </button>
-              <button class="slider-button next-button next-button-03" aria-label="Посмотреть следующий слайд">
+              <button class="slider-button next-button" aria-label="Посмотреть следующий слайд">
                 <svg class="slider-button-img" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M8.29289 4.29289C8.68342 3.90237 9.31658 3.90237 9.70711 4.29289L16.7071 11.2929C17.0976 11.6834 17.0976 12.3166 16.7071 12.7071L9.70711 19.7071C9.31658 20.0976 8.68342 20.0976 8.29289 19.7071C7.90237 19.3166 7.90237 18.6834 8.29289 18.2929L14.5858 12L8.29289 5.70711C7.90237 5.31658 7.90237 4.68342 8.29289 4.29289Z"/>
                 </svg>
@@ -289,32 +289,32 @@
                 (высота&nbsp;240&nbsp;см) - 240&nbsp;000&nbsp;р.&nbsp;(03)
               </p>
               <button class="product-button">
-                <h4 class="product-title product-title-dark product-title-dark-03">EMILIA</h4>
+                <h4 class="product-title product-title-dark">EMILIA</h4>
               </button>
             </div>
           </div>
         </div>
       </li>
-      <li class="product-card card-4">
-        <div class="card-inner card-inner-04">
+      <li class="product-card">
+        <div class="card-inner">
           <div class="card-rotate card-rotate-front front-04">
             <button class="product-button">
-              <h4 class="product-title product-title-light product-title-light-04">POLO</h4>
+              <h4 class="product-title product-title-light">POLO</h4>
             </button>
           </div>
           <div class="card-rotate card-rotate-back">
             <div class="slider-container">
-              <div class="slider slider-04">
-                <img class="product-img product-img-04" src="img/products/04/01.jpg" alt="Светильник настенный">
-                <img class="product-img product-img-04" src="img/products/04/02.jpg" alt="Светильник настенный">
-                <img class="product-img product-img-04" src="img/products/04/03.jpg" alt="Светильник настенный">
+              <div class="slider">
+                <img class="product-img" src="img/products/04/01.jpg" alt="Светильник настенный">
+                <img class="product-img" src="img/products/04/02.jpg" alt="Светильник настенный">
+                <img class="product-img" src="img/products/04/03.jpg" alt="Светильник настенный">
               </div>
-              <button class="slider-button prev-button prev-button-04" aria-label="Посмотреть предыдущий слайд">
+              <button class="slider-button prev-button" aria-label="Посмотреть предыдущий слайд">
                 <svg class="slider-button-img" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M15.7071 4.29289C16.0976 4.68342 16.0976 5.31658 15.7071 5.70711L9.41421 12L15.7071 18.2929C16.0976 18.6834 16.0976 19.3166 15.7071 19.7071C15.3166 20.0976 14.6834 20.0976 14.2929 19.7071L7.29289 12.7071C7.10536 12.5196 7 12.2652 7 12C7 11.7348 7.10536 11.4804 7.29289 11.2929L14.2929 4.29289C14.6834 3.90237 15.3166 3.90237 15.7071 4.29289Z"/>
                 </svg>
               </button>
-              <button class="slider-button next-button next-button-04" aria-label="Посмотреть следующий слайд">
+              <button class="slider-button next-button" aria-label="Посмотреть следующий слайд">
                 <svg class="slider-button-img" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M8.29289 4.29289C8.68342 3.90237 9.31658 3.90237 9.70711 4.29289L16.7071 11.2929C17.0976 11.6834 17.0976 12.3166 16.7071 12.7071L9.70711 19.7071C9.31658 20.0976 8.68342 20.0976 8.29289 19.7071C7.90237 19.3166 7.90237 18.6834 8.29289 18.2929L14.5858 12L8.29289 5.70711C7.90237 5.31658 7.90237 4.68342 8.29289 4.29289Z"/>
                 </svg>
@@ -328,32 +328,32 @@
                 высота&nbsp;1,5-2м&nbsp;- 110&nbsp;000р.
               </p>
               <button class="product-button">
-                <h4 class="product-title product-title-dark product-title-dark-04">POLO</h4>
+                <h4 class="product-title product-title-dark">POLO</h4>
               </button>
             </div>
           </div>
         </div>
       </li>
-      <li class="product-card card-5">
-        <div class="card-inner card-inner-05">
+      <li class="product-card">
+        <div class="card-inner">
           <div class="card-rotate card-rotate-front front-05">
             <button class="product-button">
-              <h4 class="product-title product-title-light product-title-light-05">ANELIA</h4>
+              <h4 class="product-title product-title-light">ANELIA</h4>
             </button>
           </div>
           <div class="card-rotate card-rotate-back">
             <div class="slider-container">
-              <div class="slider slider-05">
-                <img class="product-img product-img-05" src="img/products/05/02.jpg" alt="Светильник с плафоном">
-                <img class="product-img product-img-05" src="img/products/05/03.jpg" alt="Светильник с плафоном">
-                <img class="product-img product-img-05" src="img/products/05/04.jpg" alt="Светильник с плафоном">
+              <div class="slider">
+                <img class="product-img" src="img/products/05/02.jpg" alt="Светильник с плафоном">
+                <img class="product-img" src="img/products/05/03.jpg" alt="Светильник с плафоном">
+                <img class="product-img" src="img/products/05/04.jpg" alt="Светильник с плафоном">
               </div>
-              <button class="slider-button prev-button prev-button-05" aria-label="Посмотреть предыдущий слайд">
+              <button class="slider-button prev-button" aria-label="Посмотреть предыдущий слайд">
                 <svg class="slider-button-img" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M15.7071 4.29289C16.0976 4.68342 16.0976 5.31658 15.7071 5.70711L9.41421 12L15.7071 18.2929C16.0976 18.6834 16.0976 19.3166 15.7071 19.7071C15.3166 20.0976 14.6834 20.0976 14.2929 19.7071L7.29289 12.7071C7.10536 12.5196 7 12.2652 7 12C7 11.7348 7.10536 11.4804 7.29289 11.2929L14.2929 4.29289C14.6834 3.90237 15.3166 3.90237 15.7071 4.29289Z"/>
                 </svg>
               </button>
-              <button class="slider-button next-button next-button-05" aria-label="Посмотреть следующий слайд">
+              <button class="slider-button next-button" aria-label="Посмотреть следующий слайд">
                 <svg class="slider-button-img" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M8.29289 4.29289C8.68342 3.90237 9.31658 3.90237 9.70711 4.29289L16.7071 11.2929C17.0976 11.6834 17.0976 12.3166 16.7071 12.7071L9.70711 19.7071C9.31658 20.0976 8.68342 20.0976 8.29289 19.7071C7.90237 19.3166 7.90237 18.6834 8.29289 18.2929L14.5858 12L8.29289 5.70711C7.90237 5.31658 7.90237 4.68342 8.29289 4.29289Z"/>
                 </svg>
@@ -367,33 +367,33 @@
                 30&nbsp;000&nbsp;р.&nbsp;(05)
               </p>
               <button class="product-button">
-                <h4 class="product-title product-title-dark product-title-dark-05">ANELIA</h4>
+                <h4 class="product-title product-title-dark">ANELIA</h4>
               </button>
             </div>
           </div>
         </div>
       </li>
-      <li class="product-card card-6">
-        <div class="card-inner card-inner-06">
+      <li class="product-card">
+        <div class="card-inner">
           <div class="card-rotate card-rotate-front front-06">
             <button class="product-button">
-              <h4 class="product-title product-title-light product-title-light-06">UNA</h4>
+              <h4 class="product-title product-title-light">UNA</h4>
             </button>
           </div>
           <div class="card-rotate card-rotate-back">
             <div class="slider-container">
-              <div class="slider slider-06">
-                <img class="product-img product-img-06" src="img/products/06/01.jpg" alt="Светильник настольный">
-                <img class="product-img product-img-06" src="img/products/06/02.jpg" alt="Светильник настольный">
-                <img class="product-img product-img-06" src="img/products/06/03.jpg" alt="Светильник настольный">
-                <img class="product-img product-img-06" src="img/products/06/04.jpg" alt="Светильник настольный">
+              <div class="slider">
+                <img class="product-img" src="img/products/06/01.jpg" alt="Светильник настольный">
+                <img class="product-img" src="img/products/06/02.jpg" alt="Светильник настольный">
+                <img class="product-img" src="img/products/06/03.jpg" alt="Светильник настольный">
+                <img class="product-img" src="img/products/06/04.jpg" alt="Светильник настольный">
               </div>
-              <button class="slider-button prev-button prev-button-06" aria-label="Посмотреть предыдущий слайд">
+              <button class="slider-button prev-button" aria-label="Посмотреть предыдущий слайд">
                 <svg class="slider-button-img" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M15.7071 4.29289C16.0976 4.68342 16.0976 5.31658 15.7071 5.70711L9.41421 12L15.7071 18.2929C16.0976 18.6834 16.0976 19.3166 15.7071 19.7071C15.3166 20.0976 14.6834 20.0976 14.2929 19.7071L7.29289 12.7071C7.10536 12.5196 7 12.2652 7 12C7 11.7348 7.10536 11.4804 7.29289 11.2929L14.2929 4.29289C14.6834 3.90237 15.3166 3.90237 15.7071 4.29289Z"/>
                 </svg>
               </button>
-              <button class="slider-button next-button next-button-06" aria-label="Посмотреть следующий слайд">
+              <button class="slider-button next-button" aria-label="Посмотреть следующий слайд">
                 <svg class="slider-button-img" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M8.29289 4.29289C8.68342 3.90237 9.31658 3.90237 9.70711 4.29289L16.7071 11.2929C17.0976 11.6834 17.0976 12.3166 16.7071 12.7071L9.70711 19.7071C9.31658 20.0976 8.68342 20.0976 8.29289 19.7071C7.90237 19.3166 7.90237 18.6834 8.29289 18.2929L14.5858 12L8.29289 5.70711C7.90237 5.31658 7.90237 4.68342 8.29289 4.29289Z"/>
                 </svg>
@@ -404,32 +404,32 @@
                 Светильник&nbsp;настольный&nbsp;- 12&nbsp;000&nbsp;р.&nbsp;(06)
               </p>
               <button class="product-button">
-                <h4 class="product-title product-title-dark product-title-dark-06">UNA</h4>
+                <h4 class="product-title product-title-dark">UNA</h4>
               </button>
             </div>
           </div>
         </div>
       </li>
-      <li class="product-card card-7">
-        <div class="card-inner card-inner-07">
+      <li class="product-card">
+        <div class="card-inner">
           <div class="card-rotate card-rotate-front front-07">
             <button class="product-button">
-              <h4 class="product-title product-title-light product-title-light-07">ZOSIMA</h4>
+              <h4 class="product-title product-title-light">ZOSIMA</h4>
             </button>
           </div>
           <div class="card-rotate card-rotate-back">
             <div class="slider-container">
-              <div class="slider slider-07">
-                <img class="product-img product-img-07" src="img/products/07/02.jpg" alt="Светильник из корня">
-                <img class="product-img product-img-07" src="img/products/07/03.jpg" alt="Светильник из корня">
-                <img class="product-img product-img-07" src="img/products/07/04.jpg" alt="Светильник из корня">
+              <div class="slider">
+                <img class="product-img" src="img/products/07/02.jpg" alt="Светильник из корня">
+                <img class="product-img" src="img/products/07/03.jpg" alt="Светильник из корня">
+                <img class="product-img" src="img/products/07/04.jpg" alt="Светильник из корня">
               </div>
-              <button class="slider-button prev-button prev-button-07" aria-label="Посмотреть предыдущий слайд">
+              <button class="slider-button prev-button" aria-label="Посмотреть предыдущий слайд">
                 <svg class="slider-button-img" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M15.7071 4.29289C16.0976 4.68342 16.0976 5.31658 15.7071 5.70711L9.41421 12L15.7071 18.2929C16.0976 18.6834 16.0976 19.3166 15.7071 19.7071C15.3166 20.0976 14.6834 20.0976 14.2929 19.7071L7.29289 12.7071C7.10536 12.5196 7 12.2652 7 12C7 11.7348 7.10536 11.4804 7.29289 11.2929L14.2929 4.29289C14.6834 3.90237 15.3166 3.90237 15.7071 4.29289Z"/>
                 </svg>
               </button>
-              <button class="slider-button next-button next-button-07" aria-label="Посмотреть следующий слайд">
+              <button class="slider-button next-button" aria-label="Посмотреть следующий слайд">
                 <svg class="slider-button-img" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M8.29289 4.29289C8.68342 3.90237 9.31658 3.90237 9.70711 4.29289L16.7071 11.2929C17.0976 11.6834 17.0976 12.3166 16.7071 12.7071L9.70711 19.7071C9.31658 20.0976 8.68342 20.0976 8.29289 19.7071C7.90237 19.3166 7.90237 18.6834 8.29289 18.2929L14.5858 12L8.29289 5.70711C7.90237 5.31658 7.90237 4.68342 8.29289 4.29289Z"/>
                 </svg>
@@ -443,32 +443,32 @@
                 70-100&nbsp;т.р.&nbsp;(07)
               </p>
               <button class="product-button">
-                <h4 class="product-title product-title-dark product-title-dark-07">ZOSIMA</h4>
+                <h4 class="product-title product-title-dark">ZOSIMA</h4>
               </button>
             </div>
           </div>
         </div>
       </li>
-      <li class="product-card card-58">
-        <div class="card-inner card-inner-58">
+      <li class="product-card">
+        <div class="card-inner">
           <div class="card-rotate card-rotate-front front-58">
             <button class="product-button">
-              <h4 class="product-title product-title-light product-title-light-58">FONAR</h4>
+              <h4 class="product-title product-title-light">FONAR</h4>
             </button>
           </div>
           <div class="card-rotate card-rotate-back">
             <div class="slider-container">
-              <div class="slider slider-58">
-                <img class="product-img product-img-58" src="img/products/58/02.jpg" alt="Фонарь">
-                <img class="product-img product-img-58" src="img/products/58/03.jpg" alt="Фонарь">
-                <img class="product-img product-img-58" src="img/products/58/04.jpg" alt="Фонарь">
+              <div class="slider">
+                <img class="product-img" src="img/products/58/02.jpg" alt="Фонарь">
+                <img class="product-img" src="img/products/58/03.jpg" alt="Фонарь">
+                <img class="product-img" src="img/products/58/04.jpg" alt="Фонарь">
               </div>
-              <button class="slider-button prev-button prev-button-58" aria-label="Посмотреть предыдущий слайд">
+              <button class="slider-button prev-button" aria-label="Посмотреть предыдущий слайд">
                 <svg class="slider-button-img" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M15.7071 4.29289C16.0976 4.68342 16.0976 5.31658 15.7071 5.70711L9.41421 12L15.7071 18.2929C16.0976 18.6834 16.0976 19.3166 15.7071 19.7071C15.3166 20.0976 14.6834 20.0976 14.2929 19.7071L7.29289 12.7071C7.10536 12.5196 7 12.2652 7 12C7 11.7348 7.10536 11.4804 7.29289 11.2929L14.2929 4.29289C14.6834 3.90237 15.3166 3.90237 15.7071 4.29289Z"/>
                 </svg>
               </button>
-              <button class="slider-button next-button next-button-58" aria-label="Посмотреть следующий слайд">
+              <button class="slider-button next-button" aria-label="Посмотреть следующий слайд">
                 <svg class="slider-button-img" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M8.29289 4.29289C8.68342 3.90237 9.31658 3.90237 9.70711 4.29289L16.7071 11.2929C17.0976 11.6834 17.0976 12.3166 16.7071 12.7071L9.70711 19.7071C9.31658 20.0976 8.68342 20.0976 8.29289 19.7071C7.90237 19.3166 7.90237 18.6834 8.29289 18.2929L14.5858 12L8.29289 5.70711C7.90237 5.31658 7.90237 4.68342 8.29289 4.29289Z"/>
                 </svg>
@@ -479,7 +479,7 @@
                 Фонарь&nbsp;металлический кованый - от&nbsp;25&nbsp;000р.&nbsp;(58)
               </p>
               <button class="product-button">
-                <h4 class="product-title product-title-dark product-title-dark-58">FONAR</h4>
+                <h4 class="product-title product-title-dark">FONAR</h4>
               </button>
             </div>
           </div>
@@ -492,27 +492,27 @@
       </h3>
     </div>
     <ul class="products-list">
-      <li class="product-card card-8">
-        <div class="card-inner card-inner-08">
+      <li class="product-card">
+        <div class="card-inner">
           <div class="card-rotate card-rotate-front front-08">
             <button class="product-button">
-              <h4 class="product-title product-title-light product-title-light-08">PROV</h4>
+              <h4 class="product-title product-title-light">PROV</h4>
             </button>
           </div>
           <div class="card-rotate card-rotate-back">
             <div class="slider-container">
-              <div class="slider slider-08">
-                <img class="product-img product-img-08" src="img/products/08/02.jpg" alt="Резной столик">
-                <img class="product-img product-img-08" src="img/products/08/03.jpg" alt="Резной столик">
-                <img class="product-img product-img-08" src="img/products/08/04.jpg" alt="Резной столик">
-                <img class="product-img product-img-08" src="img/products/08/05.jpg" alt="Резной столик">
+              <div class="slider">
+                <img class="product-img" src="img/products/08/02.jpg" alt="Резной столик">
+                <img class="product-img" src="img/products/08/03.jpg" alt="Резной столик">
+                <img class="product-img" src="img/products/08/04.jpg" alt="Резной столик">
+                <img class="product-img" src="img/products/08/05.jpg" alt="Резной столик">
               </div>
-              <button class="slider-button prev-button prev-button-08" aria-label="Посмотреть предыдущий слайд">
+              <button class="slider-button prev-button" aria-label="Посмотреть предыдущий слайд">
                 <svg class="slider-button-img" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M15.7071 4.29289C16.0976 4.68342 16.0976 5.31658 15.7071 5.70711L9.41421 12L15.7071 18.2929C16.0976 18.6834 16.0976 19.3166 15.7071 19.7071C15.3166 20.0976 14.6834 20.0976 14.2929 19.7071L7.29289 12.7071C7.10536 12.5196 7 12.2652 7 12C7 11.7348 7.10536 11.4804 7.29289 11.2929L14.2929 4.29289C14.6834 3.90237 15.3166 3.90237 15.7071 4.29289Z"/>
                 </svg>
               </button>
-              <button class="slider-button next-button next-button-08" aria-label="Посмотреть следующий слайд">
+              <button class="slider-button next-button" aria-label="Посмотреть следующий слайд">
                 <svg class="slider-button-img" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M8.29289 4.29289C8.68342 3.90237 9.31658 3.90237 9.70711 4.29289L16.7071 11.2929C17.0976 11.6834 17.0976 12.3166 16.7071 12.7071L9.70711 19.7071C9.31658 20.0976 8.68342 20.0976 8.29289 19.7071C7.90237 19.3166 7.90237 18.6834 8.29289 18.2929L14.5858 12L8.29289 5.70711C7.90237 5.31658 7.90237 4.68342 8.29289 4.29289Z"/>
                 </svg>
@@ -526,32 +526,32 @@
                 90&nbsp;000&nbsp;р.&nbsp;(08)
               </p>
               <button class="product-button">
-                <h4 class="product-title product-title-dark product-title-dark-08">PROV</h4>
+                <h4 class="product-title product-title-dark">PROV</h4>
               </button>
             </div>
           </div>
         </div>
       </li>
-      <li class="product-card card-9">
-        <div class="card-inner card-inner-09">
+      <li class="product-card">
+        <div class="card-inner">
           <div class="card-rotate card-rotate-front front-09">
             <button class="product-button">
-              <h4 class="product-title product-title-light product-title-light-09">NADIN</h4>
+              <h4 class="product-title product-title-light">NADIN</h4>
             </button>
           </div>
           <div class="card-rotate card-rotate-back">
             <div class="slider-container">
-              <div class="slider slider-09">
-                <img class="product-img product-img-09" src="img/products/09/02.jpg" alt="Стол из спила">
-                <img class="product-img product-img-09" src="img/products/09/03.jpg" alt="Стол из спила">
-                <img class="product-img product-img-09" src="img/products/09/04.jpg" alt="Стол из спила">
+              <div class="slider">
+                <img class="product-img" src="img/products/09/02.jpg" alt="Стол из спила">
+                <img class="product-img" src="img/products/09/03.jpg" alt="Стол из спила">
+                <img class="product-img" src="img/products/09/04.jpg" alt="Стол из спила">
               </div>
-              <button class="slider-button prev-button prev-button-09" aria-label="Посмотреть предыдущий слайд">
+              <button class="slider-button prev-button" aria-label="Посмотреть предыдущий слайд">
                 <svg class="slider-button-img" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M15.7071 4.29289C16.0976 4.68342 16.0976 5.31658 15.7071 5.70711L9.41421 12L15.7071 18.2929C16.0976 18.6834 16.0976 19.3166 15.7071 19.7071C15.3166 20.0976 14.6834 20.0976 14.2929 19.7071L7.29289 12.7071C7.10536 12.5196 7 12.2652 7 12C7 11.7348 7.10536 11.4804 7.29289 11.2929L14.2929 4.29289C14.6834 3.90237 15.3166 3.90237 15.7071 4.29289Z"/>
                 </svg>
               </button>
-              <button class="slider-button next-button next-button-09" aria-label="Посмотреть следующий слайд">
+              <button class="slider-button next-button" aria-label="Посмотреть следующий слайд">
                 <svg class="slider-button-img" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M8.29289 4.29289C8.68342 3.90237 9.31658 3.90237 9.70711 4.29289L16.7071 11.2929C17.0976 11.6834 17.0976 12.3166 16.7071 12.7071L9.70711 19.7071C9.31658 20.0976 8.68342 20.0976 8.29289 19.7071C7.90237 19.3166 7.90237 18.6834 8.29289 18.2929L14.5858 12L8.29289 5.70711C7.90237 5.31658 7.90237 4.68342 8.29289 4.29289Z"/>
                 </svg>
@@ -565,33 +565,33 @@
                 75&nbsp;000&nbsp;р.&nbsp;(09)
               </p>
               <button class="product-button">
-                <h4 class="product-title product-title-dark product-title-dark-09">NADIN</h4>
+                <h4 class="product-title product-title-dark">NADIN</h4>
               </button>
             </div>
           </div>
         </div>
       </li>
-      <li class="product-card card-10">
-        <div class="card-inner card-inner-10">
+      <li class="product-card">
+        <div class="card-inner">
           <div class="card-rotate card-rotate-front front-10">
             <button class="product-button">
-              <h4 class="product-title product-title-light product-title-light-10">ERHART</h4>
+              <h4 class="product-title product-title-light">ERHART</h4>
             </button>
           </div>
           <div class="card-rotate card-rotate-back">
             <div class="slider-container">
-              <div class="slider slider-10">
-                <img class="product-img product-img-10" src="img/products/10/02.jpg" alt="Стол со стеклом">
-                <img class="product-img product-img-10" src="img/products/10/03.jpg" alt="Стол со стеклом">
-                <img class="product-img product-img-10" src="img/products/10/04.jpg" alt="Стол со стеклянной столешницей">
-                <img class="product-img product-img-10" src="img/products/10/05.jpg" alt="Стол со стеклянной столешницей">
+              <div class="slider">
+                <img class="product-img" src="img/products/10/02.jpg" alt="Стол со стеклом">
+                <img class="product-img" src="img/products/10/03.jpg" alt="Стол со стеклом">
+                <img class="product-img" src="img/products/10/04.jpg" alt="Стол со стеклянной столешницей">
+                <img class="product-img" src="img/products/10/05.jpg" alt="Стол со стеклянной столешницей">
               </div>
-              <button class="slider-button prev-button prev-button-10" aria-label="Посмотреть предыдущий слайд">
+              <button class="slider-button prev-button" aria-label="Посмотреть предыдущий слайд">
                 <svg class="slider-button-img" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M15.7071 4.29289C16.0976 4.68342 16.0976 5.31658 15.7071 5.70711L9.41421 12L15.7071 18.2929C16.0976 18.6834 16.0976 19.3166 15.7071 19.7071C15.3166 20.0976 14.6834 20.0976 14.2929 19.7071L7.29289 12.7071C7.10536 12.5196 7 12.2652 7 12C7 11.7348 7.10536 11.4804 7.29289 11.2929L14.2929 4.29289C14.6834 3.90237 15.3166 3.90237 15.7071 4.29289Z"/>
                 </svg>
               </button>
-              <button class="slider-button next-button next-button-10" aria-label="Посмотреть следующий слайд">
+              <button class="slider-button next-button" aria-label="Посмотреть следующий слайд">
                 <svg class="slider-button-img" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M8.29289 4.29289C8.68342 3.90237 9.31658 3.90237 9.70711 4.29289L16.7071 11.2929C17.0976 11.6834 17.0976 12.3166 16.7071 12.7071L9.70711 19.7071C9.31658 20.0976 8.68342 20.0976 8.29289 19.7071C7.90237 19.3166 7.90237 18.6834 8.29289 18.2929L14.5858 12L8.29289 5.70711C7.90237 5.31658 7.90237 4.68342 8.29289 4.29289Z"/>
                 </svg>
@@ -605,33 +605,33 @@
                 190&nbsp;000&nbsp;р.&nbsp;(10)
               </p>
               <button class="product-button">
-                <h4 class="product-title product-title-dark product-title-dark-10">ERHART</h4>
+                <h4 class="product-title product-title-dark">ERHART</h4>
               </button>
             </div>
           </div>
         </div>
       </li>
-      <li class="product-card card-11">
-        <div class="card-inner card-inner-11">
+      <li class="product-card">
+        <div class="card-inner">
           <div class="card-rotate card-rotate-front front-11">
             <button class="product-button">
-              <h4 class="product-title product-title-light product-title-light-11">IPOMEA</h4>
+              <h4 class="product-title product-title-light">IPOMEA</h4>
             </button>
           </div>
           <div class="card-rotate card-rotate-back">
             <div class="slider-container">
-              <div class="slider slider-11">
-                <img class="product-img product-img-11" src="img/products/11/02.jpg" alt="Стол с подсветкой">
-                <img class="product-img product-img-11" src="img/products/11/03.jpg" alt="Стол с подсветкой">
-                <img class="product-img product-img-11" src="img/products/11/04.jpg" alt="Стол с подсветкой">
-                <img class="product-img product-img-11" src="img/products/11/05.jpg" alt="Стол с подсветкой">
+              <div class="slider">
+                <img class="product-img" src="img/products/11/02.jpg" alt="Стол с подсветкой">
+                <img class="product-img" src="img/products/11/03.jpg" alt="Стол с подсветкой">
+                <img class="product-img" src="img/products/11/04.jpg" alt="Стол с подсветкой">
+                <img class="product-img" src="img/products/11/05.jpg" alt="Стол с подсветкой">
               </div>
-              <button class="slider-button prev-button prev-button-11" aria-label="Посмотреть предыдущий слайд">
+              <button class="slider-button prev-button" aria-label="Посмотреть предыдущий слайд">
                 <svg class="slider-button-img" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M15.7071 4.29289C16.0976 4.68342 16.0976 5.31658 15.7071 5.70711L9.41421 12L15.7071 18.2929C16.0976 18.6834 16.0976 19.3166 15.7071 19.7071C15.3166 20.0976 14.6834 20.0976 14.2929 19.7071L7.29289 12.7071C7.10536 12.5196 7 12.2652 7 12C7 11.7348 7.10536 11.4804 7.29289 11.2929L14.2929 4.29289C14.6834 3.90237 15.3166 3.90237 15.7071 4.29289Z"/>
                 </svg>
               </button>
-              <button class="slider-button next-button next-button-11" aria-label="Посмотреть следующий слайд">
+              <button class="slider-button next-button" aria-label="Посмотреть следующий слайд">
                 <svg class="slider-button-img" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M8.29289 4.29289C8.68342 3.90237 9.31658 3.90237 9.70711 4.29289L16.7071 11.2929C17.0976 11.6834 17.0976 12.3166 16.7071 12.7071L9.70711 19.7071C9.31658 20.0976 8.68342 20.0976 8.29289 19.7071C7.90237 19.3166 7.90237 18.6834 8.29289 18.2929L14.5858 12L8.29289 5.70711C7.90237 5.31658 7.90237 4.68342 8.29289 4.29289Z"/>
                 </svg>
@@ -645,37 +645,37 @@
                 220&nbsp;000р.&nbsp;(11)
               </p>
               <button class="product-button">
-                <h4 class="product-title product-title-dark product-title-dark-11">IPOMEA</h4>
+                <h4 class="product-title product-title-dark">IPOMEA</h4>
               </button>
             </div>
           </div>
         </div>
       </li>
-      <li class="product-card card-12">
-        <div class="card-inner card-inner-12">
+      <li class="product-card">
+        <div class="card-inner">
           <div class="card-rotate card-rotate-front front-12">
             <button class="product-button">
-              <h4 class="product-title product-title-light product-title-light-12">ELIM</h4>
+              <h4 class="product-title product-title-light">ELIM</h4>
             </button>
           </div>
           <div class="card-rotate card-rotate-back">
             <div class="slider-container">
-              <div class="slider slider-12">
-                <img class="product-img product-img-12" src="img/products/12/02.jpg" alt="Стол из лафета">
-                <img class="product-img product-img-12" src="img/products/12/03.jpg" alt="Стол из лафета">
-                <img class="product-img product-img-12" src="img/products/12/04.jpg" alt="Стол из лафета">
-                <img class="product-img product-img-12" src="img/products/12/05.jpg" alt="Стол из лафета">
-                <img class="product-img product-img-12" src="img/products/12/06.jpg" alt="Стол из лафета">
-                <img class="product-img product-img-12" src="img/products/12/07.jpg" alt="Стол из лафета">
-                <img class="product-img product-img-12" src="img/products/12/08.jpg" alt="Стол из лафета">
-                <img class="product-img product-img-12" src="img/products/12/09.jpg" alt="Стол из лафета">
+              <div class="slider">
+                <img class="product-img" src="img/products/12/02.jpg" alt="Стол из лафета">
+                <img class="product-img" src="img/products/12/03.jpg" alt="Стол из лафета">
+                <img class="product-img" src="img/products/12/04.jpg" alt="Стол из лафета">
+                <img class="product-img" src="img/products/12/05.jpg" alt="Стол из лафета">
+                <img class="product-img" src="img/products/12/06.jpg" alt="Стол из лафета">
+                <img class="product-img" src="img/products/12/07.jpg" alt="Стол из лафета">
+                <img class="product-img" src="img/products/12/08.jpg" alt="Стол из лафета">
+                <img class="product-img" src="img/products/12/09.jpg" alt="Стол из лафета">
               </div>
-              <button class="slider-button prev-button prev-button-12" aria-label="Посмотреть предыдущий слайд">
+              <button class="slider-button prev-button" aria-label="Посмотреть предыдущий слайд">
                 <svg class="slider-button-img" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M15.7071 4.29289C16.0976 4.68342 16.0976 5.31658 15.7071 5.70711L9.41421 12L15.7071 18.2929C16.0976 18.6834 16.0976 19.3166 15.7071 19.7071C15.3166 20.0976 14.6834 20.0976 14.2929 19.7071L7.29289 12.7071C7.10536 12.5196 7 12.2652 7 12C7 11.7348 7.10536 11.4804 7.29289 11.2929L14.2929 4.29289C14.6834 3.90237 15.3166 3.90237 15.7071 4.29289Z"/>
                 </svg>
               </button>
-              <button class="slider-button next-button next-button-12" aria-label="Посмотреть следующий слайд">
+              <button class="slider-button next-button" aria-label="Посмотреть следующий слайд">
                 <svg class="slider-button-img" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M8.29289 4.29289C8.68342 3.90237 9.31658 3.90237 9.70711 4.29289L16.7071 11.2929C17.0976 11.6834 17.0976 12.3166 16.7071 12.7071L9.70711 19.7071C9.31658 20.0976 8.68342 20.0976 8.29289 19.7071C7.90237 19.3166 7.90237 18.6834 8.29289 18.2929L14.5858 12L8.29289 5.70711C7.90237 5.31658 7.90237 4.68342 8.29289 4.29289Z"/>
                 </svg>
@@ -689,33 +689,33 @@
                 Длина&nbsp;до&nbsp;1,9&nbsp;м&nbsp;- 190&nbsp;000&nbsp;р.&nbsp;(12)
               </p>
               <button class="product-button">
-                <h4 class="product-title product-title-dark product-title-dark-12">ELIM</h4>
+                <h4 class="product-title product-title-dark">ELIM</h4>
               </button>
             </div>
           </div>
         </div>
       </li>
-      <li class="product-card card-13">
-        <div class="card-inner card-inner-13">
+      <li class="product-card">
+        <div class="card-inner">
           <div class="card-rotate card-rotate-front front-13">
             <button class="product-button">
-              <h4 class="product-title product-title-light product-title-light-13">STRAZH</h4>
+              <h4 class="product-title product-title-light">STRAZH</h4>
             </button>
           </div>
           <div class="card-rotate card-rotate-back">
             <div class="slider-container">
-              <div class="slider slider-13">
-                <img class="product-img product-img-13" src="img/products/13/02.jpg" alt="Стол из кедрового лафета">
-                <img class="product-img product-img-13" src="img/products/13/03.jpg" alt="Стол из кедрового лафета">
-                <img class="product-img product-img-13" src="img/products/13/04.jpg" alt="Стол из кедрового лафета">
-                <img class="product-img product-img-13" src="img/products/13/05.jpg" alt="Стол из кедрового лафета">
+              <div class="slider">
+                <img class="product-img" src="img/products/13/02.jpg" alt="Стол из кедрового лафета">
+                <img class="product-img" src="img/products/13/03.jpg" alt="Стол из кедрового лафета">
+                <img class="product-img" src="img/products/13/04.jpg" alt="Стол из кедрового лафета">
+                <img class="product-img" src="img/products/13/05.jpg" alt="Стол из кедрового лафета">
               </div>
-              <button class="slider-button prev-button prev-button-13" aria-label="Посмотреть предыдущий слайд">
+              <button class="slider-button prev-button" aria-label="Посмотреть предыдущий слайд">
                 <svg class="slider-button-img" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M15.7071 4.29289C16.0976 4.68342 16.0976 5.31658 15.7071 5.70711L9.41421 12L15.7071 18.2929C16.0976 18.6834 16.0976 19.3166 15.7071 19.7071C15.3166 20.0976 14.6834 20.0976 14.2929 19.7071L7.29289 12.7071C7.10536 12.5196 7 12.2652 7 12C7 11.7348 7.10536 11.4804 7.29289 11.2929L14.2929 4.29289C14.6834 3.90237 15.3166 3.90237 15.7071 4.29289Z"/>
                 </svg>
               </button>
-              <button class="slider-button next-button next-button-13" aria-label="Посмотреть следующий слайд">
+              <button class="slider-button next-button" aria-label="Посмотреть следующий слайд">
                 <svg class="slider-button-img" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M8.29289 4.29289C8.68342 3.90237 9.31658 3.90237 9.70711 4.29289L16.7071 11.2929C17.0976 11.6834 17.0976 12.3166 16.7071 12.7071L9.70711 19.7071C9.31658 20.0976 8.68342 20.0976 8.29289 19.7071C7.90237 19.3166 7.90237 18.6834 8.29289 18.2929L14.5858 12L8.29289 5.70711C7.90237 5.31658 7.90237 4.68342 8.29289 4.29289Z"/>
                 </svg>
@@ -729,31 +729,31 @@
                 Длина&nbsp;от&nbsp;3&nbsp;м&nbsp;- 250&nbsp;000&nbsp;р.&nbsp;(13)
               </p>
               <button class="product-button">
-                <h4 class="product-title product-title-dark product-title-dark-13">STRAZH</h4>
+                <h4 class="product-title product-title-dark">STRAZH</h4>
               </button>
             </div>
           </div>
         </div>
       </li>
-      <li class="product-card card-14">
-        <div class="card-inner card-inner-14">
+      <li class="product-card">
+        <div class="card-inner">
           <div class="card-rotate card-rotate-front front-14">
             <button class="product-button">
-              <h4 class="product-title product-title-light product-title-light-14">NATAN</h4>
+              <h4 class="product-title product-title-light">NATAN</h4>
             </button>
           </div>
           <div class="card-rotate card-rotate-back">
             <div class="slider-container">
-              <div class="slider slider-14">
-                <img class="product-img product-img-14" src="img/products/14/01.jpg" alt="Стол из кедра">
-                <img class="product-img product-img-14" src="img/products/14/02.jpg" alt="Стол из кедра">
+              <div class="slider">
+                <img class="product-img" src="img/products/14/01.jpg" alt="Стол из кедра">
+                <img class="product-img" src="img/products/14/02.jpg" alt="Стол из кедра">
               </div>
-              <button class="slider-button prev-button prev-button-14" aria-label="Посмотреть предыдущий слайд">
+              <button class="slider-button prev-button" aria-label="Посмотреть предыдущий слайд">
                 <svg class="slider-button-img" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M15.7071 4.29289C16.0976 4.68342 16.0976 5.31658 15.7071 5.70711L9.41421 12L15.7071 18.2929C16.0976 18.6834 16.0976 19.3166 15.7071 19.7071C15.3166 20.0976 14.6834 20.0976 14.2929 19.7071L7.29289 12.7071C7.10536 12.5196 7 12.2652 7 12C7 11.7348 7.10536 11.4804 7.29289 11.2929L14.2929 4.29289C14.6834 3.90237 15.3166 3.90237 15.7071 4.29289Z"/>
                 </svg>
               </button>
-              <button class="slider-button next-button next-button-14" aria-label="Посмотреть следующий слайд">
+              <button class="slider-button next-button" aria-label="Посмотреть следующий слайд">
                 <svg class="slider-button-img" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M8.29289 4.29289C8.68342 3.90237 9.31658 3.90237 9.70711 4.29289L16.7071 11.2929C17.0976 11.6834 17.0976 12.3166 16.7071 12.7071L9.70711 19.7071C9.31658 20.0976 8.68342 20.0976 8.29289 19.7071C7.90237 19.3166 7.90237 18.6834 8.29289 18.2929L14.5858 12L8.29289 5.70711C7.90237 5.31658 7.90237 4.68342 8.29289 4.29289Z"/>
                 </svg>
@@ -767,23 +767,23 @@
                 Скамья&nbsp;- от&nbsp;60&nbsp;000&nbsp;р. (длина&nbsp;до&nbsp;3&nbsp;м)&nbsp;(15)
               </p>
               <button class="product-button">
-                <h4 class="product-title product-title-dark product-title-dark-14">NATAN</h4>
+                <h4 class="product-title product-title-dark">NATAN</h4>
               </button>
             </div>
           </div>
         </div>
       </li>
-      <li class="product-card card-16">
-        <div class="card-inner card-inner-16">
+      <li class="product-card">
+        <div class="card-inner">
           <div class="card-rotate card-rotate-front front-16">
             <button class="product-button">
-              <h4 class="product-title product-title-light product-title-light-16">VEDA</h4>
+              <h4 class="product-title product-title-light">VEDA</h4>
             </button>
           </div>
           <div class="card-rotate card-rotate-back">
             <div class="slider-container">
-              <div class="slider slider-16">
-                <img class="product-img product-img-16" src="img/products/16/01.jpg" alt="Стол и скамья из досок">
+              <div class="slider">
+                <img class="product-img" src="img/products/16/01.jpg" alt="Стол и скамья из досок">
               </div>
             </div>
             <div class="card-back-container">
@@ -794,33 +794,33 @@
                 Скамья&nbsp;- 55&nbsp;000&nbsp;р.&nbsp;(17)
               </p>
               <button class="product-button">
-                <h4 class="product-title product-title-dark product-title-dark-16">VEDA</h4>
+                <h4 class="product-title product-title-dark">VEDA</h4>
               </button>
             </div>
           </div>
         </div>
       </li>
-      <li class="product-card card-18">
-        <div class="card-inner card-inner-18">
+      <li class="product-card">
+        <div class="card-inner">
           <div class="card-rotate card-rotate-front front-18">
             <button class="product-button">
-              <h4 class="product-title product-title-light product-title-light-18">LUDMILA</h4>
+              <h4 class="product-title product-title-light">LUDMILA</h4>
             </button>
           </div>
           <div class="card-rotate card-rotate-back">
             <div class="slider-container">
-              <div class="slider slider-18">
-                <img class="product-img product-img-18" src="img/products/18/02.jpg" alt="Детский столик">
-                <img class="product-img product-img-18" src="img/products/18/03.jpg" alt="Детский столик">
-                <img class="product-img product-img-18" src="img/products/18/04.jpg" alt="Детский столик">
-                <img class="product-img product-img-18" src="img/products/18/05.jpg" alt="Детский столик">
+              <div class="slider">
+                <img class="product-img" src="img/products/18/02.jpg" alt="Детский столик">
+                <img class="product-img" src="img/products/18/03.jpg" alt="Детский столик">
+                <img class="product-img" src="img/products/18/04.jpg" alt="Детский столик">
+                <img class="product-img" src="img/products/18/05.jpg" alt="Детский столик">
               </div>
-              <button class="slider-button prev-button prev-button-18" aria-label="Посмотреть предыдущий слайд">
+              <button class="slider-button prev-button" aria-label="Посмотреть предыдущий слайд">
                 <svg class="slider-button-img" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M15.7071 4.29289C16.0976 4.68342 16.0976 5.31658 15.7071 5.70711L9.41421 12L15.7071 18.2929C16.0976 18.6834 16.0976 19.3166 15.7071 19.7071C15.3166 20.0976 14.6834 20.0976 14.2929 19.7071L7.29289 12.7071C7.10536 12.5196 7 12.2652 7 12C7 11.7348 7.10536 11.4804 7.29289 11.2929L14.2929 4.29289C14.6834 3.90237 15.3166 3.90237 15.7071 4.29289Z"/>
                 </svg>
               </button>
-              <button class="slider-button next-button next-button-18" aria-label="Посмотреть следующий слайд">
+              <button class="slider-button next-button" aria-label="Посмотреть следующий слайд">
                 <svg class="slider-button-img" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M8.29289 4.29289C8.68342 3.90237 9.31658 3.90237 9.70711 4.29289L16.7071 11.2929C17.0976 11.6834 17.0976 12.3166 16.7071 12.7071L9.70711 19.7071C9.31658 20.0976 8.68342 20.0976 8.29289 19.7071C7.90237 19.3166 7.90237 18.6834 8.29289 18.2929L14.5858 12L8.29289 5.70711C7.90237 5.31658 7.90237 4.68342 8.29289 4.29289Z"/>
                 </svg>
@@ -831,32 +831,32 @@
                 Столик&nbsp;детский из&nbsp;спилов&nbsp;- 85&nbsp;000&nbsp;р.&nbsp;(18)
               </p>
               <button class="product-button">
-                <h4 class="product-title product-title-dark product-title-dark-18">LUDMILA</h4>
+                <h4 class="product-title product-title-dark">LUDMILA</h4>
               </button>
             </div>
           </div>
         </div>
       </li>
-      <li class="product-card card-19">
-        <div class="card-inner card-inner-19">
+      <li class="product-card">
+        <div class="card-inner">
           <div class="card-rotate card-rotate-front front-19">
             <button class="product-button">
-              <h4 class="product-title product-title-light product-title-light-19">AGAP</h4>
+              <h4 class="product-title product-title-light">AGAP</h4>
             </button>
           </div>
           <div class="card-rotate card-rotate-back">
             <div class="slider-container">
-              <div class="slider slider-19">
-                <img class="product-img product-img-19" src="img/products/19/02.jpg" alt="Детский стул">
-                <img class="product-img product-img-19" src="img/products/19/03.jpg" alt="Детский стул">
-                <img class="product-img product-img-19" src="img/products/19/04.jpg" alt="Стул из массива">
+              <div class="slider">
+                <img class="product-img" src="img/products/19/02.jpg" alt="Детский стул">
+                <img class="product-img" src="img/products/19/03.jpg" alt="Детский стул">
+                <img class="product-img" src="img/products/19/04.jpg" alt="Стул из массива">
               </div>
-              <button class="slider-button prev-button prev-button-19" aria-label="Посмотреть предыдущий слайд">
+              <button class="slider-button prev-button" aria-label="Посмотреть предыдущий слайд">
                 <svg class="slider-button-img" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M15.7071 4.29289C16.0976 4.68342 16.0976 5.31658 15.7071 5.70711L9.41421 12L15.7071 18.2929C16.0976 18.6834 16.0976 19.3166 15.7071 19.7071C15.3166 20.0976 14.6834 20.0976 14.2929 19.7071L7.29289 12.7071C7.10536 12.5196 7 12.2652 7 12C7 11.7348 7.10536 11.4804 7.29289 11.2929L14.2929 4.29289C14.6834 3.90237 15.3166 3.90237 15.7071 4.29289Z"/>
                 </svg>
               </button>
-              <button class="slider-button next-button next-button-19" aria-label="Посмотреть следующий слайд">
+              <button class="slider-button next-button" aria-label="Посмотреть следующий слайд">
                 <svg class="slider-button-img" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M8.29289 4.29289C8.68342 3.90237 9.31658 3.90237 9.70711 4.29289L16.7071 11.2929C17.0976 11.6834 17.0976 12.3166 16.7071 12.7071L9.70711 19.7071C9.31658 20.0976 8.68342 20.0976 8.29289 19.7071C7.90237 19.3166 7.90237 18.6834 8.29289 18.2929L14.5858 12L8.29289 5.70711C7.90237 5.31658 7.90237 4.68342 8.29289 4.29289Z"/>
                 </svg>
@@ -867,23 +867,23 @@
                 Стульчик&nbsp;детский&nbsp;- 25&nbsp;000&nbsp;р.&nbsp;(19)
               </p>
               <button class="product-button">
-                <h4 class="product-title product-title-dark product-title-dark-19">AGAP</h4>
+                <h4 class="product-title product-title-dark">AGAP</h4>
               </button>
             </div>
           </div>
         </div>
       </li>
-      <li class="product-card card-20">
-        <div class="card-inner card-inner-20">
+      <li class="product-card">
+        <div class="card-inner">
           <div class="card-rotate card-rotate-front front-20">
             <button class="product-button">
-              <h4 class="product-title product-title-light product-title-light-20">VIVIAN</h4>
+              <h4 class="product-title product-title-light">VIVIAN</h4>
             </button>
           </div>
           <div class="card-rotate card-rotate-back">
             <div class="slider-container">
-              <div class="slider slider-20">
-                <img class="product-img product-img-20" src="img/products/20/01.jpg" alt="Стол и табурет">
+              <div class="slider">
+                <img class="product-img" src="img/products/20/01.jpg" alt="Стол и табурет">
               </div>
             </div>
             <div class="card-back-container">
@@ -894,23 +894,23 @@
                 Табурет из ствола&nbsp;кедра&nbsp;- 12&nbsp;000&nbsp;р.&nbsp;(21)
               </p>
               <button class="product-button">
-                <h4 class="product-title product-title-dark product-title-dark-20">VIVIAN</h4>
+                <h4 class="product-title product-title-dark">VIVIAN</h4>
               </button>
             </div>
           </div>
         </div>
       </li>
-      <li class="product-card card-22">
-        <div class="card-inner card-inner-22">
+      <li class="product-card">
+        <div class="card-inner">
           <div class="card-rotate card-rotate-front front-22">
             <button class="product-button">
-              <h4 class="product-title product-title-light product-title-light-22">ANTIP</h4>
+              <h4 class="product-title product-title-light">ANTIP</h4>
             </button>
           </div>
           <div class="card-rotate card-rotate-back">
             <div class="slider-container">
-              <div class="slider slider-22">
-                <img class="product-img product-img-22" src="img/products/22/01.jpg" alt="Столик из ствола кедра">
+              <div class="slider">
+                <img class="product-img" src="img/products/22/01.jpg" alt="Столик из ствола кедра">
               </div>
             </div>
             <div class="card-back-container">
@@ -918,32 +918,32 @@
                 Столик из&nbsp;ствола&nbsp;кедра&nbsp;- 25&nbsp;000&nbsp;р.&nbsp;(22)
               </p>
               <button class="product-button">
-                <h4 class="product-title product-title-dark product-title-dark-22">ANTIP</h4>
+                <h4 class="product-title product-title-dark">ANTIP</h4>
               </button>
             </div>
           </div>
         </div>
       </li>
-      <li class="product-card card-23">
-        <div class="card-inner card-inner-23">
+      <li class="product-card">
+        <div class="card-inner">
           <div class="card-rotate card-rotate-front front-23">
             <button class="product-button">
-              <h4 class="product-title product-title-light product-title-light-23">YARMIL</h4>
+              <h4 class="product-title product-title-light">YARMIL</h4>
             </button>
           </div>
           <div class="card-rotate card-rotate-back">
             <div class="slider-container">
-              <div class="slider slider-23">
-                <img class="product-img product-img-23" src="img/products/23/01.jpg" alt="Журнальный столик">
-                <img class="product-img product-img-23" src="img/products/23/02.jpg" alt="Журнальный столик">
-                <img class="product-img product-img-23" src="img/products/23/03.jpg" alt="Кресло из тёса">
+              <div class="slider">
+                <img class="product-img" src="img/products/23/01.jpg" alt="Журнальный столик">
+                <img class="product-img" src="img/products/23/02.jpg" alt="Журнальный столик">
+                <img class="product-img" src="img/products/23/03.jpg" alt="Кресло из тёса">
               </div>
-              <button class="slider-button prev-button prev-button-23" aria-label="Посмотреть предыдущий слайд">
+              <button class="slider-button prev-button" aria-label="Посмотреть предыдущий слайд">
                 <svg class="slider-button-img" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M15.7071 4.29289C16.0976 4.68342 16.0976 5.31658 15.7071 5.70711L9.41421 12L15.7071 18.2929C16.0976 18.6834 16.0976 19.3166 15.7071 19.7071C15.3166 20.0976 14.6834 20.0976 14.2929 19.7071L7.29289 12.7071C7.10536 12.5196 7 12.2652 7 12C7 11.7348 7.10536 11.4804 7.29289 11.2929L14.2929 4.29289C14.6834 3.90237 15.3166 3.90237 15.7071 4.29289Z"/>
                 </svg>
               </button>
-              <button class="slider-button next-button next-button-23" aria-label="Посмотреть следующий слайд">
+              <button class="slider-button next-button" aria-label="Посмотреть следующий слайд">
                 <svg class="slider-button-img" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M8.29289 4.29289C8.68342 3.90237 9.31658 3.90237 9.70711 4.29289L16.7071 11.2929C17.0976 11.6834 17.0976 12.3166 16.7071 12.7071L9.70711 19.7071C9.31658 20.0976 8.68342 20.0976 8.29289 19.7071C7.90237 19.3166 7.90237 18.6834 8.29289 18.2929L14.5858 12L8.29289 5.70711C7.90237 5.31658 7.90237 4.68342 8.29289 4.29289Z"/>
                 </svg>
@@ -957,31 +957,31 @@
                 Кресло&nbsp;из&nbsp;веток и тёса&nbsp;- 60&nbsp;000&nbsp;р.&nbsp;(24)
               </p>
               <button class="product-button">
-                <h4 class="product-title product-title-dark product-title-dark-23">YARMIL</h4>
+                <h4 class="product-title product-title-dark">YARMIL</h4>
               </button>
             </div>
           </div>
         </div>
       </li>
-      <li class="product-card card-25">
-        <div class="card-inner card-inner-25">
+      <li class="product-card">
+        <div class="card-inner">
           <div class="card-rotate card-rotate-front front-25">
             <button class="product-button">
-              <h4 class="product-title product-title-light product-title-light-25">VASSA</h4>
+              <h4 class="product-title product-title-light">VASSA</h4>
             </button>
           </div>
           <div class="card-rotate card-rotate-back">
             <div class="slider-container">
-              <div class="slider slider-25">
-                <img class="product-img product-img-25" src="img/products/25/01.jpg" alt="Кресло из веток и лозы">
-                <img class="product-img product-img-25" src="img/products/25/02.jpg" alt="Кресло из лозы">
+              <div class="slider">
+                <img class="product-img" src="img/products/25/01.jpg" alt="Кресло из веток и лозы">
+                <img class="product-img" src="img/products/25/02.jpg" alt="Кресло из лозы">
               </div>
-              <button class="slider-button prev-button prev-button-25" aria-label="Посмотреть предыдущий слайд">
+              <button class="slider-button prev-button" aria-label="Посмотреть предыдущий слайд">
                 <svg class="slider-button-img" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M15.7071 4.29289C16.0976 4.68342 16.0976 5.31658 15.7071 5.70711L9.41421 12L15.7071 18.2929C16.0976 18.6834 16.0976 19.3166 15.7071 19.7071C15.3166 20.0976 14.6834 20.0976 14.2929 19.7071L7.29289 12.7071C7.10536 12.5196 7 12.2652 7 12C7 11.7348 7.10536 11.4804 7.29289 11.2929L14.2929 4.29289C14.6834 3.90237 15.3166 3.90237 15.7071 4.29289Z"/>
                 </svg>
               </button>
-              <button class="slider-button next-button next-button-25" aria-label="Посмотреть следующий слайд">
+              <button class="slider-button next-button" aria-label="Посмотреть следующий слайд">
                 <svg class="slider-button-img" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M8.29289 4.29289C8.68342 3.90237 9.31658 3.90237 9.70711 4.29289L16.7071 11.2929C17.0976 11.6834 17.0976 12.3166 16.7071 12.7071L9.70711 19.7071C9.31658 20.0976 8.68342 20.0976 8.29289 19.7071C7.90237 19.3166 7.90237 18.6834 8.29289 18.2929L14.5858 12L8.29289 5.70711C7.90237 5.31658 7.90237 4.68342 8.29289 4.29289Z"/>
                 </svg>
@@ -992,23 +992,23 @@
                 Кресло из&nbsp;веток и лозы&nbsp;- 75&nbsp;000&nbsp;р.&nbsp;(25)
               </p>
               <button class="product-button">
-                <h4 class="product-title product-title-dark product-title-dark-25">VASSA</h4>
+                <h4 class="product-title product-title-dark">VASSA</h4>
               </button>
             </div>
           </div>
         </div>
       </li>
-      <li class="product-card card-26">
-        <div class="card-inner card-inner-26">
+      <li class="product-card">
+        <div class="card-inner">
           <div class="card-rotate card-rotate-front front-26">
             <button class="product-button">
-              <h4 class="product-title product-title-light product-title-light-26">MILEN</h4>
+              <h4 class="product-title product-title-light">MILEN</h4>
             </button>
           </div>
           <div class="card-rotate card-rotate-back">
             <div class="slider-container">
-              <div class="slider slider-26">
-                <img class="product-img product-img-26" src="img/products/26/01.jpg" alt="Журнальный столик">
+              <div class="slider">
+                <img class="product-img" src="img/products/26/01.jpg" alt="Журнальный столик">
               </div>
             </div>
             <div class="card-back-container">
@@ -1016,33 +1016,33 @@
                 Журнальный&nbsp;стол&nbsp;- 40&nbsp;000&nbsp;р.&nbsp;(26)
               </p>
               <button class="product-button">
-                <h4 class="product-title product-title-dark product-title-dark-26">MILEN</h4>
+                <h4 class="product-title product-title-dark">MILEN</h4>
               </button>
             </div>
           </div>
         </div>
       </li>
-      <li class="product-card card-27">
-        <div class="card-inner card-inner-27">
+      <li class="product-card">
+        <div class="card-inner">
           <div class="card-rotate card-rotate-front front-27">
             <button class="product-button">
-              <h4 class="product-title product-title-light product-title-light-27">KIRIAK</h4>
+              <h4 class="product-title product-title-light">KIRIAK</h4>
             </button>
           </div>
           <div class="card-rotate card-rotate-back">
             <div class="slider-container">
-              <div class="slider slider-27">
-                <img class="product-img product-img-27" src="img/products/27/02.jpg" alt="Стул из веток">
-                <img class="product-img product-img-27" src="img/products/27/03.jpg" alt="Стул из веток">
-                <img class="product-img product-img-27" src="img/products/27/04.jpg" alt="Стул корнепластика">
-                <img class="product-img product-img-27" src="img/products/27/05.jpg" alt="Стул корнепластика">
+              <div class="slider">
+                <img class="product-img" src="img/products/27/02.jpg" alt="Стул из веток">
+                <img class="product-img" src="img/products/27/03.jpg" alt="Стул из веток">
+                <img class="product-img" src="img/products/27/04.jpg" alt="Стул корнепластика">
+                <img class="product-img" src="img/products/27/05.jpg" alt="Стул корнепластика">
               </div>
-              <button class="slider-button prev-button prev-button-27" aria-label="Посмотреть предыдущий слайд">
+              <button class="slider-button prev-button" aria-label="Посмотреть предыдущий слайд">
                 <svg class="slider-button-img" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M15.7071 4.29289C16.0976 4.68342 16.0976 5.31658 15.7071 5.70711L9.41421 12L15.7071 18.2929C16.0976 18.6834 16.0976 19.3166 15.7071 19.7071C15.3166 20.0976 14.6834 20.0976 14.2929 19.7071L7.29289 12.7071C7.10536 12.5196 7 12.2652 7 12C7 11.7348 7.10536 11.4804 7.29289 11.2929L14.2929 4.29289C14.6834 3.90237 15.3166 3.90237 15.7071 4.29289Z"/>
                 </svg>
               </button>
-              <button class="slider-button next-button next-button-27" aria-label="Посмотреть следующий слайд">
+              <button class="slider-button next-button" aria-label="Посмотреть следующий слайд">
                 <svg class="slider-button-img" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M8.29289 4.29289C8.68342 3.90237 9.31658 3.90237 9.70711 4.29289L16.7071 11.2929C17.0976 11.6834 17.0976 12.3166 16.7071 12.7071L9.70711 19.7071C9.31658 20.0976 8.68342 20.0976 8.29289 19.7071C7.90237 19.3166 7.90237 18.6834 8.29289 18.2929L14.5858 12L8.29289 5.70711C7.90237 5.31658 7.90237 4.68342 8.29289 4.29289Z"/>
                 </svg>
@@ -1053,23 +1053,23 @@
                 Стул&nbsp;из&nbsp;веток&nbsp;- 30&nbsp;000&nbsp;р.&nbsp;(27)
               </p>
               <button class="product-button">
-                <h4 class="product-title product-title-dark product-title-dark-27">KIRIAK</h4>
+                <h4 class="product-title product-title-dark">KIRIAK</h4>
               </button>
             </div>
           </div>
         </div>
       </li>
-      <li class="product-card card-28">
-        <div class="card-inner card-inner-28">
+      <li class="product-card">
+        <div class="card-inner">
           <div class="card-rotate card-rotate-front front-28">
             <button class="product-button">
-              <h4 class="product-title product-title-light product-title-light-28">HANNA</h4>
+              <h4 class="product-title product-title-light">HANNA</h4>
             </button>
           </div>
           <div class="card-rotate card-rotate-back">
             <div class="slider-container">
-              <div class="slider slider-28">
-                <img class="product-img product-img-28" src="img/products/28/01.jpg" alt="Табурет из веток">
+              <div class="slider">
+                <img class="product-img" src="img/products/28/01.jpg" alt="Табурет из веток">
               </div>
             </div>
             <div class="card-back-container">
@@ -1077,7 +1077,7 @@
                 Табурет&nbsp;из&nbsp;веток&nbsp;- 18&nbsp;000&nbsp;р.&nbsp;(28)
               </p>
               <button class="product-button">
-                <h4 class="product-title product-title-dark product-title-dark-28">HANNA</h4>
+                <h4 class="product-title product-title-dark">HANNA</h4>
               </button>
             </div>
           </div>
@@ -1090,17 +1090,17 @@
       </h3>
     </div>
     <ul class="products-list">
-      <li class="product-card card-29">
-        <div class="card-inner card-inner-29">
+      <li class="product-card">
+        <div class="card-inner">
           <div class="card-rotate card-rotate-front front-29">
             <button class="product-button">
-              <h4 class="product-title product-title-light product-title-light-29">IDA</h4>
+              <h4 class="product-title product-title-light">IDA</h4>
             </button>
           </div>
           <div class="card-rotate card-rotate-back">
             <div class="slider-container">
-              <div class="slider slider-29">
-                <img class="product-img product-img-29" src="img/products/29/01.jpg" alt="Кресло из веток">
+              <div class="slider">
+                <img class="product-img" src="img/products/29/01.jpg" alt="Кресло из веток">
               </div>
             </div>
             <div class="card-back-container">
@@ -1108,31 +1108,31 @@
                 Кресло&nbsp;из&nbsp;веток&nbsp;- 70&nbsp;000&nbsp;р.&nbsp;(29)
               </p>
               <button class="product-button">
-                <h4 class="product-title product-title-dark product-title-dark-29">IDA</h4>
+                <h4 class="product-title product-title-dark">IDA</h4>
               </button>
             </div>
           </div>
         </div>
       </li>
-      <li class="product-card card-30">
-        <div class="card-inner card-inner-30">
+      <li class="product-card">
+        <div class="card-inner">
           <div class="card-rotate card-rotate-front front-30">
             <button class="product-button">
-              <h4 class="product-title product-title-light product-title-light-30">KAUNITS</h4>
+              <h4 class="product-title product-title-light">KAUNITS</h4>
             </button>
           </div>
           <div class="card-rotate card-rotate-back">
             <div class="slider-container">
-              <div class="slider slider-30">
-                <img class="product-img product-img-30" src="img/products/30/01.jpg" alt="Кресло-качалка">
-                <img class="product-img product-img-30" src="img/products/30/02.jpg" alt="Кресло-качалка">
+              <div class="slider">
+                <img class="product-img" src="img/products/30/01.jpg" alt="Кресло-качалка">
+                <img class="product-img" src="img/products/30/02.jpg" alt="Кресло-качалка">
               </div>
-              <button class="slider-button prev-button prev-button-30" aria-label="Посмотреть предыдущий слайд">
+              <button class="slider-button prev-button" aria-label="Посмотреть предыдущий слайд">
                 <svg class="slider-button-img" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M15.7071 4.29289C16.0976 4.68342 16.0976 5.31658 15.7071 5.70711L9.41421 12L15.7071 18.2929C16.0976 18.6834 16.0976 19.3166 15.7071 19.7071C15.3166 20.0976 14.6834 20.0976 14.2929 19.7071L7.29289 12.7071C7.10536 12.5196 7 12.2652 7 12C7 11.7348 7.10536 11.4804 7.29289 11.2929L14.2929 4.29289C14.6834 3.90237 15.3166 3.90237 15.7071 4.29289Z"/>
                 </svg>
               </button>
-              <button class="slider-button next-button next-button-30" aria-label="Посмотреть следующий слайд">
+              <button class="slider-button next-button" aria-label="Посмотреть следующий слайд">
                 <svg class="slider-button-img" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M8.29289 4.29289C8.68342 3.90237 9.31658 3.90237 9.70711 4.29289L16.7071 11.2929C17.0976 11.6834 17.0976 12.3166 16.7071 12.7071L9.70711 19.7071C9.31658 20.0976 8.68342 20.0976 8.29289 19.7071C7.90237 19.3166 7.90237 18.6834 8.29289 18.2929L14.5858 12L8.29289 5.70711C7.90237 5.31658 7.90237 4.68342 8.29289 4.29289Z"/>
                 </svg>
@@ -1143,32 +1143,32 @@
                 Кресло-качалка из&nbsp;веток&nbsp;- 50&nbsp;000&nbsp;р.&nbsp;(30)
               </p>
               <button class="product-button">
-                <h4 class="product-title product-title-dark product-title-dark-30">KAUNITS</h4>
+                <h4 class="product-title product-title-dark">KAUNITS</h4>
               </button>
             </div>
           </div>
         </div>
       </li>
-      <li class="product-card card-31">
-        <div class="card-inner card-inner-31">
+      <li class="product-card">
+        <div class="card-inner">
           <div class="card-rotate card-rotate-front front-31">
             <button class="product-button">
-              <h4 class="product-title product-title-light product-title-light-31">BEATA</h4>
+              <h4 class="product-title product-title-light">BEATA</h4>
             </button>
           </div>
           <div class="card-rotate card-rotate-back">
             <div class="slider-container">
-              <div class="slider slider-31">
-                <img class="product-img product-img-31" src="img/products/31/02.jpg" alt="Кресло-трансформер">
-                <img class="product-img product-img-31" src="img/products/31/03.jpg" alt="Кресло-трансформер">
-                <img class="product-img product-img-31" src="img/products/31/01.jpg" alt="Кресло-трансформер">
+              <div class="slider">
+                <img class="product-img" src="img/products/31/02.jpg" alt="Кресло-трансформер">
+                <img class="product-img" src="img/products/31/03.jpg" alt="Кресло-трансформер">
+                <img class="product-img" src="img/products/31/01.jpg" alt="Кресло-трансформер">
               </div>
-              <button class="slider-button prev-button prev-button-31" aria-label="Посмотреть предыдущий слайд">
+              <button class="slider-button prev-button" aria-label="Посмотреть предыдущий слайд">
                 <svg class="slider-button-img" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M15.7071 4.29289C16.0976 4.68342 16.0976 5.31658 15.7071 5.70711L9.41421 12L15.7071 18.2929C16.0976 18.6834 16.0976 19.3166 15.7071 19.7071C15.3166 20.0976 14.6834 20.0976 14.2929 19.7071L7.29289 12.7071C7.10536 12.5196 7 12.2652 7 12C7 11.7348 7.10536 11.4804 7.29289 11.2929L14.2929 4.29289C14.6834 3.90237 15.3166 3.90237 15.7071 4.29289Z"/>
                 </svg>
               </button>
-              <button class="slider-button next-button next-button-31" aria-label="Посмотреть следующий слайд">
+              <button class="slider-button next-button" aria-label="Посмотреть следующий слайд">
                 <svg class="slider-button-img" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M8.29289 4.29289C8.68342 3.90237 9.31658 3.90237 9.70711 4.29289L16.7071 11.2929C17.0976 11.6834 17.0976 12.3166 16.7071 12.7071L9.70711 19.7071C9.31658 20.0976 8.68342 20.0976 8.29289 19.7071C7.90237 19.3166 7.90237 18.6834 8.29289 18.2929L14.5858 12L8.29289 5.70711C7.90237 5.31658 7.90237 4.68342 8.29289 4.29289Z"/>
                 </svg>
@@ -1179,31 +1179,31 @@
                 Кресло-трансформер с&nbsp;пуфиком&nbsp;- 85&nbsp;000&nbsp;р.&nbsp;(31)
               </p>
               <button class="product-button">
-                <h4 class="product-title product-title-dark product-title-dark-31">BEATA</h4>
+                <h4 class="product-title product-title-dark">BEATA</h4>
               </button>
             </div>
           </div>
         </div>
       </li>
-      <li class="product-card card-32">
-        <div class="card-inner card-inner-32">
+      <li class="product-card">
+        <div class="card-inner">
           <div class="card-rotate card-rotate-front front-32">
             <button class="product-button">
-              <h4 class="product-title product-title-light product-title-light-32">TERENS</h4>
+              <h4 class="product-title product-title-light">TERENS</h4>
             </button>
           </div>
           <div class="card-rotate card-rotate-back">
             <div class="slider-container">
-              <div class="slider slider-32">
-                <img class="product-img product-img-32" src="img/products/32/02.jpg" alt="Кресло из ствола кедра">
-                <img class="product-img product-img-32" src="img/products/32/03.jpg" alt="Кресло из ствола кедра">
+              <div class="slider">
+                <img class="product-img" src="img/products/32/02.jpg" alt="Кресло из ствола кедра">
+                <img class="product-img" src="img/products/32/03.jpg" alt="Кресло из ствола кедра">
               </div>
-              <button class="slider-button prev-button prev-button-32" aria-label="Посмотреть предыдущий слайд">
+              <button class="slider-button prev-button" aria-label="Посмотреть предыдущий слайд">
                 <svg class="slider-button-img" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M15.7071 4.29289C16.0976 4.68342 16.0976 5.31658 15.7071 5.70711L9.41421 12L15.7071 18.2929C16.0976 18.6834 16.0976 19.3166 15.7071 19.7071C15.3166 20.0976 14.6834 20.0976 14.2929 19.7071L7.29289 12.7071C7.10536 12.5196 7 12.2652 7 12C7 11.7348 7.10536 11.4804 7.29289 11.2929L14.2929 4.29289C14.6834 3.90237 15.3166 3.90237 15.7071 4.29289Z"/>
                 </svg>
               </button>
-              <button class="slider-button next-button next-button-32" aria-label="Посмотреть следующий слайд">
+              <button class="slider-button next-button" aria-label="Посмотреть следующий слайд">
                 <svg class="slider-button-img" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M8.29289 4.29289C8.68342 3.90237 9.31658 3.90237 9.70711 4.29289L16.7071 11.2929C17.0976 11.6834 17.0976 12.3166 16.7071 12.7071L9.70711 19.7071C9.31658 20.0976 8.68342 20.0976 8.29289 19.7071C7.90237 19.3166 7.90237 18.6834 8.29289 18.2929L14.5858 12L8.29289 5.70711C7.90237 5.31658 7.90237 4.68342 8.29289 4.29289Z"/>
                 </svg>
@@ -1214,35 +1214,35 @@
                 Кресло из&nbsp;ствола кедра&nbsp;- 70&nbsp;000&nbsp;р.&nbsp;(32)
               </p>
               <button class="product-button">
-                <h4 class="product-title product-title-dark product-title-dark-32">TERENS</h4>
+                <h4 class="product-title product-title-dark">TERENS</h4>
               </button>
             </div>
           </div>
         </div>
       </li>
-      <li class="product-card card-33">
-        <div class="card-inner card-inner-33">
+      <li class="product-card">
+        <div class="card-inner">
           <div class="card-rotate card-rotate-front front-33">
             <button class="product-button">
-              <h4 class="product-title product-title-light product-title-light-33">VICTOR</h4>
+              <h4 class="product-title product-title-light">VICTOR</h4>
             </button>
           </div>
           <div class="card-rotate card-rotate-back">
             <div class="slider-container">
-              <div class="slider slider-33">
-                <img class="product-img product-img-33" src="img/products/33/02.jpg" alt="Диван">
-                <img class="product-img product-img-33" src="img/products/33/03.jpg" alt="Диван">
-                <img class="product-img product-img-33" src="img/products/33/04.jpg" alt="Диван">
-                <img class="product-img product-img-33" src="img/products/33/05.jpg" alt="Диван">
-                <img class="product-img product-img-33" src="img/products/33/06.jpg" alt="Диван">
-                <img class="product-img product-img-33" src="img/products/33/07.jpg" alt="Диванный уголок">
+              <div class="slider">
+                <img class="product-img" src="img/products/33/02.jpg" alt="Диван">
+                <img class="product-img" src="img/products/33/03.jpg" alt="Диван">
+                <img class="product-img" src="img/products/33/04.jpg" alt="Диван">
+                <img class="product-img" src="img/products/33/05.jpg" alt="Диван">
+                <img class="product-img" src="img/products/33/06.jpg" alt="Диван">
+                <img class="product-img" src="img/products/33/07.jpg" alt="Диванный уголок">
               </div>
-              <button class="slider-button prev-button prev-button-33" aria-label="Посмотреть предыдущий слайд">
+              <button class="slider-button prev-button" aria-label="Посмотреть предыдущий слайд">
                 <svg class="slider-button-img" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M15.7071 4.29289C16.0976 4.68342 16.0976 5.31658 15.7071 5.70711L9.41421 12L15.7071 18.2929C16.0976 18.6834 16.0976 19.3166 15.7071 19.7071C15.3166 20.0976 14.6834 20.0976 14.2929 19.7071L7.29289 12.7071C7.10536 12.5196 7 12.2652 7 12C7 11.7348 7.10536 11.4804 7.29289 11.2929L14.2929 4.29289C14.6834 3.90237 15.3166 3.90237 15.7071 4.29289Z"/>
                 </svg>
               </button>
-              <button class="slider-button next-button next-button-33" aria-label="Посмотреть следующий слайд">
+              <button class="slider-button next-button" aria-label="Посмотреть следующий слайд">
                 <svg class="slider-button-img" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M8.29289 4.29289C8.68342 3.90237 9.31658 3.90237 9.70711 4.29289L16.7071 11.2929C17.0976 11.6834 17.0976 12.3166 16.7071 12.7071L9.70711 19.7071C9.31658 20.0976 8.68342 20.0976 8.29289 19.7071C7.90237 19.3166 7.90237 18.6834 8.29289 18.2929L14.5858 12L8.29289 5.70711C7.90237 5.31658 7.90237 4.68342 8.29289 4.29289Z"/>
                 </svg>
@@ -1256,23 +1256,23 @@
                 85&nbsp;000&nbsp;р.&nbsp;(33)
               </p>
               <button class="product-button">
-                <h4 class="product-title product-title-dark product-title-dark-33">VICTOR</h4>
+                <h4 class="product-title product-title-dark">VICTOR</h4>
               </button>
             </div>
           </div>
         </div>
       </li>
-      <li class="product-card card-34">
-        <div class="card-inner card-inner-34">
+      <li class="product-card">
+        <div class="card-inner">
           <div class="card-rotate card-rotate-front front-34">
             <button class="product-button">
-              <h4 class="product-title product-title-light product-title-light-34">MILA</h4>
+              <h4 class="product-title product-title-light">MILA</h4>
             </button>
           </div>
           <div class="card-rotate card-rotate-back">
             <div class="slider-container">
-              <div class="slider slider-34">
-                <img class="product-img product-img-34" src="img/products/34/01.jpg" alt="Скамья">
+              <div class="slider">
+                <img class="product-img" src="img/products/34/01.jpg" alt="Скамья">
               </div>
             </div>
             <div class="card-back-container">
@@ -1280,7 +1280,7 @@
                 Скамья&nbsp;с&nbsp;резьбой&nbsp;- 50&nbsp;000&nbsp;р.&nbsp;(34)
               </p>
               <button class="product-button">
-                <h4 class="product-title product-title-dark product-title-dark-34">MILA</h4>
+                <h4 class="product-title product-title-dark">MILA</h4>
               </button>
             </div>
           </div>
@@ -1293,27 +1293,27 @@
       </h3>
     </div>
     <ul class="products-list">
-      <li class="product-card card-35">
-        <div class="card-inner card-inner-35">
+      <li class="product-card">
+        <div class="card-inner">
           <div class="card-rotate card-rotate-front front-35">
             <button class="product-button">
-              <h4 class="product-title product-title-light product-title-light-35">BERESLAVA</h4>
+              <h4 class="product-title product-title-light">BERESLAVA</h4>
             </button>
           </div>
           <div class="card-rotate card-rotate-back">
             <div class="slider-container">
-              <div class="slider slider-35">
-                <img class="product-img product-img-35" src="img/products/35/02.jpg" alt="Кровать">
-                <img class="product-img product-img-35" src="img/products/35/03.jpg" alt="Кровать">
-                <img class="product-img product-img-35" src="img/products/35/04.jpg" alt="Кровать">
-                <img class="product-img product-img-35" src="img/products/35/05.jpg" alt="Кровать">
+              <div class="slider">
+                <img class="product-img" src="img/products/35/02.jpg" alt="Кровать">
+                <img class="product-img" src="img/products/35/03.jpg" alt="Кровать">
+                <img class="product-img" src="img/products/35/04.jpg" alt="Кровать">
+                <img class="product-img" src="img/products/35/05.jpg" alt="Кровать">
               </div>
-              <button class="slider-button prev-button prev-button-35" aria-label="Посмотреть предыдущий слайд">
+              <button class="slider-button prev-button" aria-label="Посмотреть предыдущий слайд">
                 <svg class="slider-button-img" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M15.7071 4.29289C16.0976 4.68342 16.0976 5.31658 15.7071 5.70711L9.41421 12L15.7071 18.2929C16.0976 18.6834 16.0976 19.3166 15.7071 19.7071C15.3166 20.0976 14.6834 20.0976 14.2929 19.7071L7.29289 12.7071C7.10536 12.5196 7 12.2652 7 12C7 11.7348 7.10536 11.4804 7.29289 11.2929L14.2929 4.29289C14.6834 3.90237 15.3166 3.90237 15.7071 4.29289Z"/>
                 </svg>
               </button>
-              <button class="slider-button next-button next-button-35" aria-label="Посмотреть следующий слайд">
+              <button class="slider-button next-button" aria-label="Посмотреть следующий слайд">
                 <svg class="slider-button-img" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M8.29289 4.29289C8.68342 3.90237 9.31658 3.90237 9.70711 4.29289L16.7071 11.2929C17.0976 11.6834 17.0976 12.3166 16.7071 12.7071L9.70711 19.7071C9.31658 20.0976 8.68342 20.0976 8.29289 19.7071C7.90237 19.3166 7.90237 18.6834 8.29289 18.2929L14.5858 12L8.29289 5.70711C7.90237 5.31658 7.90237 4.68342 8.29289 4.29289Z"/>
                 </svg>
@@ -1327,31 +1327,31 @@
                 110&nbsp;000&nbsp;р.&nbsp;(35)
               </p>
               <button class="product-button">
-                <h4 class="product-title product-title-dark product-title-dark-35">BERESLAVA</h4>
+                <h4 class="product-title product-title-dark">BERESLAVA</h4>
               </button>
             </div>
           </div>
         </div>
       </li>
-      <li class="product-card card-36">
-        <div class="card-inner card-inner-36">
+      <li class="product-card">
+        <div class="card-inner">
           <div class="card-rotate card-rotate-front front-36">
             <button class="product-button">
-              <h4 class="product-title product-title-light product-title-light-36">ELINOR</h4>
+              <h4 class="product-title product-title-light">ELINOR</h4>
             </button>
           </div>
           <div class="card-rotate card-rotate-back">
             <div class="slider-container">
-              <div class="slider slider-36">
-                <img class="product-img product-img-36" src="img/products/36/01.jpg" alt="Кровать с резным изголовьем">
-                <img class="product-img product-img-36" src="img/products/36/02.jpg" alt="Кровать с резным изголовьем">
+              <div class="slider">
+                <img class="product-img" src="img/products/36/01.jpg" alt="Кровать с резным изголовьем">
+                <img class="product-img" src="img/products/36/02.jpg" alt="Кровать с резным изголовьем">
               </div>
-              <button class="slider-button prev-button prev-button-36" aria-label="Посмотреть предыдущий слайд">
+              <button class="slider-button prev-button" aria-label="Посмотреть предыдущий слайд">
                 <svg class="slider-button-img" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M15.7071 4.29289C16.0976 4.68342 16.0976 5.31658 15.7071 5.70711L9.41421 12L15.7071 18.2929C16.0976 18.6834 16.0976 19.3166 15.7071 19.7071C15.3166 20.0976 14.6834 20.0976 14.2929 19.7071L7.29289 12.7071C7.10536 12.5196 7 12.2652 7 12C7 11.7348 7.10536 11.4804 7.29289 11.2929L14.2929 4.29289C14.6834 3.90237 15.3166 3.90237 15.7071 4.29289Z"/>
                 </svg>
               </button>
-              <button class="slider-button next-button next-button-36" aria-label="Посмотреть следующий слайд">
+              <button class="slider-button next-button" aria-label="Посмотреть следующий слайд">
                 <svg class="slider-button-img" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M8.29289 4.29289C8.68342 3.90237 9.31658 3.90237 9.70711 4.29289L16.7071 11.2929C17.0976 11.6834 17.0976 12.3166 16.7071 12.7071L9.70711 19.7071C9.31658 20.0976 8.68342 20.0976 8.29289 19.7071C7.90237 19.3166 7.90237 18.6834 8.29289 18.2929L14.5858 12L8.29289 5.70711C7.90237 5.31658 7.90237 4.68342 8.29289 4.29289Z"/>
                 </svg>
@@ -1362,38 +1362,38 @@
                 Кровать&nbsp;двуспальная с&nbsp;резным&nbsp;изголовьем&nbsp;- 150&nbsp;000&nbsp;р.&nbsp;(36)
               </p>
               <button class="product-button">
-                <h4 class="product-title product-title-dark product-title-dark-36">ELINOR</h4>
+                <h4 class="product-title product-title-dark">ELINOR</h4>
               </button>
             </div>
           </div>
         </div>
       </li>
-      <li class="product-card card-37">
-        <div class="card-inner card-inner-37">
+      <li class="product-card">
+        <div class="card-inner">
           <div class="card-rotate card-rotate-front front-37">
             <button class="product-button">
-              <h4 class="product-title product-title-light product-title-light-37">IZABEL</h4>
+              <h4 class="product-title product-title-light">IZABEL</h4>
             </button>
           </div>
           <div class="card-rotate card-rotate-back">
             <div class="slider-container">
-              <div class="slider slider-37">
-                <img class="product-img product-img-37" src="img/products/37/02.jpg" alt="Кровать с резьбой">
-                <img class="product-img product-img-37" src="img/products/37/03.jpg" alt="Кровать с резьбой">
-                <img class="product-img product-img-37" src="img/products/37/04.jpg" alt="Резьба">
-                <img class="product-img product-img-37" src="img/products/37/05.jpg" alt="Резное изголовье">
-                <img class="product-img product-img-37" src="img/products/37/06.jpg" alt="Изголовье">
-                <img class="product-img product-img-37" src="img/products/37/07.jpg" alt="Резная кровать">
-                <img class="product-img product-img-37" src="img/products/37/08.jpg" alt="Резная кровать">
-                <img class="product-img product-img-37" src="img/products/37/09.jpg" alt="Резная кровать">
-                <img class="product-img product-img-37" src="img/products/37/10.jpg" alt="Резная кровать">
+              <div class="slider">
+                <img class="product-img" src="img/products/37/02.jpg" alt="Кровать с резьбой">
+                <img class="product-img" src="img/products/37/03.jpg" alt="Кровать с резьбой">
+                <img class="product-img" src="img/products/37/04.jpg" alt="Резьба">
+                <img class="product-img" src="img/products/37/05.jpg" alt="Резное изголовье">
+                <img class="product-img" src="img/products/37/06.jpg" alt="Изголовье">
+                <img class="product-img" src="img/products/37/07.jpg" alt="Резная кровать">
+                <img class="product-img" src="img/products/37/08.jpg" alt="Резная кровать">
+                <img class="product-img" src="img/products/37/09.jpg" alt="Резная кровать">
+                <img class="product-img" src="img/products/37/10.jpg" alt="Резная кровать">
               </div>
-              <button class="slider-button prev-button prev-button-37" aria-label="Посмотреть предыдущий слайд">
+              <button class="slider-button prev-button" aria-label="Посмотреть предыдущий слайд">
                 <svg class="slider-button-img" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M15.7071 4.29289C16.0976 4.68342 16.0976 5.31658 15.7071 5.70711L9.41421 12L15.7071 18.2929C16.0976 18.6834 16.0976 19.3166 15.7071 19.7071C15.3166 20.0976 14.6834 20.0976 14.2929 19.7071L7.29289 12.7071C7.10536 12.5196 7 12.2652 7 12C7 11.7348 7.10536 11.4804 7.29289 11.2929L14.2929 4.29289C14.6834 3.90237 15.3166 3.90237 15.7071 4.29289Z"/>
                 </svg>
               </button>
-              <button class="slider-button next-button next-button-37" aria-label="Посмотреть следующий слайд">
+              <button class="slider-button next-button" aria-label="Посмотреть следующий слайд">
                 <svg class="slider-button-img" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M8.29289 4.29289C8.68342 3.90237 9.31658 3.90237 9.70711 4.29289L16.7071 11.2929C17.0976 11.6834 17.0976 12.3166 16.7071 12.7071L9.70711 19.7071C9.31658 20.0976 8.68342 20.0976 8.29289 19.7071C7.90237 19.3166 7.90237 18.6834 8.29289 18.2929L14.5858 12L8.29289 5.70711C7.90237 5.31658 7.90237 4.68342 8.29289 4.29289Z"/>
                 </svg>
@@ -1404,33 +1404,33 @@
                 Кровать двуспальная с&nbsp;резьбой&nbsp;- от&nbsp;180&nbsp;000р.&nbsp;(37)
               </p>
               <button class="product-button">
-                <h4 class="product-title product-title-dark product-title-dark-37">IZABEL</h4>
+                <h4 class="product-title product-title-dark">IZABEL</h4>
               </button>
             </div>
           </div>
         </div>
       </li>
-      <li class="product-card card-38">
-        <div class="card-inner card-inner-38">
+      <li class="product-card">
+        <div class="card-inner">
           <div class="card-rotate card-rotate-front front-38">
             <button class="product-button">
-              <h4 class="product-title product-title-light product-title-light-38">KASIAN</h4>
+              <h4 class="product-title product-title-light">KASIAN</h4>
             </button>
           </div>
           <div class="card-rotate card-rotate-back">
             <div class="slider-container">
-              <div class="slider slider-38">
-                <img class="product-img product-img-38" src="img/products/38/01.jpg" alt="Тумбочка">
-                <img class="product-img product-img-38" src="img/products/38/02.jpg" alt="Тумбочка">
-                <img class="product-img product-img-38" src="img/products/38/03.jpg" alt="Тумбочка">
-                <img class="product-img product-img-38" src="img/products/38/04.jpg" alt="Тумбочка">
+              <div class="slider">
+                <img class="product-img" src="img/products/38/01.jpg" alt="Тумбочка">
+                <img class="product-img" src="img/products/38/02.jpg" alt="Тумбочка">
+                <img class="product-img" src="img/products/38/03.jpg" alt="Тумбочка">
+                <img class="product-img" src="img/products/38/04.jpg" alt="Тумбочка">
               </div>
-              <button class="slider-button prev-button prev-button-38" aria-label="Посмотреть предыдущий слайд">
+              <button class="slider-button prev-button" aria-label="Посмотреть предыдущий слайд">
                 <svg class="slider-button-img" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M15.7071 4.29289C16.0976 4.68342 16.0976 5.31658 15.7071 5.70711L9.41421 12L15.7071 18.2929C16.0976 18.6834 16.0976 19.3166 15.7071 19.7071C15.3166 20.0976 14.6834 20.0976 14.2929 19.7071L7.29289 12.7071C7.10536 12.5196 7 12.2652 7 12C7 11.7348 7.10536 11.4804 7.29289 11.2929L14.2929 4.29289C14.6834 3.90237 15.3166 3.90237 15.7071 4.29289Z"/>
                 </svg>
               </button>
-              <button class="slider-button next-button next-button-38" aria-label="Посмотреть следующий слайд">
+              <button class="slider-button next-button" aria-label="Посмотреть следующий слайд">
                 <svg class="slider-button-img" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M8.29289 4.29289C8.68342 3.90237 9.31658 3.90237 9.70711 4.29289L16.7071 11.2929C17.0976 11.6834 17.0976 12.3166 16.7071 12.7071L9.70711 19.7071C9.31658 20.0976 8.68342 20.0976 8.29289 19.7071C7.90237 19.3166 7.90237 18.6834 8.29289 18.2929L14.5858 12L8.29289 5.70711C7.90237 5.31658 7.90237 4.68342 8.29289 4.29289Z"/>
                 </svg>
@@ -1441,34 +1441,34 @@
                 Тумбочка из&nbsp;ствола&nbsp;кедра&nbsp;- 85&nbsp;000&nbsp;р.&nbsp;(38)
               </p>
               <button class="product-button">
-                <h4 class="product-title product-title-dark product-title-dark-38">KASIAN</h4>
+                <h4 class="product-title product-title-dark">KASIAN</h4>
               </button>
             </div>
           </div>
         </div>
       </li>
-      <li class="product-card card-39">
-        <div class="card-inner card-inner-39">
+      <li class="product-card">
+        <div class="card-inner">
           <div class="card-rotate card-rotate-front front-39">
             <button class="product-button">
-              <h4 class="product-title product-title-light product-title-light-39">TOBIAS</h4>
+              <h4 class="product-title product-title-light">TOBIAS</h4>
             </button>
           </div>
           <div class="card-rotate card-rotate-back">
             <div class="slider-container">
-              <div class="slider slider-39">
-                <img class="product-img product-img-39" src="img/products/39/02.jpg" alt="Тумбочка">
-                <img class="product-img product-img-39" src="img/products/39/03.jpg" alt="Тумбочка из ствола">
-                <img class="product-img product-img-39" src="img/products/39/04.jpg" alt="Прикроватная тумбочка">
-                <img class="product-img product-img-39" src="img/products/39/05.jpg" alt="Прикроватная тумбочка">
-                <img class="product-img product-img-39" src="img/products/39/06.jpg" alt="Тумба из массива дерева">
+              <div class="slider">
+                <img class="product-img" src="img/products/39/02.jpg" alt="Тумбочка">
+                <img class="product-img" src="img/products/39/03.jpg" alt="Тумбочка из ствола">
+                <img class="product-img" src="img/products/39/04.jpg" alt="Прикроватная тумбочка">
+                <img class="product-img" src="img/products/39/05.jpg" alt="Прикроватная тумбочка">
+                <img class="product-img" src="img/products/39/06.jpg" alt="Тумба из массива дерева">
               </div>
-              <button class="slider-button prev-button prev-button-39" aria-label="Посмотреть предыдущий слайд">
+              <button class="slider-button prev-button" aria-label="Посмотреть предыдущий слайд">
                 <svg class="slider-button-img" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M15.7071 4.29289C16.0976 4.68342 16.0976 5.31658 15.7071 5.70711L9.41421 12L15.7071 18.2929C16.0976 18.6834 16.0976 19.3166 15.7071 19.7071C15.3166 20.0976 14.6834 20.0976 14.2929 19.7071L7.29289 12.7071C7.10536 12.5196 7 12.2652 7 12C7 11.7348 7.10536 11.4804 7.29289 11.2929L14.2929 4.29289C14.6834 3.90237 15.3166 3.90237 15.7071 4.29289Z"/>
                 </svg>
               </button>
-              <button class="slider-button next-button next-button-39" aria-label="Посмотреть следующий слайд">
+              <button class="slider-button next-button" aria-label="Посмотреть следующий слайд">
                 <svg class="slider-button-img" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M8.29289 4.29289C8.68342 3.90237 9.31658 3.90237 9.70711 4.29289L16.7071 11.2929C17.0976 11.6834 17.0976 12.3166 16.7071 12.7071L9.70711 19.7071C9.31658 20.0976 8.68342 20.0976 8.29289 19.7071C7.90237 19.3166 7.90237 18.6834 8.29289 18.2929L14.5858 12L8.29289 5.70711C7.90237 5.31658 7.90237 4.68342 8.29289 4.29289Z"/>
                 </svg>
@@ -1485,23 +1485,23 @@
                 90&nbsp;000&nbsp;р.&nbsp;(39)
               </p>
               <button class="product-button">
-                <h4 class="product-title product-title-dark product-title-dark-39">TOBIAS</h4>
+                <h4 class="product-title product-title-dark">TOBIAS</h4>
               </button>
             </div>
           </div>
         </div>
       </li>
-      <li class="product-card card-40">
-        <div class="card-inner card-inner-40">
+      <li class="product-card">
+        <div class="card-inner">
           <div class="card-rotate card-rotate-front front-40">
             <button class="product-button">
-              <h4 class="product-title product-title-light product-title-light-40">ZVANA</h4>
+              <h4 class="product-title product-title-light">ZVANA</h4>
             </button>
           </div>
           <div class="card-rotate card-rotate-back">
             <div class="slider-container">
-              <div class="slider slider-40">
-                <img class="product-img product-img-40" src="img/products/40/01.jpg" alt="Тумбочка">
+              <div class="slider">
+                <img class="product-img" src="img/products/40/01.jpg" alt="Тумбочка">
               </div>
             </div>
             <div class="card-back-container">
@@ -1509,7 +1509,7 @@
                 Тумбочка&nbsp;- 30&nbsp;000&nbsp;р.&nbsp;(40)
               </p>
               <button class="product-button">
-                <h4 class="product-title product-title-dark product-title-dark-40">ZVANA</h4>
+                <h4 class="product-title product-title-dark">ZVANA</h4>
               </button>
             </div>
           </div>
@@ -1522,17 +1522,17 @@
       </h3>
     </div>
     <ul class="products-list">
-      <li class="product-card card-41">
-        <div class="card-inner card-inner-41">
+      <li class="product-card">
+        <div class="card-inner">
           <div class="card-rotate card-rotate-front front-41">
             <button class="product-button">
-              <h4 class="product-title product-title-light product-title-light-41">REM</h4>
+              <h4 class="product-title product-title-light">REM</h4>
             </button>
           </div>
           <div class="card-rotate card-rotate-back">
             <div class="slider-container">
-              <div class="slider slider-41">
-                <img class="product-img product-img-41" src="img/products/41/01.jpg" alt="Комод">
+              <div class="slider">
+                <img class="product-img" src="img/products/41/01.jpg" alt="Комод">
               </div>
             </div>
             <div class="card-back-container">
@@ -1543,35 +1543,35 @@
                 135&nbsp;000&nbsp;р.&nbsp;(41)
               </p>
               <button class="product-button">
-                <h4 class="product-title product-title-dark product-title-dark-41">REM</h4>
+                <h4 class="product-title product-title-dark">REM</h4>
               </button>
             </div>
           </div>
         </div>
       </li>
-      <li class="product-card card-42">
-        <div class="card-inner card-inner-42">
+      <li class="product-card">
+        <div class="card-inner">
           <div class="card-rotate card-rotate-front front-42">
             <button class="product-button">
-              <h4 class="product-title product-title-light product-title-light-42">STVOL</h4>
+              <h4 class="product-title product-title-light">STVOL</h4>
             </button>
           </div>
           <div class="card-rotate card-rotate-back">
             <div class="slider-container">
-              <div class="slider slider-42">
-                <img class="product-img product-img-42" src="img/products/42/02.jpg" alt="Шкаф">
-                <img class="product-img product-img-42" src="img/products/42/03.jpg" alt="Шкаф из дупляны">
-                <img class="product-img product-img-42" src="img/products/42/04.jpg" alt="Шкаф из ствола дерева">
-                <img class="product-img product-img-42" src="img/products/42/05.jpg" alt="Шкаф двустворчатый">
-                <img class="product-img product-img-42" src="img/products/42/06.jpg" alt="Шкаф из массива">
-                <img class="product-img product-img-42" src="img/products/42/07.jpg" alt="Шкаф">
+              <div class="slider">
+                <img class="product-img" src="img/products/42/02.jpg" alt="Шкаф">
+                <img class="product-img" src="img/products/42/03.jpg" alt="Шкаф из дупляны">
+                <img class="product-img" src="img/products/42/04.jpg" alt="Шкаф из ствола дерева">
+                <img class="product-img" src="img/products/42/05.jpg" alt="Шкаф двустворчатый">
+                <img class="product-img" src="img/products/42/06.jpg" alt="Шкаф из массива">
+                <img class="product-img" src="img/products/42/07.jpg" alt="Шкаф">
               </div>
-              <button class="slider-button prev-button prev-button-42" aria-label="Посмотреть предыдущий слайд">
+              <button class="slider-button prev-button" aria-label="Посмотреть предыдущий слайд">
                 <svg class="slider-button-img" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M15.7071 4.29289C16.0976 4.68342 16.0976 5.31658 15.7071 5.70711L9.41421 12L15.7071 18.2929C16.0976 18.6834 16.0976 19.3166 15.7071 19.7071C15.3166 20.0976 14.6834 20.0976 14.2929 19.7071L7.29289 12.7071C7.10536 12.5196 7 12.2652 7 12C7 11.7348 7.10536 11.4804 7.29289 11.2929L14.2929 4.29289C14.6834 3.90237 15.3166 3.90237 15.7071 4.29289Z"/>
                 </svg>
               </button>
-              <button class="slider-button next-button next-button-42" aria-label="Посмотреть следующий слайд">
+              <button class="slider-button next-button" aria-label="Посмотреть следующий слайд">
                 <svg class="slider-button-img" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M8.29289 4.29289C8.68342 3.90237 9.31658 3.90237 9.70711 4.29289L16.7071 11.2929C17.0976 11.6834 17.0976 12.3166 16.7071 12.7071L9.70711 19.7071C9.31658 20.0976 8.68342 20.0976 8.29289 19.7071C7.90237 19.3166 7.90237 18.6834 8.29289 18.2929L14.5858 12L8.29289 5.70711C7.90237 5.31658 7.90237 4.68342 8.29289 4.29289Z"/>
                 </svg>
@@ -1585,7 +1585,7 @@
                 220&nbsp;000&nbsp;р.&nbsp;(42)
               </p>
               <button class="product-button">
-                <h4 class="product-title product-title-dark product-title-dark-42">STVOL</h4>
+                <h4 class="product-title product-title-dark">STVOL</h4>
               </button>
             </div>
           </div>
@@ -1598,27 +1598,27 @@
       </h3>
     </div>
     <ul class="products-list">
-      <li class="product-card card-43">
-        <div class="card-inner card-inner-43">
+      <li class="product-card">
+        <div class="card-inner">
           <div class="card-rotate card-rotate-front front-43">
             <button class="product-button">
-              <h4 class="product-title product-title-light product-title-light-43">AGLAYA</h4>
+              <h4 class="product-title product-title-light">AGLAYA</h4>
             </button>
           </div>
           <div class="card-rotate card-rotate-back">
             <div class="slider-container">
-              <div class="slider slider-43">
-                <img class="product-img product-img-43" src="img/products/43/02.jpg" alt="Прихожая">
-                <img class="product-img product-img-43" src="img/products/43/03.jpg" alt="Вешалка">
-                <img class="product-img product-img-43" src="img/products/43/04.jpg" alt="Вешалка">
-                <img class="product-img product-img-43" src="img/products/43/05.jpg" alt="Резьба">
+              <div class="slider">
+                <img class="product-img" src="img/products/43/02.jpg" alt="Прихожая">
+                <img class="product-img" src="img/products/43/03.jpg" alt="Вешалка">
+                <img class="product-img" src="img/products/43/04.jpg" alt="Вешалка">
+                <img class="product-img" src="img/products/43/05.jpg" alt="Резьба">
               </div>
-              <button class="slider-button prev-button prev-button-43" aria-label="Посмотреть предыдущий слайд">
+              <button class="slider-button prev-button" aria-label="Посмотреть предыдущий слайд">
                 <svg class="slider-button-img" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M15.7071 4.29289C16.0976 4.68342 16.0976 5.31658 15.7071 5.70711L9.41421 12L15.7071 18.2929C16.0976 18.6834 16.0976 19.3166 15.7071 19.7071C15.3166 20.0976 14.6834 20.0976 14.2929 19.7071L7.29289 12.7071C7.10536 12.5196 7 12.2652 7 12C7 11.7348 7.10536 11.4804 7.29289 11.2929L14.2929 4.29289C14.6834 3.90237 15.3166 3.90237 15.7071 4.29289Z"/>
                 </svg>
               </button>
-              <button class="slider-button next-button next-button-43" aria-label="Посмотреть следующий слайд">
+              <button class="slider-button next-button" aria-label="Посмотреть следующий слайд">
                 <svg class="slider-button-img" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M8.29289 4.29289C8.68342 3.90237 9.31658 3.90237 9.70711 4.29289L16.7071 11.2929C17.0976 11.6834 17.0976 12.3166 16.7071 12.7071L9.70711 19.7071C9.31658 20.0976 8.68342 20.0976 8.29289 19.7071C7.90237 19.3166 7.90237 18.6834 8.29289 18.2929L14.5858 12L8.29289 5.70711C7.90237 5.31658 7.90237 4.68342 8.29289 4.29289Z"/>
                 </svg>
@@ -1632,35 +1632,35 @@
                 90&nbsp;000&nbsp;р.&nbsp;(43)
               </p>
               <button class="product-button">
-                <h4 class="product-title product-title-dark product-title-dark-43">AGLAYA</h4>
+                <h4 class="product-title product-title-dark">AGLAYA</h4>
               </button>
             </div>
           </div>
         </div>
       </li>
-      <li class="product-card card-44">
-        <div class="card-inner card-inner-44">
+      <li class="product-card">
+        <div class="card-inner">
           <div class="card-rotate card-rotate-front front-44">
             <button class="product-button">
-              <h4 class="product-title product-title-light product-title-light-44">RAUL</h4>
+              <h4 class="product-title product-title-light">RAUL</h4>
             </button>
           </div>
           <div class="card-rotate card-rotate-back">
             <div class="slider-container">
-              <div class="slider slider-44">
-                <img class="product-img product-img-44" src="img/products/44/02.jpg" alt="Кейс из красного дерева">
-                <img class="product-img product-img-44" src="img/products/44/03.jpg" alt="Кейс под ром">
-                <img class="product-img product-img-44" src="img/products/44/04.jpg" alt="Чемодан из красного дерева">
-                <img class="product-img product-img-44" src="img/products/44/05.jpg" alt="Кейс из красного дерева">
-                <img class="product-img product-img-44" src="img/products/44/06.jpg" alt="Кейс из красного дерева">
-                <img class="product-img product-img-44" src="img/products/44/07.jpg" alt="Кейс из красного дерева">
+              <div class="slider">
+                <img class="product-img" src="img/products/44/02.jpg" alt="Кейс из красного дерева">
+                <img class="product-img" src="img/products/44/03.jpg" alt="Кейс под ром">
+                <img class="product-img" src="img/products/44/04.jpg" alt="Чемодан из красного дерева">
+                <img class="product-img" src="img/products/44/05.jpg" alt="Кейс из красного дерева">
+                <img class="product-img" src="img/products/44/06.jpg" alt="Кейс из красного дерева">
+                <img class="product-img" src="img/products/44/07.jpg" alt="Кейс из красного дерева">
               </div>
-              <button class="slider-button prev-button prev-button-44" aria-label="Посмотреть предыдущий слайд">
+              <button class="slider-button prev-button" aria-label="Посмотреть предыдущий слайд">
                 <svg class="slider-button-img" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M15.7071 4.29289C16.0976 4.68342 16.0976 5.31658 15.7071 5.70711L9.41421 12L15.7071 18.2929C16.0976 18.6834 16.0976 19.3166 15.7071 19.7071C15.3166 20.0976 14.6834 20.0976 14.2929 19.7071L7.29289 12.7071C7.10536 12.5196 7 12.2652 7 12C7 11.7348 7.10536 11.4804 7.29289 11.2929L14.2929 4.29289C14.6834 3.90237 15.3166 3.90237 15.7071 4.29289Z"/>
                 </svg>
               </button>
-              <button class="slider-button next-button next-button-44" aria-label="Посмотреть следующий слайд">
+              <button class="slider-button next-button" aria-label="Посмотреть следующий слайд">
                 <svg class="slider-button-img" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M8.29289 4.29289C8.68342 3.90237 9.31658 3.90237 9.70711 4.29289L16.7071 11.2929C17.0976 11.6834 17.0976 12.3166 16.7071 12.7071L9.70711 19.7071C9.31658 20.0976 8.68342 20.0976 8.29289 19.7071C7.90237 19.3166 7.90237 18.6834 8.29289 18.2929L14.5858 12L8.29289 5.70711C7.90237 5.31658 7.90237 4.68342 8.29289 4.29289Z"/>
                 </svg>
@@ -1674,23 +1674,23 @@
                 110&nbsp;000&nbsp;р.&nbsp;(44)
               </p>
               <button class="product-button">
-                <h4 class="product-title product-title-dark product-title-dark-44">RAUL</h4>
+                <h4 class="product-title product-title-dark">RAUL</h4>
               </button>
             </div>
           </div>
         </div>
       </li>
-      <li class="product-card card-45">
-        <div class="card-inner card-inner-45">
+      <li class="product-card">
+        <div class="card-inner">
           <div class="card-rotate card-rotate-front front-45">
             <button class="product-button">
-              <h4 class="product-title product-title-light product-title-light-45">UNNEIM</h4>
+              <h4 class="product-title product-title-light">UNNEIM</h4>
             </button>
           </div>
           <div class="card-rotate card-rotate-back">
             <div class="slider-container">
-              <div class="slider slider-45">
-                <img class="product-img product-img-45" src="img/products/45/01.jpg" alt="Часы">
+              <div class="slider">
+                <img class="product-img" src="img/products/45/01.jpg" alt="Часы">
               </div>
             </div>
             <div class="card-back-container">
@@ -1698,35 +1698,35 @@
                 Часы&nbsp;- 9&nbsp;000&nbsp;р.&nbsp;(45)
               </p>
               <button class="product-button">
-                <h4 class="product-title product-title-dark product-title-dark-45">UNNEIM</h4>
+                <h4 class="product-title product-title-dark">UNNEIM</h4>
               </button>
             </div>
           </div>
         </div>
       </li>
-      <li class="product-card card-46">
-        <div class="card-inner card-inner-46">
+      <li class="product-card">
+        <div class="card-inner">
           <div class="card-rotate card-rotate-front front-46">
             <button class="product-button">
-              <h4 class="product-title product-title-light product-title-light-46">KLIM</h4>
+              <h4 class="product-title product-title-light">KLIM</h4>
             </button>
           </div>
           <div class="card-rotate card-rotate-back">
             <div class="slider-container">
-              <div class="slider slider-46">
-                <img class="product-img product-img-46" src="img/products/46/02.jpg" alt="Бочонок">
-                <img class="product-img product-img-46" src="img/products/46/03.jpg" alt="Бочонок">
-                <img class="product-img product-img-46" src="img/products/46/04.jpg" alt="Набор бондарный">
-                <img class="product-img product-img-46" src="img/products/46/05.jpg" alt="Набор бондарный">
-                <img class="product-img product-img-46" src="img/products/46/06.jpg" alt="Набор бондарный">
-                <img class="product-img product-img-46" src="img/products/46/07.jpg" alt="Набор бондарный">
+              <div class="slider">
+                <img class="product-img" src="img/products/46/02.jpg" alt="Бочонок">
+                <img class="product-img" src="img/products/46/03.jpg" alt="Бочонок">
+                <img class="product-img" src="img/products/46/04.jpg" alt="Набор бондарный">
+                <img class="product-img" src="img/products/46/05.jpg" alt="Набор бондарный">
+                <img class="product-img" src="img/products/46/06.jpg" alt="Набор бондарный">
+                <img class="product-img" src="img/products/46/07.jpg" alt="Набор бондарный">
               </div>
-              <button class="slider-button prev-button prev-button-46" aria-label="Посмотреть предыдущий слайд">
+              <button class="slider-button prev-button" aria-label="Посмотреть предыдущий слайд">
                 <svg class="slider-button-img" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M15.7071 4.29289C16.0976 4.68342 16.0976 5.31658 15.7071 5.70711L9.41421 12L15.7071 18.2929C16.0976 18.6834 16.0976 19.3166 15.7071 19.7071C15.3166 20.0976 14.6834 20.0976 14.2929 19.7071L7.29289 12.7071C7.10536 12.5196 7 12.2652 7 12C7 11.7348 7.10536 11.4804 7.29289 11.2929L14.2929 4.29289C14.6834 3.90237 15.3166 3.90237 15.7071 4.29289Z"/>
                 </svg>
               </button>
-              <button class="slider-button next-button next-button-46" aria-label="Посмотреть следующий слайд">
+              <button class="slider-button next-button" aria-label="Посмотреть следующий слайд">
                 <svg class="slider-button-img" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M8.29289 4.29289C8.68342 3.90237 9.31658 3.90237 9.70711 4.29289L16.7071 11.2929C17.0976 11.6834 17.0976 12.3166 16.7071 12.7071L9.70711 19.7071C9.31658 20.0976 8.68342 20.0976 8.29289 19.7071C7.90237 19.3166 7.90237 18.6834 8.29289 18.2929L14.5858 12L8.29289 5.70711C7.90237 5.31658 7.90237 4.68342 8.29289 4.29289Z"/>
                 </svg>
@@ -1740,7 +1740,7 @@
                 90&nbsp;000&nbsp;р.&nbsp;(46)
               </p>
               <button class="product-button">
-                <h4 class="product-title product-title-dark product-title-dark-46">KLIM</h4>
+                <h4 class="product-title product-title-dark">KLIM</h4>
               </button>
             </div>
           </div>
@@ -1753,26 +1753,26 @@
       </h3>
     </div>
     <ul class="products-list">
-      <li class="product-card card-47">
-        <div class="card-inner card-inner-47">
+      <li class="product-card">
+        <div class="card-inner">
           <div class="card-rotate card-rotate-front front-47">
             <button class="product-button">
-              <h4 class="product-title product-title-light product-title-light-47">BER-LOGA</h4>
+              <h4 class="product-title product-title-light">BER-LOGA</h4>
             </button>
           </div>
           <div class="card-rotate card-rotate-back">
             <div class="slider-container">
-              <div class="slider slider-47">
-                <img class="product-img product-img-47" src="img/products/47/02.jpg" alt="Панно резное">
-                <img class="product-img product-img-47" src="img/products/47/03.jpg" alt="Панно резное">
-                <img class="product-img product-img-47" src="img/products/47/04.jpg" alt="Панно резное">
+              <div class="slider">
+                <img class="product-img" src="img/products/47/02.jpg" alt="Панно резное">
+                <img class="product-img" src="img/products/47/03.jpg" alt="Панно резное">
+                <img class="product-img" src="img/products/47/04.jpg" alt="Панно резное">
               </div>
-              <button class="slider-button prev-button prev-button-47" aria-label="Посмотреть предыдущий слайд">
+              <button class="slider-button prev-button" aria-label="Посмотреть предыдущий слайд">
                 <svg class="slider-button-img" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M15.7071 4.29289C16.0976 4.68342 16.0976 5.31658 15.7071 5.70711L9.41421 12L15.7071 18.2929C16.0976 18.6834 16.0976 19.3166 15.7071 19.7071C15.3166 20.0976 14.6834 20.0976 14.2929 19.7071L7.29289 12.7071C7.10536 12.5196 7 12.2652 7 12C7 11.7348 7.10536 11.4804 7.29289 11.2929L14.2929 4.29289C14.6834 3.90237 15.3166 3.90237 15.7071 4.29289Z"/>
                 </svg>
               </button>
-              <button class="slider-button next-button next-button-47" aria-label="Посмотреть следующий слайд">
+              <button class="slider-button next-button" aria-label="Посмотреть следующий слайд">
                 <svg class="slider-button-img" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M8.29289 4.29289C8.68342 3.90237 9.31658 3.90237 9.70711 4.29289L16.7071 11.2929C17.0976 11.6834 17.0976 12.3166 16.7071 12.7071L9.70711 19.7071C9.31658 20.0976 8.68342 20.0976 8.29289 19.7071C7.90237 19.3166 7.90237 18.6834 8.29289 18.2929L14.5858 12L8.29289 5.70711C7.90237 5.31658 7.90237 4.68342 8.29289 4.29289Z"/>
                 </svg>
@@ -1786,31 +1786,31 @@
                 205&nbsp;000&nbsp;р.&nbsp;(47)
               </p>
               <button class="product-button">
-                <h4 class="product-title product-title-dark product-title-dark-47">BER-LOGA</h4>
+                <h4 class="product-title product-title-dark">BER-LOGA</h4>
               </button>
             </div>
           </div>
         </div>
       </li>
-      <li class="product-card card-48">
-        <div class="card-inner card-inner-48">
+      <li class="product-card">
+        <div class="card-inner">
           <div class="card-rotate card-rotate-front front-48">
             <button class="product-button">
-              <h4 class="product-title product-title-light product-title-light-48">OHOTA</h4>
+              <h4 class="product-title product-title-light">OHOTA</h4>
             </button>
           </div>
           <div class="card-rotate card-rotate-back">
             <div class="slider-container">
-              <div class="slider slider-48">
-                <img class="product-img product-img-48" src="img/products/48/02.jpg" alt="Панно резное">
-                <img class="product-img product-img-48" src="img/products/48/01.jpg" alt="Панно резное">
+              <div class="slider">
+                <img class="product-img" src="img/products/48/02.jpg" alt="Панно резное">
+                <img class="product-img" src="img/products/48/01.jpg" alt="Панно резное">
               </div>
-              <button class="slider-button prev-button prev-button-48" aria-label="Посмотреть предыдущий слайд">
+              <button class="slider-button prev-button" aria-label="Посмотреть предыдущий слайд">
                 <svg class="slider-button-img" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M15.7071 4.29289C16.0976 4.68342 16.0976 5.31658 15.7071 5.70711L9.41421 12L15.7071 18.2929C16.0976 18.6834 16.0976 19.3166 15.7071 19.7071C15.3166 20.0976 14.6834 20.0976 14.2929 19.7071L7.29289 12.7071C7.10536 12.5196 7 12.2652 7 12C7 11.7348 7.10536 11.4804 7.29289 11.2929L14.2929 4.29289C14.6834 3.90237 15.3166 3.90237 15.7071 4.29289Z"/>
                 </svg>
               </button>
-              <button class="slider-button next-button next-button-48" aria-label="Посмотреть следующий слайд">
+              <button class="slider-button next-button" aria-label="Посмотреть следующий слайд">
                 <svg class="slider-button-img" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M8.29289 4.29289C8.68342 3.90237 9.31658 3.90237 9.70711 4.29289L16.7071 11.2929C17.0976 11.6834 17.0976 12.3166 16.7071 12.7071L9.70711 19.7071C9.31658 20.0976 8.68342 20.0976 8.29289 19.7071C7.90237 19.3166 7.90237 18.6834 8.29289 18.2929L14.5858 12L8.29289 5.70711C7.90237 5.31658 7.90237 4.68342 8.29289 4.29289Z"/>
                 </svg>
@@ -1824,36 +1824,36 @@
                 180&nbsp;000&nbsp;р.&nbsp;(48)
               </p>
               <button class="product-button">
-                <h4 class="product-title product-title-dark product-title-dark-48">OHOTA</h4>
+                <h4 class="product-title product-title-dark">OHOTA</h4>
               </button>
             </div>
           </div>
         </div>
       </li>
-      <li class="product-card card-49">
-        <div class="card-inner card-inner-49">
+      <li class="product-card">
+        <div class="card-inner">
           <div class="card-rotate card-rotate-front front-49">
             <button class="product-button">
-              <h4 class="product-title product-title-light product-title-light-49">PAN-NO</h4>
+              <h4 class="product-title product-title-light">PAN-NO</h4>
             </button>
           </div>
           <div class="card-rotate card-rotate-back">
             <div class="slider-container">
-              <div class="slider slider-49">
-                <img class="product-img product-img-49" src="img/products/49/02.jpg" alt="Резное панно">
-                <img class="product-img product-img-49" src="img/products/49/03.jpg" alt="Резное панно">
-                <img class="product-img product-img-49" src="img/products/49/04.jpg" alt="Резное панно">
-                <img class="product-img product-img-49" src="img/products/49/05.jpg" alt="Резное панно">
-                <img class="product-img product-img-49" src="img/products/49/06.jpg" alt="Резное панно">
-                <img class="product-img product-img-49" src="img/products/49/07.jpg" alt="Резное панно">
-                <img class="product-img product-img-49" src="img/products/49/08.jpg" alt="Резное панно">
+              <div class="slider">
+                <img class="product-img" src="img/products/49/02.jpg" alt="Резное панно">
+                <img class="product-img" src="img/products/49/03.jpg" alt="Резное панно">
+                <img class="product-img" src="img/products/49/04.jpg" alt="Резное панно">
+                <img class="product-img" src="img/products/49/05.jpg" alt="Резное панно">
+                <img class="product-img" src="img/products/49/06.jpg" alt="Резное панно">
+                <img class="product-img" src="img/products/49/07.jpg" alt="Резное панно">
+                <img class="product-img" src="img/products/49/08.jpg" alt="Резное панно">
               </div>
-              <button class="slider-button prev-button prev-button-49" aria-label="Посмотреть предыдущий слайд">
+              <button class="slider-button prev-button" aria-label="Посмотреть предыдущий слайд">
                 <svg class="slider-button-img" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M15.7071 4.29289C16.0976 4.68342 16.0976 5.31658 15.7071 5.70711L9.41421 12L15.7071 18.2929C16.0976 18.6834 16.0976 19.3166 15.7071 19.7071C15.3166 20.0976 14.6834 20.0976 14.2929 19.7071L7.29289 12.7071C7.10536 12.5196 7 12.2652 7 12C7 11.7348 7.10536 11.4804 7.29289 11.2929L14.2929 4.29289C14.6834 3.90237 15.3166 3.90237 15.7071 4.29289Z"/>
                 </svg>
               </button>
-              <button class="slider-button next-button next-button-49" aria-label="Посмотреть следующий слайд">
+              <button class="slider-button next-button" aria-label="Посмотреть следующий слайд">
                 <svg class="slider-button-img" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M8.29289 4.29289C8.68342 3.90237 9.31658 3.90237 9.70711 4.29289L16.7071 11.2929C17.0976 11.6834 17.0976 12.3166 16.7071 12.7071L9.70711 19.7071C9.31658 20.0976 8.68342 20.0976 8.29289 19.7071C7.90237 19.3166 7.90237 18.6834 8.29289 18.2929L14.5858 12L8.29289 5.70711C7.90237 5.31658 7.90237 4.68342 8.29289 4.29289Z"/>
                 </svg>
@@ -1864,38 +1864,38 @@
                 Резное&nbsp;панно&nbsp;- от&nbsp;22&nbsp;000&nbsp;р.&nbsp;(49)
               </p>
               <button class="product-button">
-                <h4 class="product-title product-title-dark product-title-dark-49">PAN-NO</h4>
+                <h4 class="product-title product-title-dark">PAN-NO</h4>
               </button>
             </div>
           </div>
         </div>
       </li>
-      <li class="product-card card-50">
-        <div class="card-inner card-inner-50">
+      <li class="product-card">
+        <div class="card-inner">
           <div class="card-rotate card-rotate-front front-50">
             <button class="product-button">
-              <h4 class="product-title product-title-light product-title-light-50">SKULPTO</h4>
+              <h4 class="product-title product-title-light">SKULPTO</h4>
             </button>
           </div>
           <div class="card-rotate card-rotate-back">
             <div class="slider-container">
-              <div class="slider slider-50">
-                <img class="product-img product-img-50" src="img/products/50/02.jpg" alt="Резная скульпутра">
-                <img class="product-img product-img-50" src="img/products/50/03.jpg" alt="Резная скульпутра">
-                <img class="product-img product-img-50" src="img/products/50/04.jpg" alt="Резная скульпутра">
-                <img class="product-img product-img-50" src="img/products/50/05.jpg" alt="Резная скульпутра">
-                <img class="product-img product-img-50" src="img/products/50/06.jpg" alt="Резная скульпутра">
-                <img class="product-img product-img-50" src="img/products/50/07.jpg" alt="Резная скульпутра">
-                <img class="product-img product-img-50" src="img/products/50/08.jpg" alt="Резная скульпутра">
-                <img class="product-img product-img-50" src="img/products/50/09.jpg" alt="Резная скульпутра">
-                <img class="product-img product-img-50" src="img/products/50/10.jpg" alt="Резная скульпутра">
+              <div class="slider">
+                <img class="product-img" src="img/products/50/02.jpg" alt="Резная скульпутра">
+                <img class="product-img" src="img/products/50/03.jpg" alt="Резная скульпутра">
+                <img class="product-img" src="img/products/50/04.jpg" alt="Резная скульпутра">
+                <img class="product-img" src="img/products/50/05.jpg" alt="Резная скульпутра">
+                <img class="product-img" src="img/products/50/06.jpg" alt="Резная скульпутра">
+                <img class="product-img" src="img/products/50/07.jpg" alt="Резная скульпутра">
+                <img class="product-img" src="img/products/50/08.jpg" alt="Резная скульпутра">
+                <img class="product-img" src="img/products/50/09.jpg" alt="Резная скульпутра">
+                <img class="product-img" src="img/products/50/10.jpg" alt="Резная скульпутра">
               </div>
-              <button class="slider-button prev-button prev-button-50" aria-label="Посмотреть предыдущий слайд">
+              <button class="slider-button prev-button" aria-label="Посмотреть предыдущий слайд">
                 <svg class="slider-button-img" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M15.7071 4.29289C16.0976 4.68342 16.0976 5.31658 15.7071 5.70711L9.41421 12L15.7071 18.2929C16.0976 18.6834 16.0976 19.3166 15.7071 19.7071C15.3166 20.0976 14.6834 20.0976 14.2929 19.7071L7.29289 12.7071C7.10536 12.5196 7 12.2652 7 12C7 11.7348 7.10536 11.4804 7.29289 11.2929L14.2929 4.29289C14.6834 3.90237 15.3166 3.90237 15.7071 4.29289Z"/>
                 </svg>
               </button>
-              <button class="slider-button next-button next-button-50" aria-label="Посмотреть следующий слайд">
+              <button class="slider-button next-button" aria-label="Посмотреть следующий слайд">
                 <svg class="slider-button-img" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M8.29289 4.29289C8.68342 3.90237 9.31658 3.90237 9.70711 4.29289L16.7071 11.2929C17.0976 11.6834 17.0976 12.3166 16.7071 12.7071L9.70711 19.7071C9.31658 20.0976 8.68342 20.0976 8.29289 19.7071C7.90237 19.3166 7.90237 18.6834 8.29289 18.2929L14.5858 12L8.29289 5.70711C7.90237 5.31658 7.90237 4.68342 8.29289 4.29289Z"/>
                 </svg>
@@ -1906,36 +1906,36 @@
                 Резная&nbsp;скульптура&nbsp;- от&nbsp;25&nbsp;000&nbsp;р.&nbsp;(50)
               </p>
               <button class="product-button">
-                <h4 class="product-title product-title-dark product-title-dark-50">SKULPTO</h4>
+                <h4 class="product-title product-title-dark">SKULPTO</h4>
               </button>
             </div>
           </div>
         </div>
       </li>
-      <li class="product-card card-57">
-        <div class="card-inner card-inner-57">
+      <li class="product-card">
+        <div class="card-inner">
           <div class="card-rotate card-rotate-front front-57">
             <button class="product-button">
-              <h4 class="product-title product-title-light product-title-light-57">REZBA</h4>
+              <h4 class="product-title product-title-light">REZBA</h4>
             </button>
           </div>
           <div class="card-rotate card-rotate-back">
             <div class="slider-container">
-              <div class="slider slider-57">
-                <img class="product-img product-img-57" src="img/products/57/02.jpg" alt="Настольная скульптура">
-                <img class="product-img product-img-57" src="img/products/57/03.jpg" alt="Настольная скульптура">
-                <img class="product-img product-img-57" src="img/products/57/04.jpg" alt="Статуэтка из кости">
-                <img class="product-img product-img-57" src="img/products/57/05.jpg" alt="Статуэтка из кости">
-                <img class="product-img product-img-57" src="img/products/57/06.jpg" alt="Резьба по кости">
-                <img class="product-img product-img-57" src="img/products/57/07.jpg" alt="Статуэтка">
-                <img class="product-img product-img-57" src="img/products/57/08.jpg" alt="Статуэтка">
+              <div class="slider">
+                <img class="product-img" src="img/products/57/02.jpg" alt="Настольная скульптура">
+                <img class="product-img" src="img/products/57/03.jpg" alt="Настольная скульптура">
+                <img class="product-img" src="img/products/57/04.jpg" alt="Статуэтка из кости">
+                <img class="product-img" src="img/products/57/05.jpg" alt="Статуэтка из кости">
+                <img class="product-img" src="img/products/57/06.jpg" alt="Резьба по кости">
+                <img class="product-img" src="img/products/57/07.jpg" alt="Статуэтка">
+                <img class="product-img" src="img/products/57/08.jpg" alt="Статуэтка">
               </div>
-              <button class="slider-button prev-button prev-button-57" aria-label="Посмотреть предыдущий слайд">
+              <button class="slider-button prev-button" aria-label="Посмотреть предыдущий слайд">
                 <svg class="slider-button-img" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M15.7071 4.29289C16.0976 4.68342 16.0976 5.31658 15.7071 5.70711L9.41421 12L15.7071 18.2929C16.0976 18.6834 16.0976 19.3166 15.7071 19.7071C15.3166 20.0976 14.6834 20.0976 14.2929 19.7071L7.29289 12.7071C7.10536 12.5196 7 12.2652 7 12C7 11.7348 7.10536 11.4804 7.29289 11.2929L14.2929 4.29289C14.6834 3.90237 15.3166 3.90237 15.7071 4.29289Z"/>
                 </svg>
               </button>
-              <button class="slider-button next-button next-button-57" aria-label="Посмотреть следующий слайд">
+              <button class="slider-button next-button" aria-label="Посмотреть следующий слайд">
                 <svg class="slider-button-img" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M8.29289 4.29289C8.68342 3.90237 9.31658 3.90237 9.70711 4.29289L16.7071 11.2929C17.0976 11.6834 17.0976 12.3166 16.7071 12.7071L9.70711 19.7071C9.31658 20.0976 8.68342 20.0976 8.29289 19.7071C7.90237 19.3166 7.90237 18.6834 8.29289 18.2929L14.5858 12L8.29289 5.70711C7.90237 5.31658 7.90237 4.68342 8.29289 4.29289Z"/>
                 </svg>
@@ -1949,7 +1949,7 @@
                 от&nbsp;20&nbsp;000&nbsp;р.&nbsp;(57)
               </p>
               <button class="product-button">
-                <h4 class="product-title product-title-dark product-title-dark-57">REZBA</h4>
+                <h4 class="product-title product-title-dark">REZBA</h4>
               </button>
             </div>
           </div>
@@ -1962,26 +1962,26 @@
       </h3>
     </div>
     <ul class="products-list">
-      <li class="product-card card-51">
-        <div class="card-inner card-inner-51">
+      <li class="product-card">
+        <div class="card-inner">
           <div class="card-rotate card-rotate-front front-51">
             <button class="product-button">
-              <h4 class="product-title product-title-light product-title-light-51">KORPIO</h4>
+              <h4 class="product-title product-title-light">KORPIO</h4>
             </button>
           </div>
           <div class="card-rotate card-rotate-back">
             <div class="slider-container">
-              <div class="slider slider-51">
-                <img class="product-img product-img-51" src="img/products/51/02.jpg" alt="Кухня корпусная">
-                <img class="product-img product-img-51" src="img/products/51/03.jpg" alt="Кухня корпусная">
-                <img class="product-img product-img-51" src="img/products/51/04.jpg" alt="Кухня корпусная">
+              <div class="slider">
+                <img class="product-img" src="img/products/51/02.jpg" alt="Кухня корпусная">
+                <img class="product-img" src="img/products/51/03.jpg" alt="Кухня корпусная">
+                <img class="product-img" src="img/products/51/04.jpg" alt="Кухня корпусная">
               </div>
-              <button class="slider-button prev-button prev-button-51" aria-label="Посмотреть предыдущий слайд">
+              <button class="slider-button prev-button" aria-label="Посмотреть предыдущий слайд">
                 <svg class="slider-button-img" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M15.7071 4.29289C16.0976 4.68342 16.0976 5.31658 15.7071 5.70711L9.41421 12L15.7071 18.2929C16.0976 18.6834 16.0976 19.3166 15.7071 19.7071C15.3166 20.0976 14.6834 20.0976 14.2929 19.7071L7.29289 12.7071C7.10536 12.5196 7 12.2652 7 12C7 11.7348 7.10536 11.4804 7.29289 11.2929L14.2929 4.29289C14.6834 3.90237 15.3166 3.90237 15.7071 4.29289Z"/>
                 </svg>
               </button>
-              <button class="slider-button next-button next-button-51" aria-label="Посмотреть следующий слайд">
+              <button class="slider-button next-button" aria-label="Посмотреть следующий слайд">
                 <svg class="slider-button-img" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M8.29289 4.29289C8.68342 3.90237 9.31658 3.90237 9.70711 4.29289L16.7071 11.2929C17.0976 11.6834 17.0976 12.3166 16.7071 12.7071L9.70711 19.7071C9.31658 20.0976 8.68342 20.0976 8.29289 19.7071C7.90237 19.3166 7.90237 18.6834 8.29289 18.2929L14.5858 12L8.29289 5.70711C7.90237 5.31658 7.90237 4.68342 8.29289 4.29289Z"/>
                 </svg>
@@ -1992,38 +1992,38 @@
                 Кухня&nbsp;корпусная - от 95&nbsp;000&nbsp;р./метр погонный (51)
               </p>
               <button class="product-button">
-                <h4 class="product-title product-title-dark product-title-dark-51">KORPIO</h4>
+                <h4 class="product-title product-title-dark">KORPIO</h4>
               </button>
             </div>
           </div>
         </div>
       </li>
-      <li class="product-card card-52">
-        <div class="card-inner card-inner-52">
+      <li class="product-card">
+        <div class="card-inner">
           <div class="card-rotate card-rotate-front front-52">
             <button class="product-button">
-              <h4 class="product-title product-title-light product-title-light-52">ROMANTIKA</h4>
+              <h4 class="product-title product-title-light">ROMANTIKA</h4>
             </button>
           </div>
           <div class="card-rotate card-rotate-back">
             <div class="slider-container">
-              <div class="slider slider-52">
-                <img class="product-img product-img-52" src="img/products/52/02.jpg" alt="Кухня резная">
-                <img class="product-img product-img-52" src="img/products/52/03.jpg" alt="Кухня резная">
-                <img class="product-img product-img-52" src="img/products/52/04.jpg" alt="Кухня резная">
-                <img class="product-img product-img-52" src="img/products/52/05.jpg" alt="Кухня">
-                <img class="product-img product-img-52" src="img/products/52/06.jpg" alt="Кухня">
-                <img class="product-img product-img-52" src="img/products/52/07.jpg" alt="Кухня">
-                <img class="product-img product-img-52" src="img/products/52/08.jpg" alt="Кухня с резными фасадами">
-                <img class="product-img product-img-52" src="img/products/52/09.jpg" alt="Кухня с резными фасадами">
-                <img class="product-img product-img-52" src="img/products/52/10.jpg" alt="Кухня с резными фасадами">
+              <div class="slider">
+                <img class="product-img" src="img/products/52/02.jpg" alt="Кухня резная">
+                <img class="product-img" src="img/products/52/03.jpg" alt="Кухня резная">
+                <img class="product-img" src="img/products/52/04.jpg" alt="Кухня резная">
+                <img class="product-img" src="img/products/52/05.jpg" alt="Кухня">
+                <img class="product-img" src="img/products/52/06.jpg" alt="Кухня">
+                <img class="product-img" src="img/products/52/07.jpg" alt="Кухня">
+                <img class="product-img" src="img/products/52/08.jpg" alt="Кухня с резными фасадами">
+                <img class="product-img" src="img/products/52/09.jpg" alt="Кухня с резными фасадами">
+                <img class="product-img" src="img/products/52/10.jpg" alt="Кухня с резными фасадами">
               </div>
-              <button class="slider-button prev-button prev-button-52" aria-label="Посмотреть предыдущий слайд">
+              <button class="slider-button prev-button" aria-label="Посмотреть предыдущий слайд">
                 <svg class="slider-button-img" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M15.7071 4.29289C16.0976 4.68342 16.0976 5.31658 15.7071 5.70711L9.41421 12L15.7071 18.2929C16.0976 18.6834 16.0976 19.3166 15.7071 19.7071C15.3166 20.0976 14.6834 20.0976 14.2929 19.7071L7.29289 12.7071C7.10536 12.5196 7 12.2652 7 12C7 11.7348 7.10536 11.4804 7.29289 11.2929L14.2929 4.29289C14.6834 3.90237 15.3166 3.90237 15.7071 4.29289Z"/>
                 </svg>
               </button>
-              <button class="slider-button next-button next-button-52" aria-label="Посмотреть следующий слайд">
+              <button class="slider-button next-button" aria-label="Посмотреть следующий слайд">
                 <svg class="slider-button-img" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M8.29289 4.29289C8.68342 3.90237 9.31658 3.90237 9.70711 4.29289L16.7071 11.2929C17.0976 11.6834 17.0976 12.3166 16.7071 12.7071L9.70711 19.7071C9.31658 20.0976 8.68342 20.0976 8.29289 19.7071C7.90237 19.3166 7.90237 18.6834 8.29289 18.2929L14.5858 12L8.29289 5.70711C7.90237 5.31658 7.90237 4.68342 8.29289 4.29289Z"/>
                 </svg>
@@ -2037,7 +2037,7 @@
                 от&nbsp;250&nbsp;000&nbsp;р. (метр погонный) (52)
               </p>
               <button class="product-button">
-                <h4 class="product-title product-title-dark product-title-dark-52">ROMANTIKA</h4>
+                <h4 class="product-title product-title-dark">ROMANTIKA</h4>
               </button>
             </div>
           </div>
@@ -2050,28 +2050,28 @@
       </h3>
     </div>
     <ul class="products-list">
-      <li class="product-card card-53">
-        <div class="card-inner card-inner-53">
+      <li class="product-card">
+        <div class="card-inner">
           <div class="card-rotate card-rotate-front front-53">
             <button class="product-button">
-              <h4 class="product-title product-title-light product-title-light-53">CELTIC</h4>
+              <h4 class="product-title product-title-light">CELTIC</h4>
             </button>
           </div>
           <div class="card-rotate card-rotate-back">
             <div class="slider-container">
-              <div class="slider slider-53">
-                <img class="product-img product-img-53" src="img/products/53/02.jpg" alt="Резная дверь">
-                <img class="product-img product-img-53" src="img/products/53/03.jpg" alt="Резная дверь">
-                <img class="product-img product-img-53" src="img/products/53/04.jpg" alt="Резная дверь">
-                <img class="product-img product-img-53" src="img/products/53/05.jpg" alt="Входная дверь">
-                <img class="product-img product-img-53" src="img/products/53/06.jpg" alt="Входная дверь">
+              <div class="slider">
+                <img class="product-img" src="img/products/53/02.jpg" alt="Резная дверь">
+                <img class="product-img" src="img/products/53/03.jpg" alt="Резная дверь">
+                <img class="product-img" src="img/products/53/04.jpg" alt="Резная дверь">
+                <img class="product-img" src="img/products/53/05.jpg" alt="Входная дверь">
+                <img class="product-img" src="img/products/53/06.jpg" alt="Входная дверь">
               </div>
-              <button class="slider-button prev-button prev-button-53" aria-label="Посмотреть предыдущий слайд">
+              <button class="slider-button prev-button" aria-label="Посмотреть предыдущий слайд">
                 <svg class="slider-button-img" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M15.7071 4.29289C16.0976 4.68342 16.0976 5.31658 15.7071 5.70711L9.41421 12L15.7071 18.2929C16.0976 18.6834 16.0976 19.3166 15.7071 19.7071C15.3166 20.0976 14.6834 20.0976 14.2929 19.7071L7.29289 12.7071C7.10536 12.5196 7 12.2652 7 12C7 11.7348 7.10536 11.4804 7.29289 11.2929L14.2929 4.29289C14.6834 3.90237 15.3166 3.90237 15.7071 4.29289Z"/>
                 </svg>
               </button>
-              <button class="slider-button next-button next-button-53" aria-label="Посмотреть следующий слайд">
+              <button class="slider-button next-button" aria-label="Посмотреть следующий слайд">
                 <svg class="slider-button-img" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M8.29289 4.29289C8.68342 3.90237 9.31658 3.90237 9.70711 4.29289L16.7071 11.2929C17.0976 11.6834 17.0976 12.3166 16.7071 12.7071L9.70711 19.7071C9.31658 20.0976 8.68342 20.0976 8.29289 19.7071C7.90237 19.3166 7.90237 18.6834 8.29289 18.2929L14.5858 12L8.29289 5.70711C7.90237 5.31658 7.90237 4.68342 8.29289 4.29289Z"/>
                 </svg>
@@ -2085,7 +2085,7 @@
                 -&nbsp;от&nbsp;280&nbsp;000&nbsp;р.&nbsp;(53)
               </p>
               <button class="product-button">
-                <h4 class="product-title product-title-dark product-title-dark-53">CELTIC</h4>
+                <h4 class="product-title product-title-dark">CELTIC</h4>
               </button>
             </div>
           </div>
@@ -2098,30 +2098,30 @@
       </h3>
     </div>
     <ul class="products-list">
-      <li class="product-card card-54">
-        <div class="card-inner card-inner-54">
+      <li class="product-card">
+        <div class="card-inner">
           <div class="card-rotate card-rotate-front front-54">
             <button class="product-button">
-              <h4 class="product-title product-title-light product-title-light-54">PARKET</h4>
+              <h4 class="product-title product-title-light">PARKET</h4>
             </button>
           </div>
           <div class="card-rotate card-rotate-back">
             <div class="slider-container">
-              <div class="slider slider-54">
-                <img class="product-img product-img-54" src="img/products/54/02.jpg" alt="Паркет">
-                <img class="product-img product-img-54" src="img/products/54/03.jpg" alt="Паркет">
-                <img class="product-img product-img-54" src="img/products/54/04.jpg" alt="Паркет">
-                <img class="product-img product-img-54" src="img/products/54/05.jpg" alt="Художественный паркет">
-                <img class="product-img product-img-54" src="img/products/54/06.jpg" alt="Художественный паркет">
-                <img class="product-img product-img-54" src="img/products/54/07.jpg" alt="Художественный паркет">
-                <img class="product-img product-img-54" src="img/products/54/08.jpg" alt="Художественный паркет">
+              <div class="slider">
+                <img class="product-img" src="img/products/54/02.jpg" alt="Паркет">
+                <img class="product-img" src="img/products/54/03.jpg" alt="Паркет">
+                <img class="product-img" src="img/products/54/04.jpg" alt="Паркет">
+                <img class="product-img" src="img/products/54/05.jpg" alt="Художественный паркет">
+                <img class="product-img" src="img/products/54/06.jpg" alt="Художественный паркет">
+                <img class="product-img" src="img/products/54/07.jpg" alt="Художественный паркет">
+                <img class="product-img" src="img/products/54/08.jpg" alt="Художественный паркет">
               </div>
-              <button class="slider-button prev-button prev-button-54" aria-label="Посмотреть предыдущий слайд">
+              <button class="slider-button prev-button" aria-label="Посмотреть предыдущий слайд">
                 <svg class="slider-button-img" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M15.7071 4.29289C16.0976 4.68342 16.0976 5.31658 15.7071 5.70711L9.41421 12L15.7071 18.2929C16.0976 18.6834 16.0976 19.3166 15.7071 19.7071C15.3166 20.0976 14.6834 20.0976 14.2929 19.7071L7.29289 12.7071C7.10536 12.5196 7 12.2652 7 12C7 11.7348 7.10536 11.4804 7.29289 11.2929L14.2929 4.29289C14.6834 3.90237 15.3166 3.90237 15.7071 4.29289Z"/>
                 </svg>
               </button>
-              <button class="slider-button next-button next-button-54" aria-label="Посмотреть следующий слайд">
+              <button class="slider-button next-button" aria-label="Посмотреть следующий слайд">
                 <svg class="slider-button-img" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M8.29289 4.29289C8.68342 3.90237 9.31658 3.90237 9.70711 4.29289L16.7071 11.2929C17.0976 11.6834 17.0976 12.3166 16.7071 12.7071L9.70711 19.7071C9.31658 20.0976 8.68342 20.0976 8.29289 19.7071C7.90237 19.3166 7.90237 18.6834 8.29289 18.2929L14.5858 12L8.29289 5.70711C7.90237 5.31658 7.90237 4.68342 8.29289 4.29289Z"/>
                 </svg>
@@ -2135,32 +2135,32 @@
                 -&nbsp;от&nbsp;20&nbsp;000р./м2
               </p>
               <button class="product-button">
-                <h4 class="product-title product-title-dark product-title-dark-54">PARKET</h4>
+                <h4 class="product-title product-title-dark">PARKET</h4>
               </button>
             </div>
           </div>
         </div>
       </li>
-      <li class="product-card card-55">
-        <div class="card-inner card-inner-55">
+      <li class="product-card">
+        <div class="card-inner">
           <div class="card-rotate card-rotate-front front-55">
             <button class="product-button">
-              <h4 class="product-title product-title-light product-title-light-55">CLASSIC</h4>
+              <h4 class="product-title product-title-light">CLASSIC</h4>
             </button>
           </div>
           <div class="card-rotate card-rotate-back">
             <div class="slider-container">
-              <div class="slider slider-55">
-                <img class="product-img product-img-55" src="img/products/55/02.jpg" alt="Лестница">
-                <img class="product-img product-img-55" src="img/products/55/03.jpg" alt="Лестница">
-                <img class="product-img product-img-55" src="img/products/55/01.jpg" alt="Лестница">
+              <div class="slider">
+                <img class="product-img" src="img/products/55/02.jpg" alt="Лестница">
+                <img class="product-img" src="img/products/55/03.jpg" alt="Лестница">
+                <img class="product-img" src="img/products/55/01.jpg" alt="Лестница">
               </div>
-              <button class="slider-button prev-button prev-button-55" aria-label="Посмотреть предыдущий слайд">
+              <button class="slider-button prev-button" aria-label="Посмотреть предыдущий слайд">
                 <svg class="slider-button-img" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M15.7071 4.29289C16.0976 4.68342 16.0976 5.31658 15.7071 5.70711L9.41421 12L15.7071 18.2929C16.0976 18.6834 16.0976 19.3166 15.7071 19.7071C15.3166 20.0976 14.6834 20.0976 14.2929 19.7071L7.29289 12.7071C7.10536 12.5196 7 12.2652 7 12C7 11.7348 7.10536 11.4804 7.29289 11.2929L14.2929 4.29289C14.6834 3.90237 15.3166 3.90237 15.7071 4.29289Z"/>
                 </svg>
               </button>
-              <button class="slider-button next-button next-button-55" aria-label="Посмотреть следующий слайд">
+              <button class="slider-button next-button" aria-label="Посмотреть следующий слайд">
                 <svg class="slider-button-img" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M8.29289 4.29289C8.68342 3.90237 9.31658 3.90237 9.70711 4.29289L16.7071 11.2929C17.0976 11.6834 17.0976 12.3166 16.7071 12.7071L9.70711 19.7071C9.31658 20.0976 8.68342 20.0976 8.29289 19.7071C7.90237 19.3166 7.90237 18.6834 8.29289 18.2929L14.5858 12L8.29289 5.70711C7.90237 5.31658 7.90237 4.68342 8.29289 4.29289Z"/>
                 </svg>
@@ -2171,32 +2171,32 @@
                 Лестница классическая&nbsp;(55) - от&nbsp;55&nbsp;000р./метр погонный
               </p>
               <button class="product-button">
-                <h4 class="product-title product-title-dark product-title-dark-55">CLASSIC</h4>
+                <h4 class="product-title product-title-dark">CLASSIC</h4>
               </button>
             </div>
           </div>
         </div>
       </li>
-      <li class="product-card card-56">
-        <div class="card-inner card-inner-56">
+      <li class="product-card">
+        <div class="card-inner">
           <div class="card-rotate card-rotate-front front-56">
             <button class="product-button">
-              <h4 class="product-title product-title-light product-title-light-56">NATUREL</h4>
+              <h4 class="product-title product-title-light">NATUREL</h4>
             </button>
           </div>
           <div class="card-rotate card-rotate-back">
             <div class="slider-container">
-              <div class="slider slider-56">
-                <img class="product-img product-img-56" src="img/products/56/01.jpg" alt="Лестница">
-                <img class="product-img product-img-56" src="img/products/56/02.jpg" alt="Лестница">
-                <img class="product-img product-img-56" src="img/products/56/03.jpg" alt="Лестница">
+              <div class="slider">
+                <img class="product-img" src="img/products/56/01.jpg" alt="Лестница">
+                <img class="product-img" src="img/products/56/02.jpg" alt="Лестница">
+                <img class="product-img" src="img/products/56/03.jpg" alt="Лестница">
               </div>
-              <button class="slider-button prev-button prev-button-56" aria-label="Посмотреть предыдущий слайд">
+              <button class="slider-button prev-button" aria-label="Посмотреть предыдущий слайд">
                 <svg class="slider-button-img" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M15.7071 4.29289C16.0976 4.68342 16.0976 5.31658 15.7071 5.70711L9.41421 12L15.7071 18.2929C16.0976 18.6834 16.0976 19.3166 15.7071 19.7071C15.3166 20.0976 14.6834 20.0976 14.2929 19.7071L7.29289 12.7071C7.10536 12.5196 7 12.2652 7 12C7 11.7348 7.10536 11.4804 7.29289 11.2929L14.2929 4.29289C14.6834 3.90237 15.3166 3.90237 15.7071 4.29289Z"/>
                 </svg>
               </button>
-              <button class="slider-button next-button next-button-56" aria-label="Посмотреть следующий слайд">
+              <button class="slider-button next-button" aria-label="Посмотреть следующий слайд">
                 <svg class="slider-button-img" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M8.29289 4.29289C8.68342 3.90237 9.31658 3.90237 9.70711 4.29289L16.7071 11.2929C17.0976 11.6834 17.0976 12.3166 16.7071 12.7071L9.70711 19.7071C9.31658 20.0976 8.68342 20.0976 8.29289 19.7071C7.90237 19.3166 7.90237 18.6834 8.29289 18.2929L14.5858 12L8.29289 5.70711C7.90237 5.31658 7.90237 4.68342 8.29289 4.29289Z"/>
                 </svg>
@@ -2207,32 +2207,32 @@
                 Лестница в&nbsp;природном стиле&nbsp;(56) - от&nbsp;45&nbsp;000р./метр погонный
               </p>
               <button class="product-button">
-                <h4 class="product-title product-title-dark product-title-dark-56">NATUREL</h4>
+                <h4 class="product-title product-title-dark">NATUREL</h4>
               </button>
             </div>
           </div>
         </div>
       </li>
-      <li class="product-card card-59">
-        <div class="card-inner card-inner-59">
+      <li class="product-card">
+        <div class="card-inner">
           <div class="card-rotate card-rotate-front front-59">
             <button class="product-button">
-              <h4 class="product-title product-title-light product-title-light-59">OG-RADA</h4>
+              <h4 class="product-title product-title-light">OG-RADA</h4>
             </button>
           </div>
           <div class="card-rotate card-rotate-back">
             <div class="slider-container">
-              <div class="slider slider-59">
-                <img class="product-img product-img-59" src="img/products/59/02.jpg" alt="Перила">
-                <img class="product-img product-img-59" src="img/products/59/03.jpg" alt="Лепнина">
-                <img class="product-img product-img-59" src="img/products/59/04.jpg" alt="Лепнина">
+              <div class="slider">
+                <img class="product-img" src="img/products/59/02.jpg" alt="Перила">
+                <img class="product-img" src="img/products/59/03.jpg" alt="Лепнина">
+                <img class="product-img" src="img/products/59/04.jpg" alt="Лепнина">
               </div>
-              <button class="slider-button prev-button prev-button-59" aria-label="Посмотреть предыдущий слайд">
+              <button class="slider-button prev-button" aria-label="Посмотреть предыдущий слайд">
                 <svg class="slider-button-img" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M15.7071 4.29289C16.0976 4.68342 16.0976 5.31658 15.7071 5.70711L9.41421 12L15.7071 18.2929C16.0976 18.6834 16.0976 19.3166 15.7071 19.7071C15.3166 20.0976 14.6834 20.0976 14.2929 19.7071L7.29289 12.7071C7.10536 12.5196 7 12.2652 7 12C7 11.7348 7.10536 11.4804 7.29289 11.2929L14.2929 4.29289C14.6834 3.90237 15.3166 3.90237 15.7071 4.29289Z"/>
                 </svg>
               </button>
-              <button class="slider-button next-button next-button-59" aria-label="Посмотреть следующий слайд">
+              <button class="slider-button next-button" aria-label="Посмотреть следующий слайд">
                 <svg class="slider-button-img" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M8.29289 4.29289C8.68342 3.90237 9.31658 3.90237 9.70711 4.29289L16.7071 11.2929C17.0976 11.6834 17.0976 12.3166 16.7071 12.7071L9.70711 19.7071C9.31658 20.0976 8.68342 20.0976 8.29289 19.7071C7.90237 19.3166 7.90237 18.6834 8.29289 18.2929L14.5858 12L8.29289 5.70711C7.90237 5.31658 7.90237 4.68342 8.29289 4.29289Z"/>
                 </svg>
@@ -2246,7 +2246,7 @@
                 Барельеф&nbsp;(лепнина)&nbsp;- от&nbsp;9&nbsp;000&nbsp;р./м2&nbsp;(60)
               </p>
               <button class="product-button">
-                <h4 class="product-title product-title-dark product-title-dark-59">OG-RADA</h4>
+                <h4 class="product-title product-title-dark">OG-RADA</h4>
               </button>
             </div>
           </div>

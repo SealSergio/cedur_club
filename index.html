@@ -8,8 +8,9 @@
     <link rel="stylesheet" href="CSS/normalize.css">
     <link rel="stylesheet" href="CSS/general.css">
     <link rel="stylesheet" href="CSS/main.css">
-    <script defer src="JS/index.js"></script>
+    <script defer src="JS/burger-nav.js"></script>
     <script defer src="JS/up.js"></script>
+    <script defer src="JS/main.js"></script>
 </head>
 <body>
 <header class="header">
@@ -177,122 +178,125 @@
     </a>
   </address>
 </section>
-<section id="categories" class="section categories">
+<section class="section catalog">
 <div class="container">
-  <a class="categories__title__link" href="https://cedar-club.ru/catalog.html">
-    <h2 class="section-title categories__title">
-      Каталог&nbsp;
-    </h2>
-  </a>
-  <p class="basic-text catalog-text">
-    Кедровый клуб - это творческое объединение мастеров, работающих с деревом. Мы делаем корпусную мебель, мебель в природном стиле, резные фигуры и панно, можем выполнить отделку дома и бани.
-    </p>
-    <p class="basic-text catalog-text">
-    На нашем сайте вы можете посмотреть каталог изделий, примерные цены, процесс изготовления и некоторые эскизы. Также каталог можно скачать по <a class="download-link" href="docs/Cedar-club-catalog.pdf" download>ссылке</a>.
-    </p>
-  <nav class="products-nav">
-    <ul class="products-nav__list">
-      <li class="products-nav__item">
-        <a class="products-nav__link" href="https://cedar-club.ru/catalog.html#lamps">
-          Светильники
-        </a>
-      </li>
-      <li class="products-nav__item">
-        <a class="products-nav__link" href="https://cedar-club.ru/catalog.html#tables">
-          Столы&nbsp;и&nbsp;стулья
-        </a>
-      </li>
-      <li class="products-nav__item">
-        <a class="products-nav__link" href="https://cedar-club.ru/catalog.html#arm-chairs">
-          Кресла
-        </a>
-      </li>
-      <li class="products-nav__item">
-        <a class="products-nav__link" href="https://cedar-club.ru/catalog.html#beds">
-          Кровати&nbsp;и&nbsp;тумбочки
-        </a>
-      </li>
-      <li class="products-nav__item">
-        <a class="products-nav__link" href="https://cedar-club.ru/catalog.html#chests">
-          Комоды
-        </a>
-      </li>
-      <li class="products-nav__item">
-        <a class="products-nav__link" href="https://cedar-club.ru/catalog.html#carving">
-          Резьба
-        </a>
-      </li>
-      <li class="products-nav__item">
-        <a class="products-nav__link" href="https://cedar-club.ru/catalog.html#kitchens">
-          Кухни
-        </a>
-      </li>
-      <li class="products-nav__item">
-        <a class="products-nav__link" href="https://cedar-club.ru/catalog.html#doors">
-          Двери
-        </a>
-      </li>
-      <li class="products-nav__item">
-        <a class="products-nav__link" href="https://cedar-club.ru/catalog.html#decoration">
-          Отделка
-        </a>
-      </li>
-      <li class="products-nav__item">
-        <a class="products-nav__link" href="https://cedar-club.ru/catalog.html#another">
-          Разное
-        </a>
-      </li>
-    </ul>
-    <div class="categories__btn">
-      <button class="categories__btn__btn">
-        <a class="categories__btn__link" href="https://cedar-club.ru/catalog.html">
-          Смотреть&nbsp;каталог
+  <div class="catalog__container">
+    <article class="catalog__texts">
+      <a class="catalog__title__link" href="https://cedar-club.ru/catalog.html">
+        <h2 class="section-title catalog__title">
+          Каталог&nbsp;
+        </h2>
+      </a>
+      <p class="basic-text catalog__text">
+        Кедровый клуб - это творческое объединение мастеров, работающих с деревом. Мы делаем корпусную мебель, мебель в природном стиле, резные фигуры и панно, можем выполнить отделку дома и бани.
+        </p>
+      <p class="basic-text catalog__text">
+        На нашем сайте вы можете посмотреть каталог изделий, примерные цены, процесс изготовления и некоторые эскизы. Также каталог можно скачать по <a class="download-link" href="docs/Cedar-club-catalog.pdf" download>ссылке</a>.
+      </p>
+      <button class="catalog__btn">
+        <a class="catalog__btn__link" href="https://cedar-club.ru/catalog.html">
+          Каталог
           <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M8.29289 4.29289C8.68342 3.90237 9.31658 3.90237 9.70711 4.29289L16.7071 11.2929C17.0976 11.6834 17.0976 12.3166 16.7071 12.7071L9.70711 19.7071C9.31658 20.0976 8.68342 20.0976 8.29289 19.7071C7.90237 19.3166 7.90237 18.6834 8.29289 18.2929L14.5858 12L8.29289 5.70711C7.90237 5.31658 7.90237 4.68342 8.29289 4.29289Z"/>
           </svg>
         </a>
       </button>
+    </article>
+    <div class="catalog__slider">
+      <div class="slider catalog-slider">
+        <img class="slider__img" src="img/examples/11.jpg" alt="Лестница">
+        <img class="slider__img" src="img/examples/01.jpg" alt="Светильник">
+        <img class="slider__img" src="img/examples/02.jpg" alt="Стол">
+        <img class="slider__img" src="img/examples/03.jpg" alt="Столик из кедра">
+        <img class="slider__img" src="img/examples/05.jpg" alt="Кресло с пуфиком">
+        <img class="slider__img" src="img/examples/07.jpg" alt="Тумбочка">
+        <img class="slider__img" src="img/examples/06.jpg" alt="Кровать">
+        <img class="slider__img" src="img/examples/08-2.jpg" alt="Резьба охота">
+        <img class="slider__img" src="img/examples/08.jpg" alt="Медвежата">
+        <img class="slider__img" src="img/examples/09.jpg" alt="Кухня">
+        <img class="slider__img" src="img/examples/10.jpg" alt="Кухня">
+      </div>
+      <button class="slider-button prev-button" aria-label="Посмотреть предыдущий слайд">
+        <svg class="slider-button-img" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M15.7071 4.29289C16.0976 4.68342 16.0976 5.31658 15.7071 5.70711L9.41421 12L15.7071 18.2929C16.0976 18.6834 16.0976 19.3166 15.7071 19.7071C15.3166 20.0976 14.6834 20.0976 14.2929 19.7071L7.29289 12.7071C7.10536 12.5196 7 12.2652 7 12C7 11.7348 7.10536 11.4804 7.29289 11.2929L14.2929 4.29289C14.6834 3.90237 15.3166 3.90237 15.7071 4.29289Z"/>
+        </svg>
+      </button>
+      <button class="slider-button next-button" aria-label="Посмотреть следующий слайд">
+        <svg class="slider-button-img" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M8.29289 4.29289C8.68342 3.90237 9.31658 3.90237 9.70711 4.29289L16.7071 11.2929C17.0976 11.6834 17.0976 12.3166 16.7071 12.7071L9.70711 19.7071C9.31658 20.0976 8.68342 20.0976 8.29289 19.7071C7.90237 19.3166 7.90237 18.6834 8.29289 18.2929L14.5858 12L8.29289 5.70711C7.90237 5.31658 7.90237 4.68342 8.29289 4.29289Z"/>
+        </svg>
+      </button>
+      <div class="catalog-slider__indicator">
+        <span class="indicator__point"></span><span class="indicator__point"></span><span class="indicator__point"></span><span class="indicator__point"></span><span class="indicator__point"></span><span class="indicator__point"></span><span class="indicator__point"></span><span class="indicator__point"></span><span class="indicator__point"></span><span class="indicator__point"></span><span class="indicator__point"></span>
+      </div>
     </div>
+  </div>
+  <nav class="catalog-nav">
+    <ul class="catalog-nav__list">
+      <li class="catalog-nav__item">
+        <a class="catalog-nav__link" href="https://cedar-club.ru/catalog.html#lamps">
+          Светильники
+        </a>
+      </li>
+      <li class="catalog-nav__item">
+        <a class="catalog-nav__link" href="https://cedar-club.ru/catalog.html#tables">
+          Столы&nbsp;и&nbsp;стулья
+        </a>
+      </li>
+      <li class="catalog-nav__item">
+        <a class="catalog-nav__link" href="https://cedar-club.ru/catalog.html#arm-chairs">
+          Кресла
+        </a>
+      </li>
+      <li class="catalog-nav__item">
+        <a class="catalog-nav__link" href="https://cedar-club.ru/catalog.html#beds">
+          Кровати&nbsp;и&nbsp;тумбочки
+        </a>
+      </li>
+      <li class="catalog-nav__item">
+        <a class="catalog-nav__link" href="https://cedar-club.ru/catalog.html#chests">
+          Комоды
+        </a>
+      </li>
+      <li class="catalog-nav__item">
+        <a class="catalog-nav__link" href="https://cedar-club.ru/catalog.html#carving">
+          Резьба
+        </a>
+      </li>
+      <li class="catalog-nav__item">
+        <a class="catalog-nav__link" href="https://cedar-club.ru/catalog.html#kitchens">
+          Кухни
+        </a>
+      </li>
+      <li class="catalog-nav__item">
+        <a class="catalog-nav__link" href="https://cedar-club.ru/catalog.html#doors">
+          Двери
+        </a>
+      </li>
+      <li class="catalog-nav__item">
+        <a class="catalog-nav__link" href="https://cedar-club.ru/catalog.html#decoration">
+          Отделка
+        </a>
+      </li>
+      <li class="catalog-nav__item">
+        <a class="catalog-nav__link" href="https://cedar-club.ru/catalog.html#another">
+          Разное
+        </a>
+      </li>
+    </ul>
   </nav>
-  <ul class="example-list">
-    <li class="example-item">
-      <img  class="example-01" src="img/examples/01.jpg" alt="Стол">
-    </li>
-    <li class="example-item">
-      <img class="example-02" src="img/examples/02.jpg" alt="Стол">
-      <img class="example-03" src="img/examples/03.jpg" alt="Стол">
-    </li>
-    <li class="example-item">
-      <img class="example-05" src="img/examples/05.jpg" alt="Стол">
-    </li>
-    <li class="example-item">
-      <img class="example-06" src="img/examples/06.jpg" alt="Стол">
-      <img class="example-07" src="img/examples/07.jpg" alt="Стол">
-    </li>
-    <li class="example-item">
-      <img class="example-08" src="img/examples/08-2.jpg" alt="Стол">
-      <img class="example-08-2" src="img/examples/08.jpg" alt="Стол">
-    </li>
-    <li class="example-item example-item-09">
-      <img class="example-09" src="img/examples/09.jpg" alt="Стол">
-      <img class="example-10" src="img/examples/10.jpg" alt="Стол">
-    </li>
-    <li class="example-item">
-      <img class="example-11" src="img/examples/11.jpg" alt="Стол">
-    </li>
-  </ul>
 </div>
 </section>
 <section id="process" class="section process">
 <div class="container">
-  <a class="categories__title__link" href="https://cedar-club.ru/process.html">
+  <a class="catalog__title__link" href="https://cedar-club.ru/process.html">
     <h2 class="section-title">
       Фпрацэссе&nbsp;&nbsp;
     </h2>
   </a>
-  <div class="categories__btn">
-    <button class="categories__btn__btn">
-      <a class="categories__btn__link" href="https://cedar-club.ru/process.html">
+  <div class="catalog__btn">
+    <button class="catalog__btn__btn">
+      <a class="catalog__btn__link" href="https://cedar-club.ru/process.html">
         Больше&nbsp;видео
         <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path fill-rule="evenodd" clip-rule="evenodd" d="M8.29289 4.29289C8.68342 3.90237 9.31658 3.90237 9.70711 4.29289L16.7071 11.2929C17.0976 11.6834 17.0976 12.3166 16.7071 12.7071L9.70711 19.7071C9.31658 20.0976 8.68342 20.0976 8.29289 19.7071C7.90237 19.3166 7.90237 18.6834 8.29289 18.2929L14.5858 12L8.29289 5.70711C7.90237 5.31658 7.90237 4.68342 8.29289 4.29289Z"/>
@@ -317,9 +321,9 @@
       <img class="sketches-examples__img sketches-example_04" src="img/sketches-examples/04.jpg" alt="Мебель">
     </li>
   </div>
-  <div class="categories__btn">
-    <button class="categories__btn__btn">
-      <a class="categories__btn__link" href="https://cedar-club.ru/sketches.html">
+  <div class="catalog__btn">
+    <button class="catalog__btn__btn">
+      <a class="catalog__btn__link" href="https://cedar-club.ru/sketches.html">
         Смотреть&nbsp;эскизы
         <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path fill-rule="evenodd" clip-rule="evenodd" d="M8.29289 4.29289C8.68342 3.90237 9.31658 3.90237 9.70711 4.29289L16.7071 11.2929C17.0976 11.6834 17.0976 12.3166 16.7071 12.7071L9.70711 19.7071C9.31658 20.0976 8.68342 20.0976 8.29289 19.7071C7.90237 19.3166 7.90237 18.6834 8.29289 18.2929L14.5858 12L8.29289 5.70711C7.90237 5.31658 7.90237 4.68342 8.29289 4.29289Z"/>
@@ -336,10 +340,10 @@
   </h2>
   <article class="about-club">
     <div class="about-club-texts">
-      <p class="basic-text catalog-text">
+      <p class="basic-text catalog__text">
         В природе нет двух одинаковых деревьев, поэтому текстура каждой детали уникальна. Мы лишь стремимся подчеркнуть эту красоту, сделать интерьер дома более "живым", неповторимым.
       </p>
-      <p class="basic-text catalog-text">
+      <p class="basic-text catalog__text">
         В мебели из натурального дерева есть какое-то особое тепло, которого нет в заводской "Made in China" - тяжелые массивные двери придают ощущение надежности, тонкий резной светильник украшает спальню, а грозная морда медведя на входе в баню выдает русский характер.
       </p>
       <p class="basic-text about-club-text">

@@ -16,12 +16,12 @@
   margin-top: 0;
 }
 
-.catalog-text {
+.catalog__text {
   margin-bottom: 18px;
 }
 
 @media(min-width: 541px){
-  .catalog-text {
+  .catalog__text {
     width: 66.2%;
   }
 }
