@@ -13,11 +13,11 @@
     body.classList.toggle("noscroll");
     background.classList.toggle("be");
     renderPopup();
-  }
+  };
 
   function renderPopup() {
     popup.appendChild(menu);
-  }
+  };
 
   const links = Array.from(menu.children);
 
@@ -29,7 +29,7 @@
     popup.classList.remove("open");
     hamb.classList.remove("active");
     body.classList.remove("noscroll");
-  }
+  };
 
   background.addEventListener("click", closeOnBack);
 
@@ -38,5 +38,5 @@
     hamb.classList.remove("active");
     body.classList.remove("noscroll");
     background.classList.remove("be");
-  }
-})()
+  };
+})();
