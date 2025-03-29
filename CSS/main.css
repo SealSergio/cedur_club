@@ -997,6 +997,98 @@ ul {
   max-width: calc(40% - 5px);
 }
 
+.about-us {
+  scroll-margin-block-start: 90px;
+}
+
+.about-club {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media (min-width: 1025px) {
+  .about-us__title {
+    margin-bottom: 0;
+  }
+  .about-club-text {
+    padding-bottom: 40px;
+  }
+}
+.about-us__img {
+  width: 50.7%;
+}
+
+.about-club-text {
+  width: 40.57%;
+}
+
+@media (max-width: 768px) {
+  .about-club {
+    flex-direction: column-reverse;
+  }
+  .about-us__img {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .about-club-text {
+    width: 100%;
+  }
+}
+.about-bogun {
+  padding: 20px 0 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: 1025px) {
+  .about-bogun {
+    padding: 40px 0 60px;
+  }
+}
+.about-bogun__title {
+  text-transform: none;
+  border-bottom: 1px solid var(--dark);
+}
+
+.about-bogun__desc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+}
+
+.about-us__logo {
+  width: 40%;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+@media (min-width: 769px) {
+  .about-bogun__desc {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .about-us__logo {
+    margin: 0 30px 0 0;
+    max-width: 300px;
+  }
+}
+@media (min-width: 769px) {
+  .about-bogun__desc {
+    width: 70%;
+  }
+}
+.about-bogun__list {
+  padding-left: 20px;
+}
+
+.about-bogun__item {
+  margin-bottom: 5px;
+  list-style-type: circle;
+}
+
 .contacts {
   margin-bottom: 24px;
   scroll-margin-block-start: 90px;
