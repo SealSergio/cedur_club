@@ -7,7 +7,14 @@
     const slides = Array.from(slider.querySelectorAll('.slider__img'));
     const slideCount = slides.length;
     let slideIndex = 0;
-    const points = Array.from(sliderContainer.querySelectorAll('.indicator__point'));
+    const indicator = sliderContainer.querySelector('.catalog-slider__indicator');
+
+    for (let i = 0; i < slideCount; i++) {
+      const indicatorPoint = document.createElement('span');
+      indicatorPoint.classList.add('indicator__point');
+      indicator.append(indicatorPoint);
+    }
+    const points = Array.from(indicator.querySelectorAll('.indicator__point'));
 
     prevButton.addEventListener('click', showPreviousSlide);
     nextButton.addEventListener('click', showNextSlide);

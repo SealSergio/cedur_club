@@ -157,7 +157,12 @@
 <main class="main">
 <section class="section home">
   <div class="home__img">
-    <img src="img/home_biggest.jpg" alt="Мебель из кедра">
+    <picture>
+      <source srcset="img/home_small.jpg" media="(max-width: 540px)">
+      <source srcset="img/home_middle.jpg" media="(max-width: 768px)">
+      <source srcset="img/home_big.jpg" media="(min-width: 769px)">
+      <img src="img/home_big.jpg" alt="Мебель из кедра">
+    </picture>
   </div>
   <!-- <div class="home-subtitle container">
     <span class="home-subtitle__line home-subtitle__line_vertical"></span>
@@ -180,7 +185,7 @@
 <div class="container">
   <div class="catalog__container">
     <article class="catalog__texts">
-      <a class="catalog__title__link" href="https://cedar-club.ru/catalog.html">
+      <a href="https://cedar-club.ru/catalog.html">
         <h2 class="section-title catalog__title">
           Каталог&nbsp;
         </h2>
@@ -191,8 +196,8 @@
       <p class="basic-text catalog__text">
         На нашем сайте вы можете посмотреть каталог изделий, примерные цены, процесс изготовления и некоторые эскизы. Также каталог можно скачать по <a class="download-link" href="docs/Cedar-club-catalog.pdf" download>ссылке</a>.
       </p>
-      <button class="catalog__btn">
-        <a class="catalog__btn__link" href="https://cedar-club.ru/catalog.html">
+      <button class="btn-more">
+        <a class="btn-more__link" href="https://cedar-club.ru/catalog.html">
           Каталог
           <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M8.29289 4.29289C8.68342 3.90237 9.31658 3.90237 9.70711 4.29289L16.7071 11.2929C17.0976 11.6834 17.0976 12.3166 16.7071 12.7071L9.70711 19.7071C9.31658 20.0976 8.68342 20.0976 8.29289 19.7071C7.90237 19.3166 7.90237 18.6834 8.29289 18.2929L14.5858 12L8.29289 5.70711C7.90237 5.31658 7.90237 4.68342 8.29289 4.29289Z"/>
@@ -202,17 +207,61 @@
     </article>
     <div class="catalog__slider">
       <div class="slider catalog-slider">
-        <img class="slider__img" src="img/examples/11.jpg" alt="Лестница">
-        <img class="slider__img" src="img/examples/01.jpg" alt="Светильник">
-        <img class="slider__img" src="img/examples/02.jpg" alt="Стол">
-        <img class="slider__img" src="img/examples/03.jpg" alt="Столик из кедра">
-        <img class="slider__img" src="img/examples/05.jpg" alt="Кресло с пуфиком">
-        <img class="slider__img" src="img/examples/07.jpg" alt="Тумбочка">
-        <img class="slider__img" src="img/examples/06.jpg" alt="Кровать">
-        <img class="slider__img" src="img/examples/08-2.jpg" alt="Резьба охота">
-        <img class="slider__img" src="img/examples/08.jpg" alt="Медвежата">
-        <img class="slider__img" src="img/examples/09.jpg" alt="Кухня">
-        <img class="slider__img" src="img/examples/10.jpg" alt="Кухня">
+        <picture>
+          <source srcset="img/catalog-examples/11_small.jpg" media="(max-width: 540px)">
+          <source srcset="img/catalog-examples/11_middle.jpg" media="(min-width: 541px)">
+          <img class="slider__img" src="img/catalog-examples/11_middle.jpg" alt="Лестница">
+        </picture>
+        <picture>
+          <source srcset="img/catalog-examples/01_small.jpg" media="(max-width: 540px)">
+          <source srcset="img/catalog-examples/01_middle.jpg" media="(min-width: 541px)">
+          <img class="slider__img" src="img/catalog-examples/01_middle.jpg" alt="Светильник">
+        </picture>
+        <picture>
+          <source srcset="img/catalog-examples/02_small.jpg" media="(max-width: 540px)">
+          <source srcset="img/catalog-examples/02_middle.jpg" media="(min-width: 541px)">
+          <img class="slider__img" src="img/catalog-examples/02_middle.jpg" alt="Стол">
+        </picture>
+        <picture>
+          <source srcset="img/catalog-examples/03_small.jpg" media="(max-width: 540px)">
+          <source srcset="img/catalog-examples/03_middle.jpg" media="(min-width: 541px)">
+          <img class="slider__img" src="img/catalog-examples/03_middle.jpg" alt="Столик из кедра">
+        </picture>
+        <picture>
+          <source srcset="img/catalog-examples/05_small.jpg" media="(max-width: 540px)">
+          <source srcset="img/catalog-examples/05_middle.jpg" media="(min-width: 541px)">
+          <img class="slider__img" src="img/catalog-examples/05_middle.jpg" alt="Кресло с пуфиком">
+        </picture>
+        <picture>
+          <source srcset="img/catalog-examples/07_small.jpg" media="(max-width: 540px)">
+          <source srcset="img/catalog-examples/07_middle.jpg" media="(min-width: 541px)">
+          <img class="slider__img" src="img/catalog-examples/07_middle.jpg" alt="Тумбочка">
+        </picture>
+        <picture>
+          <source srcset="img/catalog-examples/06_small.jpg" media="(max-width: 540px)">
+          <source srcset="img/catalog-examples/06_middle.jpg" media="(min-width: 541px)">
+          <img class="slider__img" src="img/catalog-examples/06_middle.jpg" alt="Кровать">
+        </picture>
+        <picture>
+          <source srcset="img/catalog-examples/08-2_small.jpg" media="(max-width: 540px)">
+          <source srcset="img/catalog-examples/08-2_middle.jpg" media="(min-width: 541px)">
+          <img class="slider__img" src="img/catalog-examples/08-2_middle.jpg" alt="Резьба охота">
+        </picture>
+        <picture>
+          <source srcset="img/catalog-examples/08_small.jpg" media="(max-width: 540px)">
+          <source srcset="img/catalog-examples/08_middle.jpg" media="(min-width: 541px)">
+          <img class="slider__img" src="img/catalog-examples/08_middle.jpg" alt="Медвежата">
+        </picture>
+        <picture>
+          <source srcset="img/catalog-examples/09_small.jpg" media="(max-width: 540px)">
+          <source srcset="img/catalog-examples/09_middle.jpg" media="(min-width: 541px)">
+          <img class="slider__img" src="img/catalog-examples/09_middle.jpg" alt="Кухня">
+        </picture>
+        <picture>
+          <source srcset="img/catalog-examples/10_small.jpg" media="(max-width: 540px)">
+          <source srcset="img/catalog-examples/10_middle.jpg" media="(min-width: 541px)">
+          <img class="slider__img" src="img/catalog-examples/10_middle.jpg" alt="Кухня">
+        </picture>
       </div>
       <button class="slider-button prev-button" aria-label="Посмотреть предыдущий слайд">
         <svg class="slider-button-img" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -224,9 +273,7 @@
           <path fill-rule="evenodd" clip-rule="evenodd" d="M8.29289 4.29289C8.68342 3.90237 9.31658 3.90237 9.70711 4.29289L16.7071 11.2929C17.0976 11.6834 17.0976 12.3166 16.7071 12.7071L9.70711 19.7071C9.31658 20.0976 8.68342 20.0976 8.29289 19.7071C7.90237 19.3166 7.90237 18.6834 8.29289 18.2929L14.5858 12L8.29289 5.70711C7.90237 5.31658 7.90237 4.68342 8.29289 4.29289Z"/>
         </svg>
       </button>
-      <div class="catalog-slider__indicator">
-        <span class="indicator__point"></span><span class="indicator__point"></span><span class="indicator__point"></span><span class="indicator__point"></span><span class="indicator__point"></span><span class="indicator__point"></span><span class="indicator__point"></span><span class="indicator__point"></span><span class="indicator__point"></span><span class="indicator__point"></span><span class="indicator__point"></span>
-      </div>
+      <div class="catalog-slider__indicator"></div>
     </div>
   </div>
   <nav class="catalog-nav">
@@ -287,14 +334,14 @@
 </section>
 <section id="process" class="section process">
 <div class="container">
-  <a class="catalog__title__link" href="https://cedar-club.ru/process.html">
+  <a href="https://cedar-club.ru/process.html">
     <h2 class="section-title">
       Фпрацэссе&nbsp;&nbsp;
     </h2>
   </a>
-  <div class="catalog__btn">
-    <button class="catalog__btn__btn">
-      <a class="catalog__btn__link" href="https://cedar-club.ru/process.html">
+  <div class="">
+    <button class="btn-more">
+      <a class="btn-more__link" href="https://cedar-club.ru/process.html">
         Больше&nbsp;видео
         <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path fill-rule="evenodd" clip-rule="evenodd" d="M8.29289 4.29289C8.68342 3.90237 9.31658 3.90237 9.70711 4.29289L16.7071 11.2929C17.0976 11.6834 17.0976 12.3166 16.7071 12.7071L9.70711 19.7071C9.31658 20.0976 8.68342 20.0976 8.29289 19.7071C7.90237 19.3166 7.90237 18.6834 8.29289 18.2929L14.5858 12L8.29289 5.70711C7.90237 5.31658 7.90237 4.68342 8.29289 4.29289Z"/>
@@ -319,10 +366,10 @@
       <img class="sketches-examples__img sketches-example_04" src="img/sketches-examples/04.jpg" alt="Мебель">
     </li>
   </div>
-  <div class="catalog__btn">
-    <button class="catalog__btn__btn">
-      <a class="catalog__btn__link" href="https://cedar-club.ru/sketches.html">
-        Смотреть&nbsp;эскизы
+  <div class="">
+    <button class="btn-more">
+      <a class="btn-more__link" href="https://cedar-club.ru/sketches.html">
+        Больше&nbsp;эскизов
         <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path fill-rule="evenodd" clip-rule="evenodd" d="M8.29289 4.29289C8.68342 3.90237 9.31658 3.90237 9.70711 4.29289L16.7071 11.2929C17.0976 11.6834 17.0976 12.3166 16.7071 12.7071L9.70711 19.7071C9.31658 20.0976 8.68342 20.0976 8.29289 19.7071C7.90237 19.3166 7.90237 18.6834 8.29289 18.2929L14.5858 12L8.29289 5.70711C7.90237 5.31658 7.90237 4.68342 8.29289 4.29289Z"/>
         </svg>
