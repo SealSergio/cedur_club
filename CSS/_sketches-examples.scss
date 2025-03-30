@@ -1,5 +1,10 @@
+.sketches-examples {
+  padding-bottom: 36px;
+}
+
 .sketches-examples__list {
   width: 100%;
+  margin-bottom: 18px;
 }
 
 .sketches-examples__item {
@@ -10,6 +15,10 @@
   overflow: hidden;
   max-width: 100%;
   max-height: 400px;
+
+  &:first-child {
+    margin-bottom: var(--example-gap);
+  }
 }
 
 .sketches-examples__img {
@@ -17,16 +26,18 @@
   overflow: hidden;
   min-height: 100%;
   max-height: 400px;
-}
 
-.sketches-examples__item:first-child {
-  margin-bottom: var(--example-gap);
-}
+  &_big {
+    max-width: 60%;
+  }
 
-.sketches-example_01, .sketches-example_04 {
-  max-width: 60%;
-}
+  &_small {
+    max-width: calc(40% - 5px);
+  }
 
-.sketches-example_02, .sketches-example_03 {
-  max-width: calc(40% - 5px);
+  & img {
+    object-fit: cover;
+    min-width: 100%;
+    min-height: 100%;
+  }
 }

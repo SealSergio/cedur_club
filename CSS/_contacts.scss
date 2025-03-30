@@ -47,6 +47,7 @@
   font-style: normal;
   color: var(--dark);
   transition: color 0.2s ease-in-out;
+  white-space: nowrap;
 }
 
 .contacts__link:hover, .contacts__link:active {

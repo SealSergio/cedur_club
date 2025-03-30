@@ -10,6 +10,7 @@
   --quantity: 1;
   --card-width: calc((100% - (var(--gap) * (var(--quantity) - 1))) / var(--quantity));
   --radius-big: 10px;
+  // --section-padding-bottom: 36px;
 }
 
 @media(min-width: 1200px) {
@@ -150,6 +151,7 @@ ul {
 }
 
 .btn-more {
+  display: block;
   margin: 0;
   min-width: 100px;
   min-height: 40px;
