@@ -5,15 +5,18 @@
 
 @media (min-width: 769px) {
   .sketches-examples {
+    margin-bottom: 18px;
+    padding: 0;
     height: 100vh;
     max-height: 800px;
-    margin-bottom: 18px;
   }
 }
 
 .sketches-examples__list {
   width: 100%;
   margin-bottom: 18px;
+  border-radius: 12px;
+  overflow: hidden;
 }
 
 @media (min-width: 769px) {
@@ -59,6 +62,19 @@
 
 // slider for desktop
 
+@media (min-width: 769px) {
+  .sketches-examples__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+
+  .sketches-examples__title {
+    display: none;
+  }
+}
+
 .sketches-slider {
   display: none;
 }
@@ -66,7 +82,47 @@
 @media (min-width: 769px) {
   .sketches-slider {
     display: flex;
-    height: 636px;
+    height: 100%;
+    max-height: 740px;
+    justify-content: center;
+    align-self: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+
+.sketches-slider__title {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  margin-right: 48px;
+
+  & span {
+    display: block;
+    height: 95px;
+    font-family: 'Leotaro', 'Roboto', serif;
+    font-weight: normal;
+    font-size: 130px;
+    text-transform: uppercase;
+    color: var(--dark);
+    transform: rotate(270deg);
+  }
+}
+
+@media (max-width: 1280px) {
+  .sketches-slider__title {
+    margin-right: 36px;
+
+    & span {
+      height: 90px;
+      font-size: 120px;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .sketches-slider__title {
+    display: none;
   }
 }
 
@@ -76,7 +132,23 @@
   flex-direction: column;
   gap: var(--gap);
   width: 180px;
-  margin-right: 30px;
+  min-width: 180px;
+  margin-left: 30px;
+}
+
+@media (max-width: 1280px) {
+  .sketches-slider__preview {
+    width: 150px;
+    min-width: 150px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .sketches-slider__preview {
+    width: 150px;
+    min-width: 150px;
+    margin-left: 21px;
+  }
 }
 
 .sketches-slider__preview__item {
@@ -117,11 +189,16 @@
   &.active::after {
     opacity: 0;
   }
+
+  &:not(.active):hover::after {
+    opacity: 0.2;
+  }
 }
 
 .sketches-slider__zoom {
   display: block;
-  width: 60%;
+  width: 100%;
+  max-width: 900px;
   height: 100%;
   min-height: 100%;
   border-radius: 12px;
@@ -132,5 +209,11 @@
     min-width: 100%;
     min-height: 100%;
     object-fit: cover;
+  }
+}
+
+@media (min-width: 769px) {
+  .sketches-examples__btn {
+    display: none;
   }
 }
