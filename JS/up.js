@@ -1,20 +1,19 @@
+const btn = document.getElementById('scrollToTop');
 
-let btn = document.getElementById("scrollToTop");
-
-btn.addEventListener("click", scrollbtn)
+btn.addEventListener('click', scrollbtn);
 
 function scrollbtn() {
   window.scrollTo({
     top: 0,
-    behavior: "smooth"
+    behavior: 'smooth'
   });
 }
 
-var lastScrollTop = 0;
+let lastScrollTop = 0;
 window.onscroll = onScroll;
 
 function onScroll (e) {
-    var top = window.pageYOffset;
+    let top = window.pageYOffset;
     if (lastScrollTop > top) {
         btn.style.display = 'block';
         btn.style.opacity = '1';

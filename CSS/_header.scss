@@ -20,6 +20,11 @@
   max-width: 100%;
   background-image: linear-gradient(rgba(15,2,0,0.55) 50%, rgba(15,2,0,0.4) 80%, rgba(15,2,0,0.2));
   backdrop-filter: blur(1.5px);
+  transition: top 0.3s ease-in-out;
+
+  &.hidden {
+    top: -100%;
+  }
 }
 
 .header__container {

@@ -126,6 +126,23 @@
   }
 }
 
+.sketches-slider__zoom {
+  display: block;
+  width: 100%;
+  max-width: 900px;
+  height: 100%;
+  min-height: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+
+  & img {
+    display: block;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+  }
+}
+
 .sketches-slider__preview {
   display: flex;
   justify-content: center;
@@ -192,23 +209,6 @@
 
   &:not(.active):hover::after {
     opacity: 0.2;
-  }
-}
-
-.sketches-slider__zoom {
-  display: block;
-  width: 100%;
-  max-width: 900px;
-  height: 100%;
-  min-height: 100%;
-  border-radius: 12px;
-  overflow: hidden;
-
-  & img {
-    display: block;
-    min-width: 100%;
-    min-height: 100%;
-    object-fit: cover;
   }
 }
 
