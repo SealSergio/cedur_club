@@ -1,90 +1,64 @@
 const scrollbar = document.querySelector('.scrollbar');
-const scrollbarThumb = document.querySelector('.scrollbar__thumb');
+const thumb = document.querySelector('.scrollbar__thumb');
 
-let lastScroll = 0;
-
-function countScrollTop(top) {
-  const windowHeight = document.body.scrollHeight;
-  const scrollbarHeight = scrollbar.scrollHeight;
-
-  const margin = (scrollbarHeight - 48) * (top / (windowHeight - scrollbarHeight));
-  scrollbarThumb.style.top = `${margin}px`;
-  // console.log('Высота окна:', windowHeight)
-  // console.log('Уже прокручено:', top)
-  // console.log('Высота скроллбара:', scrollbarHeight)
-  // console.log('Прокручено в процентах:', top / (windowHeight - scrollbarHeight))
-  // console.log(margin)
-  // console.log('')
+function updateThumb() {
+    const top = window.pageYOffset;
+    const windowHeight = document.body.scrollHeight;
+    const scrollbarHeight = scrollbar.scrollHeight;
+    const margin = (scrollbarHeight - 48) * (top / (windowHeight - scrollbarHeight));
+    thumb.style.top = `${margin}px`;
 }
 
+let thumbIsActive = false;
+
 window.addEventListener('scroll', () => {
-  let top = window.pageYOffset;
   let timer = 0;
+  thumb.style.opacity = '0.5';
+  updateThumb();
 
-  scrollbarThumb.style.opacity = '0.5';
-  countScrollTop(top);
-
-  if (!scrollbarThumb.classList.contains('active')) {
-    timer = 1500;
+  if (!thumbIsActive) {
+    timer = 2000;
     setTimeout(() => {
-      scrollbarThumb.style.opacity = '0';
+      thumb.style.opacity = '0';
     }, timer);
   };
 });
 
 scrollbar.addEventListener('mouseover', () => {
-  let top = window.pageYOffset;
-  scrollbarThumb.style.opacity = '0.5';
-  countScrollTop(top);
-  scrollbarThumb.classList.add('active');
+  thumb.style.opacity = '0.5';
+  updateThumb();
+  thumbIsActive = true;
 });
 
 scrollbar.addEventListener('mouseout', () => {
-  scrollbarThumb.style.opacity = '0';
-  scrollbarThumb.classList.remove('active');
+  thumb.style.opacity = '0';
+  thumbIsActive = false;
 });
 
-// scrollbarThumb.addEventListener('mousedown', (event) => {
-//   // let marg =
-//   // window.scrollTo()
-//   scrollbar.addEventListener('mousemove', (e) => {
-//     console.log('e.clientY', e.clientY)
-//     console.log('scrollbar', scrollbarThumb.getBoundingClientRect().top)
-//     console.log('')
-//     // scrollbarThumb.style.top = e.clientY - scrollbarThumb.getBoundingClientRect().y + 'px';
-//   })
+let isDragging = false;
 
-//   // moveAt(event.pageY);
+thumb.addEventListener('mousedown', () => {
+    isDragging = true;
+    document.body.style.cursor = 'grabbing';
+    document.body.style.userSelect = 'none';
+});
 
-//   // // переносит мяч на координаты (pageX, pageY),
-//   // // дополнительно учитывая изначальный сдвиг относительно указателя мыши
-//   // function moveAt(pageY) {
-//   //   let margi = event.clientY;
-//   //   console.log('pageY', pageY)
-//   //   console.log('event.clientY', event.clientY)
-//   //   console.log('scrollbarThumb', scrollbarThumb.getBoundingClientRect().y)
-//   //   console.log('margi', margi)
-//   //   scrollbarThumb.style.top = margi + 'px';
-//   // }
+document.addEventListener('mouseup', () => {
+    isDragging = false;
+    document.body.style.cursor = 'default';
+    document.body.style.userSelect = 'auto';
+});
 
-//   // function onMouseMove(event) {
-//   //   console.log('двигаем')
-//   //   moveAt(event.pageY);
-//   // }
+scrollbar.addEventListener('mousemove', (e) => {
+    if (!isDragging) return;
 
-//   // // передвигаем мяч при событии mousemove
-//   // document.addEventListener('mousemove', onMouseMove);
+    const scrollbarRect = scrollbar.getBoundingClientRect();
+    const scrollableHeight = document.body.scrollHeight;
+    let newY = e.clientY - scrollbarRect.top - 48;
+    newY = Math.max(0, Math.min(newY, scrollbarRect.height - 48));
+    thumb.style.top = `${newY}px)`;
+    window.scrollTo({
+      top: (newY / (scrollbarRect.height - 48)) * scrollableHeight,
+    });
+});
 
-//   // // отпустить мяч, удалить ненужные обработчики
-//   // document.onmouseup = function() {
-//   //   document.removeEventListener('mousemove', onMouseMove);
-//   //   scrollbarThumb.onmouseup = null;
-//   //   console.log('отпустили мяч')
-//   // };
-// })
-
-// scrollbarThumb.ondragstart = function() {
-//   return false;
-// };
-
-// const margin = (scrollbarHeight - 48) * (top / (windowHeight - scrollbarHeight));
