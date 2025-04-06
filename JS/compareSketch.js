@@ -9,17 +9,31 @@ const handleMoveLine = (e) => {
   if (dragging) {
     const comparerRect = comparer.getBoundingClientRect();
 
-    if (e.touches) {
-      if ((e.touches[0].clientX < comparerRect.left) || (e.touches[0].clientX > comparerRect.right)) {
-        stopDragging;
-        return;
-      }
-    };
+    if (window.matchMedia('(max-width: 768px)').matches) {
+      if (e.touches) {
+        if ((e.touches[0].clientY < comparerRect.top) || (e.touches[0].clientY > comparerRect.bottom)) {
+          stopDragging;
+          return;
+        }
+      };
 
-    const clientX = e.clientX || (e.touches && e.touches[0].clientX);
-    const left = clientX - comparerRect.left;
-    line.style.left = `${left}px`;
-    halfLeft.style.width = `${left}px`;
+      const clientY = e.clientY || (e.touches && e.touches[0].clientY);
+      const top = clientY - comparerRect.top;
+      line.style.top = `${top}px`;
+      halfLeft.style.height = `${top}px`;
+    } else {
+      if (e.touches) {
+        if ((e.touches[0].clientX < comparerRect.left) || (e.touches[0].clientX > comparerRect.right)) {
+          stopDragging;
+          return;
+        }
+      };
+
+      const clientX = e.clientX || (e.touches && e.touches[0].clientX);
+      const left = clientX - comparerRect.left;
+      line.style.left = `${left}px`;
+      halfLeft.style.width = `${left}px`;
+    }
   }
 };
 
@@ -57,7 +71,7 @@ const observer = new IntersectionObserver(entries => {
         entry.target.classList.add('comparer-animation');
       }
     });
-  }, 1500)
+  }, 1000)
 });
 
 observer.observe(comparer);
