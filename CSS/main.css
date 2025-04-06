@@ -635,7 +635,30 @@ ul {
   -o-object-fit: cover;
      object-fit: cover;
 }
+.home__img::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
 
+.home__img_dark::after {
+  animation: homeDark 2s ease-in 1;
+  background-color: transparent;
+}
+
+@keyframes homeDark {
+  from {
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  to {
+    background-color: transparent;
+  }
+}
 .home-subtitle {
   position: relative;
 }
