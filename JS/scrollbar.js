@@ -38,27 +38,28 @@ scrollbar.addEventListener('mouseout', () => {
 let isDragging = false;
 
 thumb.addEventListener('mousedown', () => {
-    isDragging = true;
-    document.body.style.cursor = 'grabbing';
-    document.body.style.userSelect = 'none';
+  isDragging = true;
+  document.body.style.cursor = 'grabbing';
+  document.body.style.userSelect = 'none';
 });
 
 document.addEventListener('mouseup', () => {
-    isDragging = false;
-    document.body.style.cursor = 'default';
-    document.body.style.userSelect = 'auto';
+  isDragging = false;
+  document.body.style.cursor = 'default';
+  document.body.style.userSelect = 'auto';
 });
 
 scrollbar.addEventListener('mousemove', (e) => {
-    if (!isDragging) return;
+  console.log('двигаемся после скролла')
+  if (!isDragging) return;
 
-    const scrollbarRect = scrollbar.getBoundingClientRect();
-    const scrollableHeight = document.body.scrollHeight;
-    let newY = e.clientY - scrollbarRect.top - 48;
-    newY = Math.max(0, Math.min(newY, scrollbarRect.height - 48));
-    thumb.style.top = `${newY}px)`;
-    window.scrollTo({
-      top: (newY / (scrollbarRect.height - 48)) * scrollableHeight,
-    });
+  const scrollbarRect = scrollbar.getBoundingClientRect();
+  const scrollableHeight = document.body.scrollHeight;
+  let newY = e.clientY - scrollbarRect.top - 48;
+  newY = Math.max(0, Math.min(newY, scrollbarRect.height - 48));
+  thumb.style.top = `${newY}px)`;
+  window.scrollTo({
+    top: (newY / (scrollbarRect.height - 48)) * scrollableHeight,
+  });
 });
 

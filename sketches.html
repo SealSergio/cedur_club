@@ -10,6 +10,7 @@
     <script defer src="JS/burger-nav.js"></script>
     <script defer src="JS/hideHeader.js"></script>
     <script defer src="JS/scrollbar.js"></script>
+    <script defer src="JS/compareSketch.js"></script>
     <!-- <script defer src="JS/up.js"></script> -->
 </head>
 <body>
@@ -248,6 +249,29 @@
     </ul>
   </div>
 </section>
+<section class="section comparison">
+  <div class="container">
+    <div class="comparer">
+      <div class="comparer__half comparer__half_left">
+        <picture class="comparer__img">
+          <source srcset="img/comparison/01_small.jpg" media="(max-width: 768px)">
+          <source srcset="img/comparison/01_big.jpg" media="(min-width: 769px)">
+          <img src="./img/comparison/01_big.jpg" alt="Интерьер прихожей">
+        </picture>
+      </div>
+      <div class="comparer__half comparer__half_right">
+        <picture class="comparer__img">
+          <source srcset="img/comparison/02_small.jpg" media="(max-width: 768px)">
+          <source srcset="img/comparison/02_big.jpg" media="(min-width: 769px)">
+          <img src="./img/comparison/02_big.jpg" alt="Эскиз прихожей">
+        </picture>
+      </div>
+      <span class="comparer__line">
+        <span class="comparer__line__inner"></span>
+      </span>
+    </div>
+  </div>
+</section>
 </main>
 <footer class="footer">
 <div class="footer__container container">
@@ -347,10 +371,5 @@
 <img class="footer__logo-big" src="img/footer-logo.png" alt="Логотип Анатолия Богуна">
 </div>
 </footer>
-<!-- <div id="scrollToTop" class="btn-up" onclick="goUp();">
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="36" height="36">
-    <path d="M12,0A12,12,0,1,1,0,12,12.013,12.013,0,0,1,12,0Zm0,22A10,10,0,1,0,2,12,10.011,10.011,0,0,0,12,22ZM10.586,8.586,5.874,13.3l1.414,1.414L12,10l4.673,4.673,1.414-1.414L13.414,8.586a2,2,0,0,0-2.828,0Z"/>
-  </svg>
-</div> -->
 </body>
 </html>
