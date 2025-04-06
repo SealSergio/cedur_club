@@ -627,11 +627,12 @@ ul {
   top: 0;
   display: block;
   height: 100%;
+  overflow: hidden;
 }
 .comparer__half_left {
   left: 0;
   z-index: 5;
-  width: 50%;
+  width: 0;
 }
 .comparer__half_left img, .comparer__half_left picture {
   -o-object-position: left;
@@ -653,16 +654,72 @@ ul {
   min-height: 100%;
 }
 
+.comparer-animation .comparer__half_left {
+  animation: appearHalf 1s 1 ease-in-out;
+  width: 50%;
+}
+
+@keyframes appearHalf {
+  from {
+    width: 0;
+  }
+  to {
+    width: 50%;
+  }
+}
 .comparer__img {
   display: block;
   width: 100%;
   height: 100%;
 }
 
+.comparer__subtitle {
+  position: absolute;
+  display: block;
+  padding: 12px;
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--light);
+}
+.comparer__subtitle_left {
+  top: 0;
+  left: 0;
+  z-index: 7;
+}
+.comparer__subtitle_left::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  display: block;
+  width: 105%;
+  height: 115%;
+  border-bottom-right-radius: 100% 30%;
+  background-color: var(--less-dark);
+}
+.comparer__subtitle_right {
+  bottom: 0;
+  right: 0;
+  z-index: 6;
+}
+.comparer__subtitle_right::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  display: block;
+  width: 105%;
+  height: 115%;
+  border-top-left-radius: 100% 30%;
+  background-color: var(--less-dark);
+}
+
 .comparer__line {
   position: absolute;
   top: 0;
-  left: 50%;
+  left: 0;
   z-index: 7;
   display: block;
   width: 12px;
@@ -673,6 +730,19 @@ ul {
   transform: translateX(-50%);
 }
 
+.comparer-animation .comparer__line {
+  animation: appearLine 1s 1 ease-in-out;
+  left: 50%;
+}
+
+@keyframes appearLine {
+  from {
+    left: 0;
+  }
+  to {
+    left: 50%;
+  }
+}
 .comparer__line__inner {
   display: block;
   width: 6px;
@@ -688,9 +758,9 @@ ul {
   display: block;
   width: 20px;
   height: 20px;
-  cursor: pointer;
   transform: translateY(50%) rotate(45deg);
   background-color: var(--light);
+  cursor: pointer;
 }
 
 .section-sketches {

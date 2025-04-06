@@ -50,16 +50,15 @@ document.addEventListener('mouseup', () => {
 });
 
 scrollbar.addEventListener('mousemove', (e) => {
-  console.log('двигаемся после скролла')
-  if (!isDragging) return;
-
-  const scrollbarRect = scrollbar.getBoundingClientRect();
-  const scrollableHeight = document.body.scrollHeight;
-  let newY = e.clientY - scrollbarRect.top - 48;
-  newY = Math.max(0, Math.min(newY, scrollbarRect.height - 48));
-  thumb.style.top = `${newY}px)`;
-  window.scrollTo({
-    top: (newY / (scrollbarRect.height - 48)) * scrollableHeight,
-  });
+  if (isDragging) {
+    const scrollbarRect = scrollbar.getBoundingClientRect();
+    const scrollableHeight = document.body.scrollHeight;
+    let newY = e.clientY - scrollbarRect.top - 48;
+    newY = Math.max(0, Math.min(newY, scrollbarRect.height - 48));
+    thumb.style.top = `${newY}px)`;
+    window.scrollTo({
+      top: (newY / (scrollbarRect.height - 48)) * scrollableHeight,
+    });
+  }
 });
 
