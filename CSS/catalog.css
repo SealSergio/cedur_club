@@ -232,7 +232,6 @@ ul {
   height: 100vh;
   z-index: 9;
 }
-
 .body__back.be {
   display: block;
 }
@@ -383,7 +382,6 @@ ul {
   text-transform: uppercase;
   transition: color 0.15s ease-in-out;
 }
-
 .header-nav__link:hover, .header-nav__link:focus, .header-nav__link:active {
   color: var(--lighter);
 }
@@ -410,7 +408,7 @@ ul {
 }
 
 @media (max-width: 768px) {
-  .header-nav {
+  .header-nav, .header-nav__tel {
     display: none;
   }
 }
@@ -526,7 +524,6 @@ ul {
   color: var(--dark);
   transition: color 0.2s;
 }
-
 .menu__link:first-child {
   max-width: 175px;
 }
@@ -550,8 +547,7 @@ ul {
   font-size: 18px;
   color: var(--dark);
 }
-
-.menu-products__link-last {
+.menu-products__link_last {
   margin: 0;
 }
 
@@ -563,23 +559,19 @@ ul {
 .hamb__field.active .hamb__bar:nth-child(2) {
   opacity: 0;
 }
-
 .hamb__field.active .hamb__bar:nth-child(1) {
   width: 35px;
   height: 3px;
   background-color: var(--dark);
   transform: translateY(8px) rotate(45deg);
 }
-
 .hamb__field.active .hamb__bar:nth-child(3) {
   width: 35px;
   height: 3px;
   background-color: var(--dark);
   transform: translateY(-8px) rotate(-45deg);
 }
-
-.hamb__field.active:hover .hamb__bar:nth-child(1),
-.hamb__field.active:hover .hamb__bar:nth-child(3) {
+.hamb__field.active:hover .hamb__bar:nth-child(1), .hamb__field.active:hover .hamb__bar:nth-child(3) {
   background-color: var(--less-dark);
 }
 
