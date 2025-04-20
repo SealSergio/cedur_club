@@ -1,0 +1,219 @@
+.sketches-examples {
+  padding-bottom: 36px;
+  background: var(--less-dark) url('../img/sketches-example.jpg') bottom right / cover no-repeat;
+}
+
+@media (min-width: 769px) {
+  .sketches-examples {
+    margin-bottom: 18px;
+    padding: 0;
+    height: 100vh;
+    max-height: 800px;
+  }
+}
+
+.sketches-examples__list {
+  width: 100%;
+  margin-bottom: 18px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+@media (min-width: 769px) {
+  .sketches-examples__list {
+    display: none;
+  }
+}
+
+.sketches-examples__item {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: var(--example-gap);
+  overflow: hidden;
+  max-width: 100%;
+  max-height: 400px;
+
+  &:first-child {
+    margin-bottom: var(--example-gap);
+  }
+}
+
+.sketches-examples__img {
+  object-fit: cover;
+  overflow: hidden;
+  min-height: 100%;
+  max-height: 400px;
+
+  &_big {
+    max-width: 60%;
+  }
+
+  &_small {
+    max-width: calc(40% - 5px);
+  }
+
+  & img {
+    object-fit: cover;
+    min-width: 100%;
+    min-height: 100%;
+  }
+}
+
+// slider for desktop
+
+@media (min-width: 769px) {
+  .sketches-examples__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+
+  .sketches-examples__title {
+    display: none;
+  }
+}
+
+.sketches-slider {
+  display: none;
+}
+
+@media (min-width: 769px) {
+  .sketches-slider {
+    display: flex;
+    height: 100%;
+    max-height: 740px;
+    justify-content: center;
+    align-self: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+
+.sketches-slider__title {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  margin-right: 48px;
+
+  & span {
+    display: block;
+    height: 95px;
+    font-family: 'Leotaro', 'Roboto', serif;
+    font-weight: normal;
+    font-size: 130px;
+    text-transform: uppercase;
+    color: var(--dark);
+    transform: rotate(270deg);
+  }
+}
+
+@media (max-width: 1280px) {
+  .sketches-slider__title {
+    margin-right: 36px;
+
+    & span {
+      height: 90px;
+      font-size: 120px;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .sketches-slider__title {
+    display: none;
+  }
+}
+
+.sketches-slider__zoom {
+  display: block;
+  width: 100%;
+  max-width: 900px;
+  height: 100%;
+  min-height: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+
+  & img {
+    display: block;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+  }
+}
+
+.sketches-slider__preview {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: var(--gap);
+  width: 180px;
+  min-width: 180px;
+  margin-left: 30px;
+}
+
+@media (max-width: 1280px) {
+  .sketches-slider__preview {
+    width: 150px;
+    min-width: 150px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .sketches-slider__preview {
+    width: 150px;
+    min-width: 150px;
+    margin-left: 21px;
+  }
+}
+
+.sketches-slider__preview__item {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 135px;
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.15s ease-in-out;
+
+  & img {
+    display: block;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+  }
+
+  &.active {
+    transform: scale(1.08);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.3;
+    transition: all 0.15s ease-in-out;
+  }
+
+  &.active::after {
+    opacity: 0;
+  }
+
+  &:not(.active):hover::after {
+    opacity: 0.2;
+  }
+}
+
+@media (min-width: 769px) {
+  .sketches-examples__btn {
+    display: none;
+  }
+}

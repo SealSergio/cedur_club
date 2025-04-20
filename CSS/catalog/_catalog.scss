@@ -1,0 +1,243 @@
+.section-catalog {
+  margin-top: 80px;
+  margin-bottom: 10px;
+}
+
+@media(min-width: 1025px) {
+  .section-catalog {
+    margin-top: 90px;
+    margin-bottom: 20px;
+  }
+}
+
+.categories__title {
+  margin-top: 0;
+}
+
+.catalog__text {
+  margin-bottom: 18px;
+}
+
+@media(min-width: 541px){
+  .catalog__text {
+    width: 66.2%;
+  }
+}
+
+.download-link {
+  color: var(--dark);
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
+.product-category {
+  width: 100%;
+  min-width: 100%;
+  margin-bottom: 20px;
+}
+
+.category-title {
+  display: inline-block;
+  margin-top: 0;
+  margin-bottom: 30px;
+  padding: 0;
+  font-family: 'Leotaro', 'Roboto', serif;
+  font-weight: normal;
+  font-size: 24px;
+  color: var(--dark);
+  border-bottom: 1px solid var(--dark);
+  scroll-margin-block-start: 100px;
+}
+
+.products-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: var(--gap);
+  margin: 0 auto;
+  margin-bottom: 40px;
+  flex-basis: content;
+}
+
+.product-card {
+  margin: 0;
+  width: var(--card-width);
+  min-width: 340px;
+  max-width: 500px;
+  min-height: 350px;
+  max-height: 400px;
+  border-radius: 6px;
+  overflow: hidden;
+  perspective: 1000px;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.card-inner {
+  position: relative;
+  z-index: 5;
+  width: 100%;
+  height: 100%;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+
+.card-inner.is-flipped {
+  transform: rotateY(180deg);
+}
+
+.card-rotate {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  overflow: hidden;
+}
+
+.card-rotate-front {
+  padding: 15px;
+  padding-bottom: 5px;
+  background-color: var(--less-dark);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+.card-rotate-back {
+  background-color: var(--light);
+  transform: rotateY(180deg);
+}
+
+.card-back-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  margin-top: auto;
+  padding: 10px 15px 8px 15px;
+  min-width: 100%;
+}
+
+.product-button {
+  position: relative;
+  margin: 0 auto;
+  margin-top: auto;
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.product-title {
+  margin: 0;
+  font-family: 'Leotaro', 'Roboto', serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  line-height: 1;
+  transition: background-color 0.15s ease-in-out;
+  border-radius: 18px;
+  user-select: none;
+}
+
+.product-title-light {
+  margin-bottom: 10px;
+  padding: 11px 12px 7px;
+  color: var(--dark);
+  background-color: var(--light);
+}
+
+.card-rotate-front:hover .product-title-light,
+.product-title-light:hover, .product-title-light:active {
+  background-color: var(--lighter);
+}
+
+.product-title-dark {
+  position: relative;
+  z-index: 4;
+  margin-top: 5px;
+  padding: 10px 11px 6px;
+  border: 1px solid var(--less-dark);
+  color: var(--dark);
+}
+
+.product-title-dark:hover, .product-title-dark:active {
+  background-color: var(--lighter);
+}
+
+.product-card-text {
+  text-align: center;
+}
+
+.slider-container {
+  position: relative;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+  align-items: stretch;
+  transition: 2s ease-in-out;
+  height: 100%;
+}
+
+.product-img {
+  width: 100%;
+  min-width: 100%;
+  height: 100%;
+  max-height: 500px;
+  object-fit: cover;
+}
+
+.slider-button {
+  position: absolute;
+  z-index: 6;
+  top: 45%;
+  margin: 0;
+  padding: 5px;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.prev-button {
+  left: 5px;
+  padding: 10px 10px 10px 0;
+}
+
+.next-button {
+  right: 5px;
+  padding: 10px 0 10px 10px;
+}
+
+.slider-button-img {
+  height: 65px;
+  width: 35px;
+}
+
+.slider-button-img path {
+  width: 100%;
+  height: 100%;
+  opacity: 50%;
+  transition: 0.2s;
+  fill: rgb(230, 230, 230);
+}
+
+.slider-button-img:hover,
+.slider-button:hover .slider-button-img path {
+  opacity: 90%;
+}
+
+.slider-button-img:active,
+.slider-button:active .slider-button-img path {
+  opacity: 100%;
+}
