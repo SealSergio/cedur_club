@@ -90,5 +90,9 @@ export function createCard(productData, productsList) {
     productTitleDark.innerHTML = productData.name;
     productBtnBack.append(productTitleDark);
 
+    productCard.style.height = `${productCard.offsetWidth * 0.8}px`;
+    console.log(`${productCard.offsetWidth * 0.8}px`);
+
+
     flipOver(front, productBtnBack, cardInner);
 };
